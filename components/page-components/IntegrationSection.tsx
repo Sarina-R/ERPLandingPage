@@ -1,332 +1,277 @@
-import { Button } from '../ui/button'
+import React from 'react'
+import { Grid3X3, Image, Link2 } from 'lucide-react'
 
-const IntegrationSection = () => {
+interface IntegrationApp {
+  name: string
+  category: string
+}
+
+interface ExternalIntegration {
+  name: string
+  position: string
+}
+
+interface ConnectionLineProps {
+  from: { x: number; y: number }
+  to: { x: number; y: number }
+  className?: string
+}
+
+const IntegrationSection: React.FC = () => {
+  const integrationApps: IntegrationApp[] = [
+    { name: 'حسابداری', category: 'finance' },
+    { name: 'مدیریت دانش', category: 'productivity' },
+    { name: 'امضای دیجیتال', category: 'security' },
+    { name: 'CRM', category: 'sales' },
+    { name: 'استودیو', category: 'creative' },
+    { name: 'اشتراکات', category: 'finance' },
+    { name: 'اجاره', category: 'finance' },
+    { name: 'فروشگاه', category: 'sales' },
+    { name: 'بحث و گفتگو', category: 'communication' },
+    { name: 'اسناد', category: 'productivity' },
+    { name: 'پروژه', category: 'productivity' },
+    { name: 'حضور و غیاب', category: 'hr' },
+    { name: 'خدمات میدانی', category: 'operations' },
+    { name: 'برنامه‌ریزی', category: 'productivity' },
+    { name: 'پشتیبانی', category: 'support' },
+    { name: 'وب‌سایت', category: 'creative' },
+    { name: 'بازاریابی اجتماعی', category: 'marketing' },
+    { name: 'ایمیل مارکتینگ', category: 'marketing' },
+    { name: 'خرید', category: 'operations' },
+    { name: 'موجودی انبار', category: 'operations' },
+    { name: 'تولید', category: 'operations' },
+    { name: 'فروش', category: 'sales' },
+    { name: 'منابع انسانی', category: 'hr' },
+    { name: 'داشبورد', category: 'analytics' },
+  ]
+
+  const externalIntegrations: ExternalIntegration[] = [
+    { name: 'QuickBooks', position: 'top-left' },
+    { name: 'Salesforce', position: 'top-right' },
+    { name: 'Slack', position: 'right' },
+    { name: 'Shopify', position: 'left' },
+    { name: 'Zendesk', position: 'bottom-left' },
+    { name: 'HubSpot', position: 'bottom-right' },
+  ]
+
+  const getCategoryColor = (category: string): string => {
+    const colors: Record<string, string> = {
+      finance: 'bg-blue-500/10 text-blue-600 dark:text-blue-400',
+      productivity: 'bg-green-500/10 text-green-600 dark:text-green-400',
+      security: 'bg-red-500/10 text-red-600 dark:text-red-400',
+      sales: 'bg-purple-500/10 text-purple-600 dark:text-purple-400',
+      creative: 'bg-orange-500/10 text-orange-600 dark:text-orange-400',
+      communication: 'bg-cyan-500/10 text-cyan-600 dark:text-cyan-400',
+      hr: 'bg-pink-500/10 text-pink-600 dark:text-pink-400',
+      operations: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400',
+      support: 'bg-violet-500/10 text-violet-600 dark:text-violet-400',
+      marketing: 'bg-rose-500/10 text-rose-600 dark:text-rose-400',
+      analytics: 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-400',
+    }
+    return colors[category] || 'bg-gray-500/10 text-gray-600 dark:text-gray-400'
+  }
+
+  const ConnectionLine: React.FC<ConnectionLineProps> = ({
+    from,
+    to,
+    className = '',
+  }) => (
+    <svg
+      className={`absolute pointer-events-none w-full h-full ${className}`}
+      style={{ zIndex: 0 }}
+    >
+      <defs>
+        <linearGradient
+          id={`lineGradient-${Math.random()}`}
+          x1='0%'
+          y1='0%'
+          x2='100%'
+          y2='0%'
+        >
+          <stop offset='0%' stopColor='currentColor' stopOpacity={0} />
+          <stop offset='50%' stopColor='currentColor' stopOpacity={0.3} />
+          <stop offset='100%' stopColor='currentColor' stopOpacity={0} />
+        </linearGradient>
+      </defs>
+      <line
+        x1={from.x}
+        y1={from.y}
+        x2={to.x}
+        y2={to.y}
+        stroke={`url(#lineGradient-${Math.random()})`}
+        strokeWidth='1'
+        strokeDasharray='2,3'
+        className='text-border animate-pulse'
+      />
+    </svg>
+  )
+
+  // Mathematical positioning for grid items
+  const getGridItemPosition = (
+    index: number,
+    containerWidth: number = 800,
+    containerHeight: number = 600
+  ) => {
+    const cols = 6
+    const rows = 4
+    const cellWidth = containerWidth / cols
+    const cellHeight = containerHeight / rows
+
+    const col = index % cols
+    const row = Math.floor(index / cols)
+
+    return {
+      x: col * cellWidth + cellWidth / 2,
+      y: row * cellHeight + cellHeight / 2,
+    }
+  }
+
+  // Mathematical positioning for external integrations
+  const getExternalPosition = (
+    position: string,
+    containerWidth: number = 800,
+    containerHeight: number = 600
+  ) => {
+    const margin = 40
+    const positions: Record<string, { x: number; y: number }> = {
+      'top-left': { x: containerWidth * 0.2, y: -margin },
+      'top-right': { x: containerWidth * 0.8, y: -margin },
+      right: { x: containerWidth + margin, y: containerHeight * 0.3 },
+      left: { x: -margin, y: containerWidth * 0.3 },
+      'bottom-left': { x: containerWidth * 0.2, y: containerHeight + margin },
+      'bottom-right': { x: containerWidth * 0.8, y: containerHeight + margin },
+    }
+    return positions[position] || { x: 0, y: 0 }
+  }
+
+  const centerPoint = { x: 400, y: 300 } // Center of the container
+
   return (
-    <section className='py-20 px-4 mt-12'>
+    <section className='py-24 px-6 bg-gradient-to-b from-background to-muted/20'>
       <div className='max-w-7xl mx-auto'>
-        {/* Integration Apps Grid */}
+        {/* Header */}
+        <div className='text-center mb-16 space-y-4'>
+          <div className='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4'>
+            <Grid3X3 className='w-4 h-4' />
+            یکپارچه‌سازی
+          </div>
+          <h2 className='text-4xl font-bold tracking-tight'>
+            یکپارچه‌سازی کامل
+          </h2>
+          <p className='text-xl text-muted-foreground max-w-2xl mx-auto'>
+            تمام ابزارهای کسب‌وکار شما در یک پلتفرم متحد
+          </p>
+        </div>
+
+        {/* Main Integration Container */}
         <div className='relative'>
-          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-5xl mx-auto'>
-            {/* Row 1 */}
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-orange-400 to-yellow-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>حسابداری</span>
+          {/* Integration Grid */}
+          <div className='relative border border-border/50 rounded-3xl bg-card/50 backdrop-blur-sm p-12'>
+            <div className='grid grid-cols-6 gap-4 relative z-10'>
+              {integrationApps.map((app: IntegrationApp, index: number) => {
+                const itemPosition = getGridItemPosition(index)
+
+                return (
+                  <div key={index} className='relative'>
+                    <div className='group relative aspect-square flex flex-col items-center justify-center p-4 rounded-2xl border border-border/30 hover:border-border/60 bg-background/80 hover:bg-background transition-all duration-300 hover:shadow-lg hover:scale-105'>
+                      <div
+                        className={`w-10 h-10 rounded-xl mb-3 flex items-center justify-center transition-transform group-hover:scale-110 ${getCategoryColor(
+                          app.category
+                        )}`}
+                      >
+                        <div className='w-4 h-4 rounded-sm bg-current opacity-60'></div>
+                      </div>
+                      <span className='text-xs font-medium text-center leading-tight'>
+                        {app.name}
+                      </span>
+                    </div>
+
+                    {/* Connection Line to Center */}
+                    <ConnectionLine
+                      from={itemPosition}
+                      to={centerPoint}
+                      className='text-primary opacity-20'
+                    />
+                  </div>
+                )
+              })}
             </div>
 
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>مدیریت دانش</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-teal-400 to-blue-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>امضای دیجیتال</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-cyan-400 to-teal-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>CRM</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>استودیو</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>اشتراکات</span>
-            </div>
-
-            {/* Row 2 */}
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-purple-600 to-pink-600 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>اجاره</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-yellow-500 to-orange-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>فروشگاه</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-orange-600 to-red-600 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>بحث و گفتگو</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-blue-400 to-cyan-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>اسناد</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-teal-500 to-green-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>پروژه</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>حضور و غیاب</span>
-            </div>
-
-            {/* Row 3 */}
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-teal-600 to-blue-600 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>خدمات میدانی</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-orange-500 to-yellow-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>برنامه‌ریزی</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-green-500 to-teal-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>پشتیبانی</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-teal-500 to-cyan-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>وب‌سایت</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-red-500 to-pink-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>بازاریابی اجتماعی</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>ایمیل مارکتینگ</span>
-            </div>
-
-            {/* Row 4 */}
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-teal-600 to-green-600 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>خرید</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-purple-600 to-indigo-600 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>موجودی انبار</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-teal-500 to-blue-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>تولید</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-purple-500 to-red-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>فروش</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-purple-600 to-pink-600 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>منابع انسانی</span>
-            </div>
-
-            <div className='flex flex-col items-center group'>
-              <div className='w-16 h-16 bg-background rounded-lg shadow-sm flex items-center justify-center mb-2 group-hover:shadow-md transition-shadow'>
-                <div className='w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-500 rounded'></div>
-              </div>
-              <span className='text-sm font-medium'>داشبورد</span>
-            </div>
-          </div>
-
-          {/* Curved Arrows and Labels */}
-          <div className='absolute inset-0 pointer-events-none'>
-            {/* Top curved arrows */}
+            {/* Central Gradient Effect */}
             <svg
-              className='absolute top-0 left-1/4 w-32 h-16'
-              viewBox='0 0 128 64'
+              className='absolute inset-0 w-full h-full pointer-events-none'
+              style={{ zIndex: 1 }}
             >
-              <path
-                d='M10 50 Q 64 10 118 50'
-                stroke='currentColor'
-                strokeWidth='2'
-                fill='none'
-                className='text-muted-foreground/40'
+              <defs>
+                <radialGradient id='centerGradient' cx='50%' cy='50%' r='50%'>
+                  <stop
+                    offset='0%'
+                    stopColor='currentColor'
+                    stopOpacity={0.1}
+                  />
+                  <stop
+                    offset='70%'
+                    stopColor='currentColor'
+                    stopOpacity={0.05}
+                  />
+                  <stop
+                    offset='100%'
+                    stopColor='currentColor'
+                    stopOpacity={0}
+                  />
+                </radialGradient>
+              </defs>
+              <circle
+                cx='50%'
+                cy='50%'
+                r='40%'
+                fill='url(#centerGradient)'
+                className='text-primary animate-pulse'
               />
-              <text
-                x='64'
-                y='25'
-                textAnchor='middle'
-                className='text-xs fill-muted-foreground font-medium'
-              >
-                QuickBooks
-              </text>
-            </svg>
-
-            <svg
-              className='absolute top-0 right-1/4 w-32 h-16'
-              viewBox='0 0 128 64'
-            >
-              <path
-                d='M10 50 Q 64 10 118 50'
-                stroke='currentColor'
-                strokeWidth='2'
-                fill='none'
-                className='text-muted-foreground/40'
-              />
-              <text
-                x='64'
-                y='25'
-                textAnchor='middle'
-                className='text-xs fill-muted-foreground font-medium'
-              >
-                Salesforce
-              </text>
-            </svg>
-
-            {/* Side curved arrows */}
-            <svg
-              className='absolute left-0 top-1/3 w-24 h-32'
-              viewBox='0 0 96 128'
-            >
-              <path
-                d='M80 10 Q 20 64 80 118'
-                stroke='currentColor'
-                strokeWidth='2'
-                fill='none'
-                className='text-muted-foreground/40'
-              />
-              <text
-                x='35'
-                y='68'
-                textAnchor='middle'
-                className='text-xs fill-muted-foreground font-medium'
-                transform='rotate(-90 35 68)'
-              >
-                Slack
-              </text>
-            </svg>
-
-            <svg
-              className='absolute right-0 top-1/3 w-24 h-32'
-              viewBox='0 0 96 128'
-            >
-              <path
-                d='M16 10 Q 76 64 16 118'
-                stroke='currentColor'
-                strokeWidth='2'
-                fill='none'
-                className='text-muted-foreground/40'
-              />
-              <text
-                x='61'
-                y='68'
-                textAnchor='middle'
-                className='text-xs fill-muted-foreground font-medium'
-                transform='rotate(90 61 68)'
-              >
-                Shopify
-              </text>
-            </svg>
-
-            {/* Bottom curved arrows */}
-            <svg
-              className='absolute bottom-0 left-1/3 w-32 h-16'
-              viewBox='0 0 128 64'
-            >
-              <path
-                d='M10 14 Q 64 54 118 14'
-                stroke='currentColor'
-                strokeWidth='2'
-                fill='none'
-                className='text-muted-foreground/40'
-              />
-              <text
-                x='64'
-                y='45'
-                textAnchor='middle'
-                className='text-xs fill-muted-foreground font-medium'
-              >
-                Zendesk
-              </text>
-            </svg>
-
-            <svg
-              className='absolute bottom-0 right-1/3 w-32 h-16'
-              viewBox='0 0 128 64'
-            >
-              <path
-                d='M10 14 Q 64 54 118 14'
-                stroke='currentColor'
-                strokeWidth='2'
-                fill='none'
-                className='text-muted-foreground/40'
-              />
-              <text
-                x='64'
-                y='45'
-                textAnchor='middle'
-                className='text-xs fill-muted-foreground font-medium'
-              >
-                HubSpot
-              </text>
             </svg>
           </div>
 
-          {/* Bottom text */}
-          <div className='text-center mt-12'>
-            <div className='inline-flex items-center gap-2 text-sm text-muted-foreground'>
-              <div className='w-8 h-4 bg-muted-foreground/20 rounded-full'></div>
-              <span>تصور کنید بدون Odoo</span>
-              <Button
-                variant='link'
-                className='text-sm p-0 h-auto text-primary'
-              >
-                مشاهده همه اپلیکیشن‌ها ←
-              </Button>
-            </div>
-          </div>
+          {/* External Integration Badges */}
+          {externalIntegrations.map(
+            (integration: ExternalIntegration, index: number) => {
+              const positions: Record<string, string> = {
+                'top-left': '-top-6 left-1/6 -translate-x-1/2',
+                'top-right': '-top-6 right-1/6 translate-x-1/2',
+                right: 'top-1/3 -right-8',
+                left: 'top-1/3 -left-8',
+                'bottom-left': '-bottom-6 left-1/6 -translate-x-1/2',
+                'bottom-right': '-bottom-6 right-1/6 translate-x-1/2',
+              }
+
+              const externalPosition = getExternalPosition(integration.position)
+
+              return (
+                <div
+                  key={index}
+                  className={`absolute ${positions[integration.position]}`}
+                >
+                  <div className='flex items-center gap-2 px-4 py-2 rounded-full bg-background/90 border border-border/50 shadow-lg backdrop-blur-sm hover:scale-105 transition-transform'>
+                    <Link2 className='w-3 h-3 text-muted-foreground' />
+                    <span className='text-sm font-medium text-foreground whitespace-nowrap'>
+                      {integration.name}
+                    </span>
+                  </div>
+
+                  {/* Connection Line from External to Center */}
+                  <ConnectionLine
+                    from={externalPosition}
+                    to={centerPoint}
+                    className='text-primary opacity-30'
+                  />
+
+                  {/* Connection indicator */}
+                  <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+                    <div className='w-1 h-1 bg-primary rounded-full animate-ping'></div>
+                  </div>
+                </div>
+              )
+            }
+          )}
         </div>
       </div>
     </section>
