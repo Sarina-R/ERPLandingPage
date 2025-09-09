@@ -121,13 +121,15 @@ export default function ERPLandingPage() {
   ]
 
   return (
-    <div className='min-h-screen bg-background text-foreground' dir='rtl'>
-      <HeroSection />
-      <IntegrationSection />
-      <ModulesSection modules={modules} />
-      <PricingSection />
-      <Cooperation />
-      <CTASection />
+    <div className='min-h-screen bg-background text-foreground  max-w-6xl mx-auto mt-12'>
+      <div className='mx-4 border'>
+        <HeroSection />
+        <IntegrationSection />
+        <ModulesSection modules={modules} />
+        <PricingSection />
+        <Cooperation />
+        <CTASection />
+      </div>
     </div>
   )
 }
