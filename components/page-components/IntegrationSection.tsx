@@ -1,19 +1,9 @@
-import React from 'react'
 import { Button } from '../ui/button'
 
 const IntegrationSection = () => {
   return (
-    <section className='py-20 px-4 bg-muted/30'>
+    <section className='py-20 px-4 mt-12'>
       <div className='max-w-7xl mx-auto'>
-        <div className='text-center mb-16'>
-          <h2 className='text-4xl font-bold mb-4'>
-            یکپارچه‌سازی با ابزارهای محبوب
-          </h2>
-          <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
-            Odoo به راحتی با بیش از ۱۰۰۰ سرویس و ابزار مختلف ادغام می‌شود
-          </p>
-        </div>
-
         {/* Integration Apps Grid */}
         <div className='relative'>
           <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-5xl mx-auto'>
