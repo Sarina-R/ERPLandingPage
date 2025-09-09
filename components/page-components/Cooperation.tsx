@@ -1,4 +1,3 @@
-import React from 'react'
 import { CheckCircle } from 'lucide-react'
 
 const Cooperation = () => {
@@ -25,9 +24,6 @@ const Cooperation = () => {
               <div className='grid lg:grid-cols-2 gap-12 items-center'>
                 <div>
                   <div className='flex items-center gap-4 mb-8'>
-                    <div className='relative'>
-                      <div className='w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center'></div>
-                    </div>
                     <div>
                       <h3 className='text-2xl font-bold'>AVIS × ODOO</h3>
                       <p className='text-muted-foreground'>شراکت نوآورانه</p>
@@ -78,9 +74,9 @@ const Cooperation = () => {
                 </div>
 
                 <div className='relative'>
-                  {/* Mathematical Network Topology Visualization */}
+                  {/* Network */}
                   <div className='relative w-full h-80 bg-card/50 rounded-xl border border-border/50 backdrop-blur-sm overflow-hidden'>
-                    {/* Neural Network Grid Background */}
+                    {/* Neural Grid Background */}
                     <svg className='absolute inset-0 w-full h-full opacity-10'>
                       <defs>
                         <pattern
@@ -112,7 +108,7 @@ const Cooperation = () => {
                       />
                     </svg>
 
-                    {/* Mathematical Function Visualization */}
+                    {/* Function Visualization */}
                     <div className='absolute inset-4'>
                       {/* AVIS Node Cluster */}
                       <div className='absolute top-8 left-8'>
@@ -125,22 +121,15 @@ const Cooperation = () => {
                           </div>
 
                           {/* Satellite nodes representing AVIS capabilities */}
-                          <div className='absolute -top-2 -right-2 w-6 h-6 bg-blue-500/30 rounded-full border border-blue-500/50 animate-pulse'></div>
+                          <div className='absolute -top-2 -right-2 w-6 h-6 bg-blue-500/30 rounded-full border border-blue-500/50'></div>
                           <div
-                            className='absolute -bottom-2 -left-2 w-4 h-4 bg-purple-500/30 rounded-full border border-purple-500/50 animate-pulse'
+                            className='absolute -bottom-2 -left-2 w-4 h-4 bg-purple-500/30 rounded-full border border-purple-500/50'
                             style={{ animationDelay: '0.5s' }}
                           ></div>
                           <div
-                            className='absolute top-1/2 -left-4 w-3 h-3 bg-blue-400/30 rounded-full border border-blue-400/50 animate-pulse'
+                            className='absolute top-1/2 -left-4 w-3 h-3 bg-blue-400/30 rounded-full border border-blue-400/50'
                             style={{ animationDelay: '1s' }}
                           ></div>
-
-                          {/* Mathematical label */}
-                          <div className='absolute -bottom-8 left-1/2 transform -translate-x-1/2'>
-                            <span className='text-xs font-mono text-muted-foreground'>
-                              f(A)
-                            </span>
-                          </div>
                         </div>
                       </div>
 
@@ -155,22 +144,15 @@ const Cooperation = () => {
                           </div>
 
                           {/* Satellite nodes representing ODOO modules */}
-                          <div className='absolute -top-2 -left-2 w-5 h-5 bg-purple-600/30 rounded-full border border-purple-600/50 animate-pulse'></div>
+                          <div className='absolute -top-2 -left-2 w-5 h-5 bg-purple-600/30 rounded-full border border-purple-600/50 '></div>
                           <div
-                            className='absolute -bottom-2 -right-2 w-4 h-4 bg-pink-500/30 rounded-full border border-pink-500/50 animate-pulse'
+                            className='absolute -bottom-2 -right-2 w-4 h-4 bg-pink-500/30 rounded-full border border-pink-500/50 '
                             style={{ animationDelay: '0.7s' }}
                           ></div>
                           <div
-                            className='absolute top-1/2 -right-4 w-3 h-3 bg-purple-400/30 rounded-full border border-purple-400/50 animate-pulse'
+                            className='absolute top-1/2 -right-4 w-3 h-3 bg-purple-400/30 rounded-full border border-purple-400/50 '
                             style={{ animationDelay: '1.3s' }}
                           ></div>
-
-                          {/* Mathematical label */}
-                          <div className='absolute -top-8 left-1/2 transform -translate-x-1/2'>
-                            <span className='text-xs font-mono text-muted-foreground'>
-                              g(O)
-                            </span>
-                          </div>
                         </div>
                       </div>
 
@@ -178,29 +160,15 @@ const Cooperation = () => {
                       <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                         <div className='relative'>
                           {/* Main integration node */}
-                          <div className='w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/30 border-2 border-primary/40 rounded-full flex items-center justify-center backdrop-blur-sm animate-pulse'>
+                          <div className='w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/30 border-2 border-primary/40 rounded-full flex items-center justify-center backdrop-blur-sm'>
                             <span className='text-lg font-bold text-primary'>
                               ⊗
-                            </span>
-                          </div>
-
-                          {/* Tensor product visualization */}
-                          <div className='absolute inset-0 rounded-full border-2 border-primary/20 animate-spin-slow'></div>
-                          <div
-                            className='absolute inset-2 rounded-full border border-primary/30 animate-spin-slow'
-                            style={{ animationDirection: 'reverse' }}
-                          ></div>
-
-                          {/* Mathematical label */}
-                          <div className='absolute -bottom-10 left-1/2 transform -translate-x-1/2'>
-                            <span className='text-xs font-mono text-muted-foreground whitespace-nowrap'>
-                              f(A) ⊗ g(O)
                             </span>
                           </div>
                         </div>
                       </div>
 
-                      {/* Complex Mathematical Connections */}
+                      {/* Complex Connections */}
                       <svg className='absolute inset-0 w-full h-full'>
                         {/* Bezier curves representing data flow */}
                         <path
@@ -299,38 +267,11 @@ const Cooperation = () => {
                         />
                       </svg>
 
-                      {/* Information Theory Particles */}
-                      <div
-                        className='absolute top-1/4 left-1/4 w-2 h-2 bg-primary/60 rounded-full animate-ping'
-                        style={{ animationDelay: '0.2s' }}
-                      ></div>
-                      <div
-                        className='absolute top-3/4 right-1/4 w-1 h-1 bg-primary/80 rounded-full animate-ping'
-                        style={{ animationDelay: '0.8s' }}
-                      ></div>
-                      <div
-                        className='absolute bottom-1/3 left-2/3 w-1.5 h-1.5 bg-primary/70 rounded-full animate-ping'
-                        style={{ animationDelay: '1.4s' }}
-                      ></div>
-                      <div
-                        className='absolute top-2/3 left-1/3 w-1 h-1 bg-primary/90 rounded-full animate-ping'
-                        style={{ animationDelay: '2s' }}
-                      ></div>
-
-                      {/* Complex Mathematical Equation */}
-                      <div className='absolute bottom-4 left-1/2 transform -translate-x-1/2'>
-                        <div className='bg-background/80 backdrop-blur-sm px-3 py-1 rounded-md border border-border/50'>
-                          <span className='text-xs font-mono text-muted-foreground'>
-                            ∫(AVIS ⊗ ODOO)dx = Σ∞
-                          </span>
-                        </div>
-                      </div>
-
                       {/* Information entropy indicator */}
                       <div className='absolute top-4 right-4'>
                         <div className='bg-background/80 backdrop-blur-sm px-2 py-1 rounded-md border border-border/50'>
                           <span className='text-xs font-mono text-muted-foreground'>
-                            H(X,Y)
+                            AVIS x ODOO
                           </span>
                         </div>
                       </div>
@@ -341,27 +282,6 @@ const Cooperation = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Enhanced Background Mathematical Elements */}
-      <div className='absolute top-10 left-10 w-32 h-32 border border-primary/10 rounded-full animate-spin-slow'></div>
-      <div
-        className='absolute bottom-10 right-10 w-24 h-24 border border-primary/20 rounded-full animate-spin-slow'
-        style={{ animationDirection: 'reverse' }}
-      ></div>
-
-      {/* Additional mathematical symbols floating */}
-      <div
-        className='absolute top-1/4 right-1/4 text-primary/5 text-4xl font-bold animate-pulse'
-        style={{ animationDelay: '1s' }}
-      >
-        ∇
-      </div>
-      <div
-        className='absolute bottom-1/4 left-1/4 text-primary/5 text-3xl font-bold animate-pulse'
-        style={{ animationDelay: '2s' }}
-      >
-        ∂
       </div>
 
       <style jsx>{`
