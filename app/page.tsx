@@ -6,14 +6,9 @@ import HeroSection from '@/components/page-components/HeroSection'
 import IntegrationSection from '@/components/page-components/IntegrationSection'
 import ModulesSection from '@/components/page-components/ModulesSection'
 import PricingSection from '@/components/page-components/PricingSection'
-import { Button } from '@/components/ui/button'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+import AccountingSvg from '@/components/svg/AccountingSvg'
+import ChartSvg from '@/components/svg/ChartSvg'
+import ShoppingSvg from '@/components/svg/ShoppingSvg'
 import {
   Calculator,
   Users,
@@ -21,35 +16,29 @@ import {
   Globe,
   BarChart3,
   Warehouse,
-  CheckCircle,
-  Star,
-  TrendingUp,
-  Award,
-  Zap,
 } from 'lucide-react'
-import { useState, useEffect } from 'react'
 
 export default function ERPLandingPage() {
-  const [selectedPlan, setSelectedPlan] = useState('starter')
-  const [userCount, setUserCount] = useState(5)
-  const [animatedStats, setAnimatedStats] = useState({
-    users: 0,
-    companies: 0,
-    countries: 0,
-    satisfaction: 0,
-  })
+  // const [selectedPlan, setSelectedPlan] = useState('starter')
+  // const [userCount, setUserCount] = useState(5)
+  // const [animatedStats, setAnimatedStats] = useState({
+  //   users: 0,
+  //   companies: 0,
+  //   countries: 0,
+  //   satisfaction: 0,
+  // })
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setAnimatedStats({
-        users: 12000000,
-        companies: 7000000,
-        countries: 120,
-        satisfaction: 98,
-      })
-    }, 500)
-    return () => clearTimeout(timer)
-  }, [])
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setAnimatedStats({
+  //       users: 12000000,
+  //       companies: 7000000,
+  //       countries: 120,
+  //       satisfaction: 98,
+  //     })
+  //   }, 500)
+  //   return () => clearTimeout(timer)
+  // }, [])
 
   const modules = [
     {
@@ -62,6 +51,19 @@ export default function ERPLandingPage() {
         'گزارش‌های مالی',
         'مالیات و عوارض',
       ],
+      svg: AccountingSvg,
+    },
+    {
+      title: 'گزارش‌گیری و تحلیل',
+      description: 'داشبوردهای تحلیلی و گزارش‌های مدیریتی',
+      icon: BarChart3,
+      features: [
+        'داشبورد مدیریتی',
+        'گزارش‌های سفارشی',
+        'تحلیل فروش',
+        'پیش‌بینی درآمد',
+      ],
+      svg: ChartSvg,
     },
     {
       title: 'مدیریت ارتباط با مشتری',
@@ -73,6 +75,7 @@ export default function ERPLandingPage() {
         'مدیریت تماس‌ها',
         'خدمات پشتیبانی',
       ],
+      svg: ShoppingSvg,
     },
     {
       title: 'فروش',
@@ -96,17 +99,7 @@ export default function ERPLandingPage() {
         'سئو و بهینه‌سازی',
       ],
     },
-    {
-      title: 'گزارش‌گیری و تحلیل',
-      description: 'داشبوردهای تحلیلی و گزارش‌های مدیریتی',
-      icon: BarChart3,
-      features: [
-        'داشبورد مدیریتی',
-        'گزارش‌های سفارشی',
-        'تحلیل فروش',
-        'پیش‌بینی درآمد',
-      ],
-    },
+
     {
       title: 'مدیریت انبار',
       description: 'کنترل موجودی، ورود و خروج کالا',

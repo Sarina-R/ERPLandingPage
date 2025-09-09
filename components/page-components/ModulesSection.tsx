@@ -1,11 +1,3 @@
-import React from 'react'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '../ui/card'
 import { CheckCircle } from 'lucide-react'
 
 interface Module {
@@ -13,6 +5,7 @@ interface Module {
   description: string
   icon: React.ComponentType<{ className?: string }>
   features: string[]
+  svg?: React.ComponentType
 }
 
 interface ModulesSectionProps {
@@ -21,33 +14,35 @@ interface ModulesSectionProps {
 
 const ModulesSection: React.FC<ModulesSectionProps> = ({ modules }) => {
   return (
-    <section className='py-20 px-4 bg-muted/30'>
+    <section className='pt-20 border-y'>
       <div className='max-w-7xl mx-auto'>
         <div className='text-center mb-16'>
-          <h2 className='text-4xl font-bold mb-4'>ماژول‌های ERP</h2>
-          <p className='text-xl text-muted-foreground max-w-2xl mx-auto'>
-            انتخاب کنید که کدام ماژول‌ها برای کسب‌وکار شما مناسب هستند
-          </p>
+          <div className='border-y'>
+            <div className='text-center mx-12'>
+              <h2 className='relative text-4xl font-bold border-x py-8 px-4'>
+                ماژول‌های ERP
+              </h2>
+            </div>
+          </div>
         </div>
 
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-2 md:grid-cols-3'>
           {modules.map((module, index) => (
-            <Card
+            <div
               key={index}
-              className='group hover:shadow-lg transition-shadow duration-300'
+              className='group hover:shadow-lg transition-shadow duration-300 border p-4'
             >
-              <CardHeader>
+              {/* Conditionally render SVG if it exists */}
+              <div>
                 <div className='flex items-center gap-3 mb-2'>
                   <div className='p-2 bg-primary/10 rounded-lg'>
                     <module.icon className='h-6 w-6' />
                   </div>
-                  <CardTitle className='text-xl'>{module.title}</CardTitle>
+                  <div className='text-xl'>{module.title}</div>
                 </div>
-                <CardDescription className='text-base'>
-                  {module.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
+                <div className='text-base'>{module.description}</div>
+              </div>
+              <div>
                 <ul className='space-y-2'>
                   {module.features.map((feature, idx) => (
                     <li key={idx} className='flex items-center gap-2 text-sm'>
@@ -56,8 +51,13 @@ const ModulesSection: React.FC<ModulesSectionProps> = ({ modules }) => {
                     </li>
                   ))}
                 </ul>
-              </CardContent>
-            </Card>
+              </div>
+              {module.svg && (
+                <div className='flex justify-center mt-auto opacity-60'>
+                  <module.svg />
+                </div>
+              )}{' '}
+            </div>
           ))}
         </div>
       </div>
