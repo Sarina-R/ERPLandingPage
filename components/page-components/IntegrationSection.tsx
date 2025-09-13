@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid3X3, Image, Link2 } from 'lucide-react'
+import { Grid3X3, Link2 } from 'lucide-react'
 
 interface IntegrationApp {
   name: string
@@ -54,22 +54,22 @@ const IntegrationSection: React.FC = () => {
     { name: 'HubSpot', position: 'bottom-right' },
   ]
 
-  const getCategoryColor = (category: string): string => {
-    const colors: Record<string, string> = {
-      finance: 'bg-blue-500/10 text-blue-600 dark:text-blue-400',
-      productivity: 'bg-green-500/10 text-green-600 dark:text-green-400',
-      security: 'bg-red-500/10 text-red-600 dark:text-red-400',
-      sales: 'bg-purple-500/10 text-purple-600 dark:text-purple-400',
-      creative: 'bg-orange-500/10 text-orange-600 dark:text-orange-400',
-      communication: 'bg-cyan-500/10 text-cyan-600 dark:text-cyan-400',
-      hr: 'bg-pink-500/10 text-pink-600 dark:text-pink-400',
-      operations: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400',
-      support: 'bg-violet-500/10 text-violet-600 dark:text-violet-400',
-      marketing: 'bg-rose-500/10 text-rose-600 dark:text-rose-400',
-      analytics: 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-400',
-    }
-    return colors[category] || 'bg-gray-500/10 text-gray-600 dark:text-gray-400'
-  }
+  // const getCategoryColor = (category: string): string => {
+  //   const colors: Record<string, string> = {
+  //     finance: 'bg-blue-500/10 text-blue-600 dark:text-blue-400',
+  //     productivity: 'bg-green-500/10 text-green-600 dark:text-green-400',
+  //     security: 'bg-red-500/10 text-red-600 dark:text-red-400',
+  //     sales: 'bg-purple-500/10 text-purple-600 dark:text-purple-400',
+  //     creative: 'bg-orange-500/10 text-orange-600 dark:text-orange-400',
+  //     communication: 'bg-cyan-500/10 text-cyan-600 dark:text-cyan-400',
+  //     hr: 'bg-pink-500/10 text-pink-600 dark:text-pink-400',
+  //     operations: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400',
+  //     support: 'bg-violet-500/10 text-violet-600 dark:text-violet-400',
+  //     marketing: 'bg-rose-500/10 text-rose-600 dark:text-rose-400',
+  //     analytics: 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-400',
+  //   }
+  //   return colors[category] || 'bg-gray-500/10 text-gray-600 dark:text-gray-400'
+  // }
 
   const ConnectionLine: React.FC<ConnectionLineProps> = ({
     from,
@@ -106,7 +106,6 @@ const IntegrationSection: React.FC = () => {
     </svg>
   )
 
-  // Mathematical positioning for grid items
   const getGridItemPosition = (
     index: number,
     containerWidth: number = 800,
@@ -126,7 +125,6 @@ const IntegrationSection: React.FC = () => {
     }
   }
 
-  // Mathematical positioning for external integrations
   const getExternalPosition = (
     position: string,
     containerWidth: number = 800,
@@ -144,7 +142,7 @@ const IntegrationSection: React.FC = () => {
     return positions[position] || { x: 0, y: 0 }
   }
 
-  const centerPoint = { x: 400, y: 300 } // Center of the container
+  const centerPoint = { x: 400, y: 300 }
 
   return (
     <section className='py-24 px-6 bg-gradient-to-b from-background to-muted/20'>
@@ -167,19 +165,21 @@ const IntegrationSection: React.FC = () => {
         <div className='relative'>
           {/* Integration Grid */}
           <div className='relative border border-border/50 rounded-3xl bg-card/50 backdrop-blur-sm p-12'>
-            <div className='grid grid-cols-6 gap-4 relative z-10'>
+            <div className='grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 relative z-10'>
               {integrationApps.map((app: IntegrationApp, index: number) => {
                 const itemPosition = getGridItemPosition(index)
+                const imageSrc = `/odoo-pic/icon (${23 - index + 1}).svg`
 
                 return (
                   <div key={index} className='relative'>
                     <div className='group relative aspect-square flex flex-col items-center justify-center p-4 rounded-2xl border border-border/30 hover:border-border/60 bg-background/80 hover:bg-background transition-all duration-300 hover:shadow-lg hover:scale-105'>
-                      <div
-                        className={`w-10 h-10 rounded-xl mb-3 flex items-center justify-center transition-transform group-hover:scale-110 ${getCategoryColor(
-                          app.category
-                        )}`}
-                      >
-                        <div className='w-4 h-4 rounded-sm bg-current opacity-60'></div>
+                      {/* Replace colored box with actual image */}
+                      <div className='w-10 h-10 mb-3 flex items-center justify-center'>
+                        <img
+                          src={imageSrc}
+                          alt={app.name}
+                          className='w-10 h-10 object-contain transition-transform group-hover:scale-110'
+                        />
                       </div>
                       <span className='text-xs font-medium text-center leading-tight'>
                         {app.name}
