@@ -102,10 +102,10 @@ export default function ERPLandingPage() {
         <IntegrationSection />
         <ModulesSection modules={modules} />
         <PricingSection />
-        <Cooperation />
-        <LiveDashboardPreview />
         <InteractiveProcessFlow />
+        <LiveDashboardPreview />
         <InteractiveComparisonTool />
+        <Cooperation />
         <CTASection />
       </div>
     </div>

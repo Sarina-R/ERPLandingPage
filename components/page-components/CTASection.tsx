@@ -2,7 +2,7 @@ import { Button } from '../ui/button'
 
 const CTASection = () => {
   return (
-    <section className='py-20 px-4 relative overflow-hidden'>
+    <section className='py-20 px-4 relative border-t'>
       <div className='max-w-4xl mx-auto text-center relative z-10'>
         {/* Main Heading with Mathematical Enhancement */}
         <div className='relative mb-6'>
@@ -15,7 +15,7 @@ const CTASection = () => {
         {/* Enhanced Description */}
         <div className='relative mb-8'>
           <p className='text-xl mb-4 opacity-90 max-w-2xl mx-auto leading-relaxed'>
-            همین امروز دمو رایگان دریافت کنید و ببینید Odoo چگونه کسب‌وکار شما
+            همین امروز دمو رایگان دریافت کنید و ببینید AVIS چگونه کسب‌وکار شما
             را متحول می‌کند.
           </p>
         </div>
