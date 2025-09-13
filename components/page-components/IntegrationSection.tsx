@@ -172,8 +172,7 @@ const IntegrationSection: React.FC = () => {
 
                 return (
                   <div key={index} className='relative'>
-                    <div className='group relative aspect-square flex flex-col items-center justify-center p-4 rounded-2xl border border-border/30 hover:border-border/60 bg-background/80 hover:bg-background transition-all duration-300 hover:shadow-lg hover:scale-105'>
-                      {/* Replace colored box with actual image */}
+                    <div className='group relative aspect-square flex flex-col items-center justify-center p-4 rounded-2xl border hover:border-border/60 bg-background/80 hover:bg-background transition-all duration-300 hover:shadow-lg hover:scale-105'>
                       <div className='w-10 h-10 mb-3 flex items-center justify-center'>
                         <img
                           src={imageSrc}
