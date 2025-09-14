@@ -5,7 +5,7 @@ const ShoppingSvg = () => {
       viewBox='0 0 200 200'
       width='200'
       height='200'
-      className='hidden md:block w-full h-full text-black dark:text-white'
+      className='w-full h-full text-black dark:text-white'
     >
       {/* Center - CRM System */}
       <g transform='translate(100, 100)' className='center-pulse'>
