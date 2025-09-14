@@ -14,7 +14,7 @@ interface ModulesSectionProps {
 
 const ModulesSection: React.FC<ModulesSectionProps> = ({ modules }) => {
   return (
-    <section className='pt-20 border-y'>
+    <section id='modules' className='pt-20 border-y'>
       <div className='max-w-7xl mx-auto'>
         <div className='text-center mb-16'>
           <div className='border-y'>

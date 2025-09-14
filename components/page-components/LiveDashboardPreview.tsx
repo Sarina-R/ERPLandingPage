@@ -56,7 +56,7 @@ const LiveDashboardPreview: React.FC = () => {
   }
 
   return (
-    <section className='min-h-screen'>
+    <section id='dashboard' className='min-h-screen'>
       {/* Header Section */}
       <div className='text-center'>
         <div className='border-y border-border'>

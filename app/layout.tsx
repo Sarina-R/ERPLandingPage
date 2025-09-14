@@ -92,16 +92,10 @@ export default function RootLayout({
                 </div>
                 <div className='hidden md:flex items-center gap-8'>
                   <a
-                    href='#portfolio'
+                    href='#modules'
                     className='text-muted-foreground hover:text-foreground transition-colors text-sm font-medium'
                   >
-                    نمونه کارها
-                  </a>
-                  <a
-                    href='#services'
-                    className='text-muted-foreground hover:text-foreground transition-colors text-sm font-medium'
-                  >
-                    خدمات
+                    ماژول‌ها
                   </a>
                   <a
                     href='#pricing'
@@ -110,10 +104,16 @@ export default function RootLayout({
                     قیمت‌ها
                   </a>
                   <a
-                    href='#contact'
+                    href='#dashboard'
                     className='text-muted-foreground hover:text-foreground transition-colors text-sm font-medium'
                   >
-                    تماس
+                    داشبورد
+                  </a>
+                  <a
+                    href='#cta'
+                    className='text-muted-foreground hover:text-foreground transition-colors text-sm font-medium'
+                  >
+                    از اینجا شروع کنید
                   </a>
                 </div>
                 <div className='flex items-center gap-2'>

@@ -2,7 +2,7 @@ import { Button } from '../ui/button'
 
 const CTASection = () => {
   return (
-    <section className='py-20 px-4 relative border-t'>
+    <section id='cta' className='py-20 px-4 relative border-t'>
       <div className='max-w-4xl mx-auto text-center relative z-10'>
         {/* Main Heading with Mathematical Enhancement */}
         <div className='relative mb-6'>

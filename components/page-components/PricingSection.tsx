@@ -93,7 +93,7 @@ const PricingSection: FC = () => {
   }
 
   return (
-    <section className='min-h-screen mt-20'>
+    <section id='pricing' className='min-h-screen mt-20'>
       <div>
         {/* Header */}
         <div className='text-center border-y mb-8'>
