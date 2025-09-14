@@ -67,9 +67,9 @@ export default function InteractiveProcessFlow() {
           <div className='text-center'>
             <div className='border-y border-border'>
               <div className='text-center mx-6 md:mx-12'>
-                <h2 className='relative text-3xl md:text-4xl font-bold border-x border-border py-6 md:py-8 px-3 md:px-4'>
+                <h2 className='relative text-2xl md:text-3xl font-bold border-x border-border py-6 md:py-8 px-3 md:px-4'>
                   فرآیند کار چطور است؟
-                  <p className='text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto pt-4 md:pt-6'>
+                  <p className='text-base md:text-lg text-muted-foreground max-w-2xl mx-auto pt-4 md:pt-6'>
                     ببینید سیستم ERP ما چگونه در ۴ مرحله ساده کسب‌وکار شما را
                     متحول می‌کند
                   </p>
@@ -124,7 +124,7 @@ export default function InteractiveProcessFlow() {
               >
                 <div className='flex items-center justify-between mb-4'>
                   <span
-                    className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold
+                    className={`w-5 sm:w-8 h-5 sm:h-8 rounded-full flex items-center justify-center text-[10px] font-semibold
                       ${
                         isActive
                           ? 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900'
@@ -133,26 +133,26 @@ export default function InteractiveProcessFlow() {
                   >
                     {index + 1}
                   </span>
-                  <span className='text-xs px-2 py-1 rounded-full border border-zinc-200 dark:border-zinc-600 text-zinc-500 dark:text-zinc-400'>
+                  <span className='text-[10px] px-2 py-1 rounded-full border border-zinc-200 dark:border-zinc-600 text-zinc-500 dark:text-zinc-400'>
                     {step.time}
                   </span>
                 </div>
 
                 <div
-                  className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4
+                  className={`w-9 sm:w-12 h-9 sm:h-12 rounded-lg flex items-center justify-center mb-4
                     ${
                       isActive
                         ? 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900'
                         : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-500 dark:text-zinc-400'
                     }`}
                 >
-                  <StepIcon className='w-6 h-6' />
+                  <StepIcon className='h-4 sm:h-6 w-4 sm:w-6' />
                 </div>
 
-                <h3 className='text-lg font-medium mb-2 text-zinc-900 dark:text-white'>
+                <h3 className='text-base font-medium mb-2 text-zinc-900 dark:text-white'>
                   {step.title}
                 </h3>
-                <p className='text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed'>
+                <p className='text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed'>
                   {step.description}
                 </p>
               </div>
@@ -161,12 +161,12 @@ export default function InteractiveProcessFlow() {
         </div>
 
         {/* Progress */}
-        <div className='mt-12 max-w-3xl mx-auto'>
+        <div className='mt-12 max-w-86 sm:max-w-3xl mx-auto'>
           <div className='flex justify-between items-center mb-3'>
-            <span className='text-sm font-medium text-zinc-700 dark:text-zinc-300'>
+            <span className='text-xs font-medium text-zinc-700 dark:text-zinc-300'>
               پیشرفت
             </span>
-            <span className='text-sm text-zinc-500 dark:text-zinc-400'>
+            <span className='text-xs text-zinc-500 dark:text-zinc-400'>
               {activeStep + 1} از {steps.length}
             </span>
           </div>
