@@ -103,14 +103,14 @@ export default function InteractiveComparisonTool() {
 
   return (
     <section className='py-16'>
-      <div className='max-w-7xl mx-auto'>
+      <div className=''>
         {/* Header */}
         <div className='text-center mb-8'>
           <div className='border-y border-neutral-200 dark:border-neutral-700'>
             <div className='text-center mx-6 md:mx-12'>
-              <h2 className='relative text-3xl md:text-4xl font-bold border-x border-neutral-200 dark:border-neutral-700 py-6 md:py-8 px-3 md:px-4 text-black dark:text-white'>
+              <h2 className='relative text-2xl md:text-3xl font-bold border-x border-neutral-200 dark:border-neutral-700 py-6 md:py-8 px-3 md:px-4 text-black dark:text-white'>
                 مقایسه تعاملی
-                <p className='text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto pt-4 md:pt-6'>
+                <p className='text-base md:text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto pt-4 md:pt-6'>
                   ببینید سیستم ERP ما در مقایسه با سایر روش‌ها چقدر بهتر عمل
                   می‌کند
                 </p>
@@ -137,12 +137,12 @@ export default function InteractiveComparisonTool() {
         </div>
 
         {/* Main Content Grid */}
-        <div className='grid grid-cols-1 lg:grid-cols-2 h-[600px]'>
+        <div className='grid grid-cols-1 sm:grid-cols-2'>
           {/* Selected Scenario Card */}
           <div className='  border-y border-neutral-200 dark:border-neutral-700 flex flex-col justify-between'>
             <div className='p-8'>
               <div
-                className={`inline-block px-4 py-2 rounded-full bg-gradient-to-r ${scenarios[selectedPlan].color} text-white text-sm font-medium mb-6`}
+                className={`inline-block px-4 py-2 rounded-full bg-gradient-to-r ${scenarios[selectedPlan].color} text-white text-xs font-medium mb-6`}
               >
                 {scenarios[selectedPlan].title}
               </div>
@@ -155,7 +155,9 @@ export default function InteractiveComparisonTool() {
                     ) : (
                       <AlertCircle className='w-5 h-5 text-red-500 flex-shrink-0' />
                     )}
-                    <span className='text-black dark:text-white'>{item}</span>
+                    <span className='text-sm text-black dark:text-white'>
+                      {item}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -169,10 +171,10 @@ export default function InteractiveComparisonTool() {
                     key={key}
                     className='p-4 text-center border border-neutral-200 dark:border-neutral-700'
                   >
-                    <div className='text-xl font-bold text-black dark:text-white mb-1'>
+                    <div className='text-lg font-bold text-black dark:text-white mb-1'>
                       {value}
                     </div>
-                    <div className='text-sm text-neutral-600 dark:text-neutral-400'>
+                    <div className='text-xs text-neutral-600 dark:text-neutral-400'>
                       {key === 'time' && 'زمان'}
                       {key === 'errors' && 'خطا'}
                       {key === 'cost' && 'هزینه ماهانه'}
@@ -191,13 +193,13 @@ export default function InteractiveComparisonTool() {
                 key={metric}
                 className='  border border-neutral-200 dark:border-neutral-700 p-6 flex-1'
               >
-                <h4 className='text-lg font-semibold text-black dark:text-white mb-4'>
+                <h4 className='text-base font-semibold text-black dark:text-white mb-4'>
                   {label}
                 </h4>
                 <div className='space-y-4'>
                   {Object.entries(scenarios).map(([key, scenario]) => (
                     <div key={key} className='flex items-center gap-4'>
-                      <div className='w-20 text-sm text-neutral-600 dark:text-neutral-400 text-right'>
+                      <div className='w-20 text-xs text-neutral-600 dark:text-neutral-400 text-right'>
                         {scenario.title}
                       </div>
                       <div className='flex-1 bg-neutral-100 dark:bg-neutral-700 rounded-full h-3 overflow-hidden'>
@@ -211,7 +213,7 @@ export default function InteractiveComparisonTool() {
                           }}
                         />
                       </div>
-                      <div className='w-16 text-sm font-medium text-black dark:text-white text-left'>
+                      <div className='w-16 text-xs font-medium text-black dark:text-white text-left'>
                         {
                           scenario.metrics[
                             metric as keyof typeof scenario.metrics
