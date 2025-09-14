@@ -61,9 +61,9 @@ const LiveDashboardPreview: React.FC = () => {
       <div className='text-center'>
         <div className='border-y border-border'>
           <div className='text-center mx-6 md:mx-12'>
-            <h2 className='relative text-3xl md:text-4xl font-bold border-x border-border py-6 md:py-8 px-3 md:px-4'>
+            <h2 className='relative text-2xl md:text-3xl font-bold border-x border-border py-6 md:py-8 px-3 md:px-4'>
               داشبورد زنده ERP{' '}
-              <p className='text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto pt-4 md:pt-6'>
+              <p className='text-base md:text-lg text-muted-foreground max-w-2xl mx-auto pt-4 md:pt-6'>
                 نمونه‌ای از داشبورد واقعی که هم‌اکنون در کسب‌وکارها استفاده
                 می‌شود
               </p>
@@ -77,18 +77,20 @@ const LiveDashboardPreview: React.FC = () => {
         <div className='border-b'>
           <div className='grid grid-cols-3 h-20'>
             <div className='border-r flex items-center justify-center'>
-              <h3 className='text-2xl font-bold'>داشبورد مدیریتی</h3>
+              <h3 className='text-base sm:text-xl font-bold'>
+                داشبورد مدیریتی
+              </h3>
             </div>
             <div className='border-r flex items-center justify-center'>
               <button
                 onClick={() => setIsLive(!isLive)}
-                className={`px-8 py-3 font-bold border transition-all duration-300 ${
+                className={`px-4 sm:px-8 py-2 sm:py-3 font-bold border transition-all text-sm sm:text-base duration-300 ${
                   isLive
                     ? 'bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 rounded-lg'
                     : 'bg-white text-black hover:bg-gray-100 dark:bg-white/5 dark:text-white dark:hover:bg-white/10 rounded-lg'
                 }`}
               >
-                <div className='flex items-center gap-3'>
+                <div className='flex items-center gap-2 sm:gap-3'>
                   <div
                     className={`w-3 h-3 border rounded-full ${
                       isLive
@@ -101,7 +103,7 @@ const LiveDashboardPreview: React.FC = () => {
               </button>
             </div>
             <div className='flex items-center justify-center'>
-              <div className='flex items-center gap-3'>
+              <div className='flex items-center gap-2 sm:gap-3'>
                 <div
                   className={`w-4 h-4 border rounded-full ${
                     isLive
@@ -109,7 +111,9 @@ const LiveDashboardPreview: React.FC = () => {
                       : 'bg-black/20 dark:bg-white/10'
                   }`}
                 />
-                <span className='font-bold'>{isLive ? 'زنده' : 'آفلاین'}</span>
+                <span className='font-bold text-sm sm:text-base'>
+                  {isLive ? 'زنده' : 'آفلاین'}
+                </span>
               </div>
             </div>
           </div>
@@ -211,10 +215,10 @@ const LiveDashboardPreview: React.FC = () => {
                   <div className='w-2 h-2 bg-green-500 animate-ping rounded-full' />
                 )}
               </div>
-              <div className='text-4xl font-bold mb-2'>
+              <div className='text-3xl font-bold mb-2'>
                 {formatNumber(metrics.revenue)} تومان
               </div>
-              <div className='text-lg text-gray-600 dark:text-gray-300'>
+              <div className='text-base text-gray-600 dark:text-gray-300'>
                 درآمد امروز
               </div>
             </div>
@@ -265,10 +269,10 @@ const LiveDashboardPreview: React.FC = () => {
                     <div className='w-2 h-2 bg-blue-500 animate-ping rounded-full' />
                   )}
                 </div>
-                <div className='text-2xl font-bold'>
+                <div className='text-xl font-bold'>
                   {formatNumber(metrics.orders)}
                 </div>
-                <div className='text-sm text-gray-600 dark:text-gray-300'>
+                <div className='text-xs text-gray-600 dark:text-gray-300'>
                   سفارشات
                 </div>
               </div>
@@ -423,10 +427,10 @@ const LiveDashboardPreview: React.FC = () => {
                     <div className='w-2 h-2 bg-cyan-500 animate-ping rounded-full' />
                   )}
                 </div>
-                <div className='text-2xl font-bold'>
+                <div className='text-xl font-bold'>
                   {formatNumber(metrics.customers)}
                 </div>
-                <div className='text-sm text-gray-600 dark:text-gray-300'>
+                <div className='text-xs text-gray-600 dark:text-gray-300'>
                   مشتریان فعال
                 </div>
               </div>
@@ -501,7 +505,7 @@ const LiveDashboardPreview: React.FC = () => {
                   x='70'
                   y='30'
                   fill='currentColor'
-                  fontSize='6'
+                  fontSize='5'
                   opacity='0.5'
                 >
                   +{metrics.growth}%
@@ -538,183 +542,185 @@ const LiveDashboardPreview: React.FC = () => {
                   <div className='w-2 h-2 bg-green-500 animate-ping rounded-full' />
                 )}
               </div>
-              <div className='text-3xl font-bold mb-2'>{metrics.growth}%</div>
-              <div className='text-sm text-gray-600 dark:text-gray-300'>
+              <div className='text-2xl font-bold mb-2'>{metrics.growth}%</div>
+              <div className='text-xs text-gray-600 dark:text-gray-300'>
                 رشد فروش
               </div>
             </div>
           </div>
 
           {/* Live Activity Feed */}
-          <div className='p-6 relative bg-light-card dark:bg-dark-card'>
-            <div className='absolute inset-0 p-2 opacity-20'>
-              <svg className='w-full h-full' viewBox='0 0 120 140' fill='none'>
-                {/* Activity timeline */}
-                <line
-                  x1='10'
-                  y1='20'
-                  x2='10'
-                  y2='120'
-                  stroke='currentColor'
-                  strokeWidth='1'
-                  opacity='0.3'
-                />
-
-                {/* Activity dots */}
-                <circle cx='10' cy='30' r='2' fill='#22c55e' />
-                <circle cx='10' cy='60' r='2' fill='#3b82f6' />
-                <circle cx='10' cy='90' r='2' fill='#f59e0b' />
-
-                {/* Activity indicators */}
-                <rect
-                  x='20'
-                  y='25'
-                  width='15'
-                  height='2'
-                  fill='#22c55e'
-                  opacity='0.4'
-                />
-                <rect
-                  x='20'
-                  y='28'
-                  width='8'
-                  height='1'
-                  fill='#22c55e'
-                  opacity='0.3'
-                />
-
-                <rect
-                  x='20'
-                  y='55'
-                  width='12'
-                  height='2'
-                  fill='#3b82f6'
-                  opacity='0.4'
-                />
-                <rect
-                  x='20'
-                  y='58'
-                  width='18'
-                  height='1'
-                  fill='#3b82f6'
-                  opacity='0.3'
-                />
-
-                <rect
-                  x='20'
-                  y='85'
-                  width='10'
-                  height='2'
-                  fill='#f59e0b'
-                  opacity='0.4'
-                />
-                <rect
-                  x='20'
-                  y='88'
-                  width='14'
-                  height='1'
-                  fill='#f59e0b'
-                  opacity='0.3'
-                />
-
-                {/* Live pulse on timeline */}
-                {isLive && (
-                  <>
-                    <circle
-                      cx='10'
-                      cy='30'
-                      r='4'
-                      fill='none'
-                      stroke='#22c55e'
-                      strokeWidth='0.5'
-                      opacity='0.5'
-                    >
-                      <animate
-                        attributeName='r'
-                        values='4;8;4'
-                        dur='2s'
-                        repeatCount='indefinite'
-                      />
-                      <animate
-                        attributeName='opacity'
-                        values='0.5;0;0.5'
-                        dur='2s'
-                        repeatCount='indefinite'
-                      />
-                    </circle>
-                    <circle
-                      cx='10'
-                      cy='60'
-                      r='6'
-                      fill='none'
-                      stroke='#3b82f6'
-                      strokeWidth='0.5'
-                      opacity='0.4'
-                    >
-                      <animate
-                        attributeName='r'
-                        values='6;10;6'
-                        dur='2.5s'
-                        repeatCount='indefinite'
-                        begin='0.8s'
-                      />
-                      <animate
-                        attributeName='opacity'
-                        values='0.4;0;0.4'
-                        dur='2.5s'
-                        repeatCount='indefinite'
-                        begin='0.8s'
-                      />
-                    </circle>
-                  </>
-                )}
-              </svg>
-            </div>
-            <div className='relative z-10'>
-              <h4 className='text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2'>
-                <Clock className='w-5 h-5' />
-                فعالیت‌های اخیر
-              </h4>
-              <div className='space-y-3'>
-                {(
-                  [
-                    {
-                      type: 'success',
-                      message: 'فاکتور جدید #۱۲۳۴ ثبت شد',
-                      time: 'همین الان',
-                    },
-                    {
-                      type: 'info',
-                      message: 'مشتری جدید عضو شد',
-                      time: '۲ دقیقه پیش',
-                    },
-                    {
-                      type: 'warning',
-                      message: 'موجودی کالای A کم است',
-                      time: '۵ دقیقه پیش',
-                    },
-                  ] as Activity[]
-                ).map((activity, index) => (
-                  <div key={index} className='flex items-center gap-3 p-3'>
-                    {activity.type === 'success' && (
-                      <CheckCircle className='w-5 h-5 text-green-500' />
-                    )}
-                    {activity.type === 'info' && (
-                      <Users className='w-5 h-5 text-blue-500' />
-                    )}
-                    {activity.type === 'warning' && (
-                      <AlertCircle className='w-5 h-5 text-orange-500' />
-                    )}
-                    <div className='flex-1'>
-                      <div className='text-sm text-gray-900 dark:text-white'>
-                        {activity.message}
-                      </div>
-                      <div className='text-xs text-gray-500 dark:text-gray-400'>
-                        {activity.time}
+          <div className='p-6 relative col-span-3'>
+            <div className='sm:grid grid-cols-2 relative'>
+              <div className='relative z-10'>
+                <h4 className='text-base font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2'>
+                  <Clock className='w-5 h-5' />
+                  فعالیت‌های اخیر
+                </h4>
+                <div className='space-y-3'>
+                  {(
+                    [
+                      {
+                        type: 'success',
+                        message: 'فاکتور جدید #۱۲۳۴ ثبت شد',
+                        time: 'همین الان',
+                      },
+                      {
+                        type: 'info',
+                        message: 'مشتری جدید عضو شد',
+                        time: '۲ دقیقه پیش',
+                      },
+                      {
+                        type: 'warning',
+                        message: 'موجودی کالای A کم است',
+                        time: '۵ دقیقه پیش',
+                      },
+                    ] as Activity[]
+                  ).map((activity, index) => (
+                    <div key={index} className='flex items-center gap-3 p-3'>
+                      {activity.type === 'success' && (
+                        <CheckCircle className='w-5 h-5 text-green-500' />
+                      )}
+                      {activity.type === 'info' && (
+                        <Users className='w-5 h-5 text-blue-500' />
+                      )}
+                      {activity.type === 'warning' && (
+                        <AlertCircle className='w-5 h-5 text-orange-500' />
+                      )}
+                      <div className='flex-1'>
+                        <div className='text-xs text-gray-900 dark:text-white'>
+                          {activity.message}
+                        </div>
+                        <div className='text-[10px] text-gray-500 dark:text-gray-400'>
+                          {activity.time}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+              </div>
+              <div className='hidden sm:block inset-0 p-2 opacity-30'>
+                <svg className='max-h-52' viewBox='0 0 100 120' fill='none'>
+                  {/* Activity timeline */}
+                  <line
+                    x1='10'
+                    y1='20'
+                    x2='10'
+                    y2='120'
+                    stroke='currentColor'
+                    strokeWidth='1'
+                    opacity='0.3'
+                  />
+
+                  {/* Activity dots */}
+                  <circle cx='10' cy='30' r='2' fill='#22c55e' />
+                  <circle cx='10' cy='60' r='2' fill='#3b82f6' />
+                  <circle cx='10' cy='90' r='2' fill='#f59e0b' />
+
+                  {/* Activity indicators */}
+                  <rect
+                    x='20'
+                    y='25'
+                    width='15'
+                    height='2'
+                    fill='#22c55e'
+                    opacity='0.4'
+                  />
+                  <rect
+                    x='20'
+                    y='28'
+                    width='8'
+                    height='1'
+                    fill='#22c55e'
+                    opacity='0.3'
+                  />
+
+                  <rect
+                    x='20'
+                    y='55'
+                    width='12'
+                    height='2'
+                    fill='#3b82f6'
+                    opacity='0.4'
+                  />
+                  <rect
+                    x='20'
+                    y='58'
+                    width='18'
+                    height='1'
+                    fill='#3b82f6'
+                    opacity='0.3'
+                  />
+
+                  <rect
+                    x='20'
+                    y='85'
+                    width='10'
+                    height='2'
+                    fill='#f59e0b'
+                    opacity='0.4'
+                  />
+                  <rect
+                    x='20'
+                    y='88'
+                    width='14'
+                    height='1'
+                    fill='#f59e0b'
+                    opacity='0.3'
+                  />
+
+                  {/* Live pulse on timeline */}
+                  {isLive && (
+                    <>
+                      <circle
+                        cx='10'
+                        cy='30'
+                        r='4'
+                        fill='none'
+                        stroke='#22c55e'
+                        strokeWidth='0.5'
+                        opacity='0.5'
+                      >
+                        <animate
+                          attributeName='r'
+                          values='4;8;4'
+                          dur='2s'
+                          repeatCount='indefinite'
+                        />
+                        <animate
+                          attributeName='opacity'
+                          values='0.5;0;0.5'
+                          dur='2s'
+                          repeatCount='indefinite'
+                        />
+                      </circle>
+                      <circle
+                        cx='10'
+                        cy='60'
+                        r='6'
+                        fill='none'
+                        stroke='#3b82f6'
+                        strokeWidth='0.5'
+                        opacity='0.4'
+                      >
+                        <animate
+                          attributeName='r'
+                          values='6;10;6'
+                          dur='2.5s'
+                          repeatCount='indefinite'
+                          begin='0.8s'
+                        />
+                        <animate
+                          attributeName='opacity'
+                          values='0.4;0;0.4'
+                          dur='2.5s'
+                          repeatCount='indefinite'
+                          begin='0.8s'
+                        />
+                      </circle>
+                    </>
+                  )}
+                </svg>
               </div>
             </div>
           </div>
