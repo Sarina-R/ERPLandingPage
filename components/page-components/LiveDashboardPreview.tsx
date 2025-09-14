@@ -84,7 +84,7 @@ const LiveDashboardPreview: React.FC = () => {
             <div className='border-r flex items-center justify-center'>
               <button
                 onClick={() => setIsLive(!isLive)}
-                className={`px-4 sm:px-8 py-2 sm:py-3 font-bold border transition-all text-sm sm:text-base duration-300 ${
+                className={`px-2 sm:px-8 py-2 sm:py-3 font-bold border transition-all text-xs sm:text-base duration-300 ${
                   isLive
                     ? 'bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 rounded-lg'
                     : 'bg-white text-black hover:bg-gray-100 dark:bg-white/5 dark:text-white dark:hover:bg-white/10 rounded-lg'
@@ -92,7 +92,7 @@ const LiveDashboardPreview: React.FC = () => {
               >
                 <div className='flex items-center gap-2 sm:gap-3'>
                   <div
-                    className={`w-3 h-3 border rounded-full ${
+                    className={`hidden sm:block w-3 h-3 border rounded-full ${
                       isLive
                         ? 'bg-white dark:bg-black animate-pulse-slow'
                         : 'bg-black dark:bg-white'
@@ -542,7 +542,9 @@ const LiveDashboardPreview: React.FC = () => {
                   <div className='w-2 h-2 bg-green-500 animate-ping rounded-full' />
                 )}
               </div>
-              <div className='text-2xl font-bold mb-2'>{metrics.growth}%</div>
+              <div className='sm:text-2xl font-bold mb-2 text-base'>
+                {metrics.growth}%
+              </div>
               <div className='text-xs text-gray-600 dark:text-gray-300'>
                 رشد فروش
               </div>
