@@ -125,7 +125,7 @@ export default function InteractiveComparisonTool() {
             <button
               key={key}
               onClick={() => setSelectedPlan(key as keyof Scenarios)}
-              className={`px-6 py-2.5 rounded-full font-medium transition-all duration-200 border-2 ${
+              className={`px-2 sm:px-6 py-1.5 sm:py-2.5 rounded-full font-medium transition-all duration-200 border-2 text-sm sm:text-base ${
                 selectedPlan === key
                   ? 'bg-black text-white border-black dark:bg-white dark:text-black dark:border-white'
                   : ' text-black border-neutral-300 hover:border-black  dark:text-white dark:border-neutral-600 dark:hover:border-white'
