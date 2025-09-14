@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
-import localFont from 'next/font/local'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/theme-toggle'
 import './globals.css'
 import Image from 'next/image'
+import { Vazirmatn } from 'next/font/google'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -17,19 +17,7 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
-const vazir = localFont({
-  src: [
-    {
-      path: '../public/fonts/Vazir.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/Vazir-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
+const vazir = Vazirmatn({
   variable: '--font-vazir',
   display: 'swap',
 })
@@ -49,22 +37,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='fa' dir='rtl' suppressHydrationWarning>
-      <head>
-        <link
-          // rel='preload'
-          href='/fonts/Vazir.woff2'
-          as='font'
-          type='font/woff2'
-          crossOrigin='anonymous'
-        />
-        <link
-          // rel='preload'
-          href='/fonts/Vazir-Bold.woff2'
-          as='font'
-          type='font/woff2'
-          crossOrigin='anonymous'
-        />
-      </head>
       <body
         className={`${vazir.variable} ${geistSans.variable} ${geistMono.variable} bg-background text-foreground`}
       >
