@@ -57,16 +57,130 @@ const SiteBuilderSvg = () => {
         className='wave-flow'
       />
 
-      {/* Laptop screen as central element (responsive design) */}
+      {/* Laptop */}
       <g transform='translate(60, 40)' className='pulse-glow'>
-        <path
-          d='M0 0 L80 0 L80 60 L0 60 Z'
+        {/* Laptop screen outline */}
+        <rect
+          x='0'
+          y='0'
+          width='80'
+          height='55'
+          rx='4'
+          ry='4'
           fill='none'
           stroke='currentColor'
           strokeWidth='1.5'
         />
+
+        {/* Screen inner border (bezel) */}
+        <rect
+          x='5'
+          y='5'
+          width='70'
+          height='45'
+          rx='2'
+          ry='2'
+          fill='none'
+          stroke='currentColor'
+          strokeWidth='1'
+        />
+
+        {/* --- Website Mockup inside screen --- */}
+        {/* Top navbar */}
+        <rect
+          x='7'
+          y='7'
+          width='66'
+          height='6'
+          rx='1'
+          ry='1'
+          fill='none'
+          stroke='currentColor'
+          strokeWidth='0.8'
+        />
+
+        {/* Sidebar */}
+        <rect
+          x='7'
+          y='15'
+          width='12'
+          height='33'
+          rx='1'
+          ry='1'
+          fill='none'
+          stroke='currentColor'
+          strokeWidth='0.8'
+        />
+
+        {/* Content area */}
+        <rect
+          x='21'
+          y='15'
+          width='52'
+          height='33'
+          rx='1'
+          ry='1'
+          fill='none'
+          stroke='currentColor'
+          strokeWidth='0.8'
+        />
+
+        {/* Example text blocks in content */}
+        <line
+          x1='24'
+          y1='20'
+          x2='68'
+          y2='20'
+          stroke='currentColor'
+          strokeWidth='0.6'
+        />
+        <line
+          x1='24'
+          y1='25'
+          x2='60'
+          y2='25'
+          stroke='currentColor'
+          strokeWidth='0.6'
+        />
+        <line
+          x1='24'
+          y1='30'
+          x2='68'
+          y2='30'
+          stroke='currentColor'
+          strokeWidth='0.6'
+        />
+        <line
+          x1='24'
+          y1='35'
+          x2='58'
+          y2='35'
+          stroke='currentColor'
+          strokeWidth='0.6'
+        />
+        <line
+          x1='24'
+          y1='40'
+          x2='68'
+          y2='40'
+          stroke='currentColor'
+          strokeWidth='0.6'
+        />
+
+        {/* Laptop hinge */}
+        <line
+          x1='20'
+          y1='55'
+          x2='60'
+          y2='55'
+          stroke='currentColor'
+          strokeWidth='2'
+          strokeLinecap='round'
+        />
+
+        {/* Laptop base */}
         <path
-          d='M-10 60 L90 60 L80 70 L0 70 Z'
+          d='M-12 60 L92 60 L78 72 L2 72 Z'
           fill='none'
           stroke='currentColor'
           strokeWidth='1.5'
