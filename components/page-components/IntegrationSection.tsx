@@ -145,26 +145,30 @@ const IntegrationSection: React.FC = () => {
   const centerPoint = { x: 400, y: 300 }
 
   return (
-    <section className='py-24 px-6 bg-gradient-to-b from-background to-muted/20'>
-      <div className='max-w-7xl mx-auto'>
-        {/* Header */}
-        <div className='text-center mb-16 space-y-4'>
-          <div className='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4'>
-            <Grid3X3 className='w-4 h-4' />
-            یکپارچه‌سازی
-          </div>
-          <h2 className='text-4xl font-bold tracking-tight'>
-            یکپارچه‌سازی کامل
-          </h2>
-          <p className='text-xl text-muted-foreground max-w-2xl mx-auto'>
-            تمام ابزارهای کسب‌وکار شما در یک پلتفرم متحد
-          </p>
+    <section className='py-24 bg-gradient-to-b from-background to-muted/20 overflow-hidden'>
+      {/* Header */}
+      <div className='text-center mb-16 '>
+        <div className='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4'>
+          <Grid3X3 className='w-4 h-4' />
+          یکپارچه‌سازی
         </div>
+        <div className='text-center border-y mb-8'>
+          <div className='mx-4 md:mx-8'>
+            <h2 className='relative text-2xl md:text-3xl font-bold border-x py-4 md:py-6 px-2 md:px-3'>
+              یکپارچه‌سازی کامل
+              <p className='text-base md:text-lg text-neutral-600 dark:text-neutral-400 max-w-xl mx-auto pt-3 md:pt-4'>
+                تمام ابزارهای کسب‌وکار شما در یک پلتفرم متحد
+              </p>
+            </h2>
+          </div>
+        </div>
+      </div>
 
+      <div className=' px-2 sm:px-6'>
         {/* Main Integration Container */}
         <div className='relative'>
           {/* Integration Grid */}
-          <div className='relative border border-border/50 rounded-3xl bg-card/50 backdrop-blur-sm p-12'>
+          <div className='relative border border-border/50 rounded-3xl bg-card/50 backdrop-blur-sm p-6 sm:p-12'>
             <div className='grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 relative z-10'>
               {integrationApps.map((app: IntegrationApp, index: number) => {
                 const itemPosition = getGridItemPosition(index)
@@ -173,14 +177,14 @@ const IntegrationSection: React.FC = () => {
                 return (
                   <div key={index} className='relative'>
                     <div className='group relative aspect-square flex flex-col items-center justify-center p-4 rounded-2xl border hover:border-border/60 bg-background/80 hover:bg-background transition-all duration-300 hover:shadow-lg hover:scale-105'>
-                      <div className='w-10 h-10 mb-3 flex items-center justify-center'>
+                      <div className='w-8 sm:w-10 h-8  mb-3 flex items-center justify-center'>
                         <img
                           src={imageSrc}
                           alt={app.name}
-                          className='w-10 h-10 object-contain transition-transform group-hover:scale-110'
+                          className='w-8 sm:w-10 h-8 sm:h-10 object-contain transition-transform group-hover:scale-110'
                         />
                       </div>
-                      <span className='text-xs font-medium text-center leading-tight'>
+                      <span className='text-[9px] sm:text-xs font-medium text-center leading-tight'>
                         {app.name}
                       </span>
                     </div>
@@ -251,7 +255,7 @@ const IntegrationSection: React.FC = () => {
                 >
                   <div className='flex items-center gap-2 px-4 py-2 rounded-full bg-background/90 border border-border/50 shadow-lg backdrop-blur-sm hover:scale-105 transition-transform'>
                     <Link2 className='w-3 h-3 text-muted-foreground' />
-                    <span className='text-sm font-medium text-foreground whitespace-nowrap'>
+                    <span className='text-[10px] sm:text-sm font-medium text-foreground whitespace-nowrap'>
                       {integration.name}
                     </span>
                   </div>
