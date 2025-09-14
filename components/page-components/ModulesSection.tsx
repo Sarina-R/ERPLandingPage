@@ -38,12 +38,12 @@ const ModulesSection: React.FC<ModulesSectionProps> = ({ modules }) => {
                   <div className='p-2 bg-primary/10 rounded-lg'>
                     <module.icon className='h-4 sm:h-6 w-4 sm:w-6' />
                   </div>
-                  <div className='text-lg'>{module.title}</div>
+                  <div className='text-lg font-bold'>{module.title}</div>
                 </div>
-                <div className='text-sm'>{module.description}</div>
+                <div className='text-sm my-4'>{module.description}</div>
               </div>
               <div>
-                <ul className='space-y-2'>
+                <ul className='space-y-2 pr-4'>
                   {module.features.map((feature, idx) => (
                     <li key={idx} className='flex items-center gap-2 text-xs'>
                       <CheckCircle className='h-4 w-4 text-primary flex-shrink-0' />
