@@ -20,6 +20,9 @@ import {
   BarChart3,
   Warehouse,
 } from 'lucide-react'
+import SalesActionIcon from '@/components/svg/SalesSvg'
+import SiteBuilderActionIcon from '@/components/svg/SiteBuilderActionIcon'
+import InventoryActionIcon from '@/components/svg/InventorySvg'
 
 export default function ERPLandingPage() {
   const modules = [
@@ -69,6 +72,7 @@ export default function ERPLandingPage() {
         'قیمت‌گذاری',
         'تخفیفات و پروموشن',
       ],
+      svg: SalesActionIcon,
     },
     {
       title: 'سایت‌ساز',
@@ -80,6 +84,7 @@ export default function ERPLandingPage() {
         'مدیریت محتوا',
         'سئو و بهینه‌سازی',
       ],
+      svg: SiteBuilderActionIcon,
     },
 
     {
@@ -92,6 +97,7 @@ export default function ERPLandingPage() {
         'ردیابی کالا',
         'گزارش حرکت کالا',
       ],
+      svg: InventoryActionIcon,
     },
   ]
 
