@@ -17,25 +17,25 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
-const samim = localFont({
+const vazir = localFont({
   src: [
     {
-      path: '../public/fonts/Samim.woff2',
+      path: '../public/fonts/Vazir.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Samim-Bold.woff2',
+      path: '../public/fonts/Vazir-Bold.woff2',
       weight: '700',
       style: 'normal',
     },
   ],
-  variable: '--font-samim',
+  variable: '--font-vazir',
   display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'خدمات طراحی وبسایت آویس',
+  title: 'سیستم مدیریت منابع انسانی آویس',
   description: 'یک وبسایت ساخته شده با Next.js',
   icons: {
     icon: 'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/logo/avis-mono-dark.png',
@@ -52,21 +52,21 @@ export default function RootLayout({
       <head>
         <link
           rel='preload'
-          href='/fonts/Samim.woff2'
+          href='/fonts/Vazir.woff2'
           as='font'
           type='font/woff2'
           crossOrigin='anonymous'
         />
         <link
           rel='preload'
-          href='/fonts/Samim-Bold.woff2'
+          href='/fonts/Vazir-Bold.woff2'
           as='font'
           type='font/woff2'
           crossOrigin='anonymous'
         />
       </head>
       <body
-        className={`${samim.variable} ${geistSans.variable} ${geistMono.variable} bg-background text-foreground`}
+        className={`${vazir.variable} ${geistSans.variable} ${geistMono.variable} bg-background text-foreground`}
       >
         <ThemeProvider
           attribute='class'
