@@ -28,10 +28,7 @@ const ModulesSection: React.FC<ModulesSectionProps> = ({ modules }) => {
 
         <div className='grid grid-cols-2 md:grid-cols-3'>
           {modules.map((module, index) => (
-            <div
-              key={index}
-              className='group hover:shadow-lg transition-shadow duration-300 border p-4'
-            >
+            <div key={index} className='border p-4'>
               {/* Conditionally render SVG if it exists */}
               <div>
                 <div className='flex items-center gap-3 mb-2'>
