@@ -51,14 +51,14 @@ export default function RootLayout({
     <html lang='fa' dir='rtl' suppressHydrationWarning>
       <head>
         <link
-          rel='preload'
+          // rel='preload'
           href='/fonts/Vazir.woff2'
           as='font'
           type='font/woff2'
           crossOrigin='anonymous'
         />
         <link
-          rel='preload'
+          // rel='preload'
           href='/fonts/Vazir-Bold.woff2'
           as='font'
           type='font/woff2'
