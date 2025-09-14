@@ -7,9 +7,9 @@ const Cooperation = () => {
         <div className='text-center'>
           <div className='border-y border-border'>
             <div className='text-center mx-6 md:mx-12'>
-              <h2 className='relative text-3xl md:text-4xl font-bold border-x border-border py-6 md:py-8 px-3 md:px-4'>
+              <h2 className='relative text-2xl md:text-3xl font-bold border-x border-border py-6 md:py-8 px-3 md:px-4'>
                 همکاری استراتژیک
-                <p className='text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto pt-4 md:pt-6'>
+                <p className='text-base md:text-lg text-muted-foreground max-w-2xl mx-auto pt-4 md:pt-6'>
                   AVIS و ODOO - قدرت فناوری در خدمت کسب‌وکار شما
                 </p>
                 <span className='absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-0.5 bg-primary rounded-full' />
@@ -25,8 +25,10 @@ const Cooperation = () => {
                 <div>
                   <div className='flex items-center gap-4 mb-8'>
                     <div>
-                      <h3 className='text-2xl font-bold'>AVIS × ODOO</h3>
-                      <p className='text-muted-foreground'>شراکت نوآورانه</p>
+                      <h3 className='text-xl font-bold'>AVIS × ODOO</h3>
+                      <p className='text-sm text-muted-foreground'>
+                        شراکت نوآورانه
+                      </p>
                     </div>
                   </div>
 
@@ -36,8 +38,10 @@ const Cooperation = () => {
                         <CheckCircle className='w-4 h-4 text-primary' />
                       </div>
                       <div>
-                        <h4 className='font-semibold mb-2'>پیاده‌سازی تخصصی</h4>
-                        <p className='text-sm text-muted-foreground'>
+                        <h4 className='font-semibold mb-2 text-base'>
+                          پیاده‌سازی تخصصی
+                        </h4>
+                        <p className='text-xs text-muted-foreground'>
                           تیم متخصص AVIS با سال‌ها تجربه در پیاده‌سازی Odoo
                         </p>
                       </div>
@@ -48,8 +52,10 @@ const Cooperation = () => {
                         <CheckCircle className='w-4 h-4 text-primary' />
                       </div>
                       <div>
-                        <h4 className='font-semibold mb-2'>پشتیبانی محلی</h4>
-                        <p className='text-sm text-muted-foreground'>
+                        <h4 className='font-semibold mb-2 text-base'>
+                          پشتیبانی محلی
+                        </h4>
+                        <p className='text-xs text-muted-foreground'>
                           خدمات پشتیبانی کامل به زبان فارسی و متناسب با نیازهای
                           ایرانی
                         </p>
@@ -61,10 +67,10 @@ const Cooperation = () => {
                         <CheckCircle className='w-4 h-4 text-primary' />
                       </div>
                       <div>
-                        <h4 className='font-semibold mb-2'>
+                        <h4 className='font-semibold mb-2 text-base'>
                           سفارشی‌سازی پیشرفته
                         </h4>
-                        <p className='text-sm text-muted-foreground'>
+                        <p className='text-xs text-muted-foreground'>
                           توسعه ماژول‌های اختصاصی متناسب با قوانین و نیازهای
                           کسب‌وکار شما
                         </p>
@@ -115,7 +121,7 @@ const Cooperation = () => {
                         <div className='relative'>
                           {/* Main AVIS Node */}
                           <div className='w-20 h-20 bg-gradient-to-br from-blue-500/20 to-purple-600/20 border-2 border-blue-500/30 rounded-full flex items-center justify-center backdrop-blur-sm'>
-                            <span className='text-sm font-bold text-primary'>
+                            <span className='text-xs font-bold text-primary'>
                               AVIS
                             </span>
                           </div>
@@ -138,7 +144,7 @@ const Cooperation = () => {
                         <div className='relative'>
                           {/* Main ODOO Node */}
                           <div className='w-20 h-20 bg-gradient-to-br from-purple-600/20 to-pink-600/20 border-2 border-purple-600/30 rounded-full flex items-center justify-center backdrop-blur-sm'>
-                            <span className='text-sm font-bold text-primary'>
+                            <span className='text-xs font-bold text-primary'>
                               ODOO
                             </span>
                           </div>
@@ -161,7 +167,7 @@ const Cooperation = () => {
                         <div className='relative'>
                           {/* Main integration node */}
                           <div className='w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/30 border-2 border-primary/40 rounded-full flex items-center justify-center backdrop-blur-sm'>
-                            <span className='text-lg font-bold text-primary'>
+                            <span className='text-base font-bold text-primary'>
                               ⊗
                             </span>
                           </div>
@@ -270,7 +276,7 @@ const Cooperation = () => {
                       {/* Information entropy indicator */}
                       <div className='absolute top-4 right-4'>
                         <div className='bg-background/80 backdrop-blur-sm px-2 py-1 rounded-md border border-border/50'>
-                          <span className='text-xs font-mono text-muted-foreground'>
+                          <span className='text-[10px] font-mono text-muted-foreground'>
                             AVIS x ODOO
                           </span>
                         </div>
