@@ -1,8 +1,10 @@
 import React from 'react'
 import { Grid3X3, Link2 } from 'lucide-react'
+import Link from 'next/link'
 
 interface IntegrationApp {
   name: string
+  enName: string
   category: string
 }
 
@@ -19,30 +21,38 @@ interface ConnectionLineProps {
 
 const IntegrationSection: React.FC = () => {
   const integrationApps: IntegrationApp[] = [
-    { name: 'حسابداری', category: 'finance' },
-    { name: 'مدیریت دانش', category: 'productivity' },
-    { name: 'امضای دیجیتال', category: 'security' },
-    { name: 'CRM', category: 'sales' },
-    { name: 'استودیو', category: 'creative' },
-    { name: 'اشتراکات', category: 'finance' },
-    { name: 'اجاره', category: 'finance' },
-    { name: 'فروشگاه', category: 'sales' },
-    { name: 'بحث و گفتگو', category: 'communication' },
-    { name: 'اسناد', category: 'productivity' },
-    { name: 'پروژه', category: 'productivity' },
-    { name: 'حضور و غیاب', category: 'hr' },
-    { name: 'خدمات میدانی', category: 'operations' },
-    { name: 'برنامه‌ریزی', category: 'productivity' },
-    { name: 'پشتیبانی', category: 'support' },
-    { name: 'وب‌سایت', category: 'creative' },
-    { name: 'بازاریابی اجتماعی', category: 'marketing' },
-    { name: 'ایمیل مارکتینگ', category: 'marketing' },
-    { name: 'خرید', category: 'operations' },
-    { name: 'موجودی انبار', category: 'operations' },
-    { name: 'تولید', category: 'operations' },
-    { name: 'فروش', category: 'sales' },
-    { name: 'منابع انسانی', category: 'hr' },
-    { name: 'داشبورد', category: 'analytics' },
+    { name: 'مدیریت دانش', category: 'productivity', enName: 'accounting' },
+    { name: 'حسابداری', category: 'finance', enName: 'knowledge' },
+    { name: 'امضای دیجیتال', category: 'security', enName: 'sign' },
+    { name: 'CRM', category: 'sales', enName: 'CRM' },
+    { name: 'استودیو', category: 'creative', enName: 'studio' },
+    { name: 'اشتراکات', category: 'finance', enName: 'subscription' },
+    { name: 'اجاره', category: 'finance', enName: 'rental' },
+    { name: 'فروشگاه', category: 'sales', enName: 'point-of-sale' },
+    { name: 'بحث و گفتگو', category: 'communication', enName: 'discuss' },
+    { name: 'اسناد', category: 'productivity', enName: 'documents' },
+    { name: 'پروژه', category: 'productivity', enName: 'project' },
+    { name: 'حضور و غیاب', category: 'hr', enName: 'timesheets' },
+    { name: 'خدمات میدانی', category: 'operations', enName: 'field-service' },
+    { name: 'برنامه‌ریزی', category: 'productivity', enName: 'planning' },
+    { name: 'پشتیبانی', category: 'support', enName: 'helpdesk' },
+    { name: 'وب‌سایت', category: 'creative', enName: 'website' },
+    {
+      name: 'بازاریابی اجتماعی',
+      category: 'marketing',
+      enName: 'social-marketing',
+    },
+    {
+      name: 'ایمیل مارکتینگ',
+      category: 'marketing',
+      enName: 'email-marketing',
+    },
+    { name: 'خرید', category: 'operations', enName: 'purchase' },
+    { name: 'موجودی انبار', category: 'operations', enName: 'inventory' },
+    { name: 'تولید', category: 'operations', enName: 'manufacturing' },
+    { name: 'فروش', category: 'sales', enName: 'sales' },
+    { name: 'منابع انسانی', category: 'hr', enName: 'hr' },
+    { name: 'داشبورد', category: 'analytics', enName: 'dashboard' },
   ]
 
   const externalIntegrations: ExternalIntegration[] = [
@@ -175,27 +185,29 @@ const IntegrationSection: React.FC = () => {
                 const imageSrc = `/odoo-pic/icon (${23 - index + 1}).svg`
 
                 return (
-                  <div key={index} className='relative'>
-                    <div className='group relative aspect-square flex flex-col items-center justify-center p-4 rounded-2xl border hover:border-border/60 bg-background/80 hover:bg-background transition-all duration-300 hover:shadow-lg hover:scale-105'>
-                      <div className='w-8 sm:w-10 h-8  mb-3 flex items-center justify-center'>
-                        <img
-                          src={imageSrc}
-                          alt={app.name}
-                          className='w-8 sm:w-10 h-8 sm:h-10 object-contain transition-transform group-hover:scale-110'
-                        />
+                  <Link href={`/${app.enName}`}>
+                    <div key={index} className='relative'>
+                      <div className='group relative aspect-square flex flex-col items-center justify-center p-4 rounded-2xl border hover:border-border/60 bg-background/80 hover:bg-background transition-all duration-300 hover:shadow-lg hover:scale-105'>
+                        <div className='w-8 sm:w-10 h-8  mb-3 flex items-center justify-center'>
+                          <img
+                            src={imageSrc}
+                            alt={app.name}
+                            className='w-8 sm:w-10 h-8 sm:h-10 object-contain transition-transform group-hover:scale-110'
+                          />
+                        </div>
+                        <span className='text-[9px] sm:text-xs font-medium text-center leading-tight'>
+                          {app.name}
+                        </span>
                       </div>
-                      <span className='text-[9px] sm:text-xs font-medium text-center leading-tight'>
-                        {app.name}
-                      </span>
-                    </div>
 
-                    {/* Connection Line to Center */}
-                    <ConnectionLine
-                      from={itemPosition}
-                      to={centerPoint}
-                      className='text-primary opacity-20'
-                    />
-                  </div>
+                      {/* Connection Line to Center */}
+                      <ConnectionLine
+                        from={itemPosition}
+                        to={centerPoint}
+                        className='text-primary opacity-20'
+                      />
+                    </div>
+                  </Link>
                 )
               })}
             </div>
