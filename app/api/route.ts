@@ -1,107 +1,300 @@
-import { NextRequest, NextResponse } from 'next/server'
-import fs from 'fs'
-import path from 'path'
+import { NextResponse } from 'next/server'
 
-interface LandingPageData {
-  name: string
-  category: string
-  enName: string
-  content: {
-    heroSection: {
-      title: string
-      desc: string
-      ctaText: string
-      image: string
-    }
-    featureShowcase: Array<{
-      title: string
-      desc: string
-      image: string
-    }>
-    interactiveElements: Array<{
-      type: string
-      title: string
-      desc: string
-    }>
-    imageGallery: string[]
-    testimonials: Array<{
-      name: string
-      position: string
-      company: string
-      content: string
-      avatar: string
-      companyLogo: string
-    }>
-    cta: {
-      title: string
-      desc: string
-      primaryButton: string
-      secondaryButton: string
-    }
-  }
-}
-
-// GET /api/landing-pages/[name]
-export async function GET(
-  request: NextRequest,
-  { params }: { params: { name: string } }
-) {
-  try {
-    const { name } = params
-
-    // Read the JSON data file
-    const dataFilePath = path.join(process.cwd(), 'data', 'landing-pages.json')
-    const jsonData = fs.readFileSync(dataFilePath, 'utf8')
-    const landingPages: LandingPageData[] = JSON.parse(jsonData)
-
-    // Find the landing page by enName
-    const landingPage = landingPages.find(
-      (page) => page.enName.toLowerCase() === name.toLowerCase()
-    )
-
-    if (!landingPage) {
-      return NextResponse.json(
+const data = [
+  {
+    name: 'مدیریت دانش',
+    category: 'productivity',
+    enName: 'knowledge',
+    content: {
+      heroSection: {
+        title: 'سیستم مدیریت دانش هوشمند',
+        desc: 'تمام اطلاعات و دانش سازمان خود را در یک مکان متمرکز کنید. با ابزارهای قدرتمند جستجو و سازماندهی، به راحتی به اطلاعات مورد نیاز دسترسی پیدا کنید.',
+        ctaText: 'شروع رایگان',
+        image: '/images/knowledge-hero.webp',
+      },
+      featureShowcase: [
         {
-          error: 'Landing page not found',
-          availablePages: landingPages.map((p) => p.enName),
+          title: 'ویرایشگر متن پیشرفته',
+          desc: 'با استفاده از میانبرهای قدرتمند، محتوای خود را در بهترین شکل ممکن ارائه دهید',
+          image: '/images/knowledge-editor.webp',
         },
-        { status: 404 }
-      )
-    }
-
-    return NextResponse.json({
-      success: true,
-      data: landingPage,
-    })
-  } catch (error) {
-    console.error('Error fetching landing page data:', error)
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    )
-  }
-}
-
-// GET /api/landing-pages (get all pages)
-export async function GET_ALL() {
-  try {
-    const dataFilePath = path.join(process.cwd(), 'data', 'landing-pages.json')
-    const jsonData = fs.readFileSync(dataFilePath, 'utf8')
-    const landingPages: LandingPageData[] = JSON.parse(jsonData)
-
-    return NextResponse.json({
-      success: true,
-      data: landingPages.map((page) => ({
-        name: page.name,
-        category: page.category,
-        enName: page.enName,
-      })),
-    })
-  } catch (error) {
-    console.error('Error fetching landing pages list:', error)
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    )
-  }
+        {
+          title: 'سازماندهی انعطاف‌پذیر',
+          desc: 'محتوای خود را با فیلدهای سفارشی مرتب کرده و با نماهای شخصی‌سازی شده مرور کنید',
+          image: '/images/knowledge-organize.webp',
+        },
+        {
+          title: 'مدیریت دسترسی',
+          desc: 'تعیین کنید چه کسی به محتوای شما دسترسی دارد. حتی می‌توانید صفحات را با عموم به اشتراک بگذارید',
+          image: '/images/knowledge-access.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'demo',
+          title: 'آزمایش رایگان',
+          desc: 'سیستم مدیریت دانش را به مدت 15 روز رایگان امتحان کنید',
+        },
+      ],
+      imageGallery: [
+        '/images/knowledge-gallery-1.webp',
+        '/images/knowledge-gallery-2.webp',
+        '/images/knowledge-gallery-3.webp',
+      ],
+      testimonials: [
+        {
+          name: 'علی احمدی',
+          position: 'مدیر فناوری اطلاعات',
+          company: 'شرکت نوآوری پارس',
+          content:
+            'سیستم مدیریت دانش به ما کمک کرد تا تمام اطلاعات پراکنده سازمان را در یک مکان جمع‌آوری کنیم',
+          avatar: '/images/testimonial-1.webp',
+          companyLogo: '/images/company-1.webp',
+        },
+      ],
+      cta: {
+        title: 'آماده شروع هستید؟',
+        desc: 'همین امروز سیستم مدیریت دانش خود را راه‌اندازی کنید',
+        primaryButton: 'شروع رایگان',
+        secondaryButton: 'مشاهده دمو',
+      },
+    },
+  },
+  {
+    name: 'حسابداری',
+    category: 'finance',
+    enName: 'accounting',
+    content: {
+      heroSection: {
+        title: 'حسابداری هوشمند و کامل',
+        desc: 'تمام امور مالی کسب‌وکار خود را با نرم‌افزار حسابداری پیشرفته مدیریت کنید. از صدور فاکتور تا گزارش‌گیری مالی، همه چیز در یک مکان.',
+        ctaText: 'شروع رایگان',
+        image: '/images/accounting-hero.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'صدور فاکتور آنلاین',
+          desc: 'فاکتورهای حرفه‌ای ایجاد کرده و به راحتی برای مشتریان ارسال کنید',
+          image: '/images/accounting-invoice.webp',
+        },
+        {
+          title: 'گزارش‌گیری مالی',
+          desc: 'گزارش‌های مالی جامع و دقیق برای تصمیم‌گیری‌های بهتر',
+          image: '/images/accounting-reports.webp',
+        },
+        {
+          title: 'مدیریت بانک',
+          desc: 'تطبیق خودکار تراکنش‌های بانکی و مدیریت حساب‌های مختلف',
+          image: '/images/accounting-bank.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'calculator',
+          title: 'محاسبه مالیات',
+          desc: 'مالیات معاملات خود را به راحتی محاسبه کنید',
+        },
+      ],
+      imageGallery: [
+        '/images/accounting-gallery-1.webp',
+        '/images/accounting-gallery-2.webp',
+        '/images/accounting-gallery-3.webp',
+      ],
+      testimonials: [
+        {
+          name: 'مریم رضایی',
+          position: 'مدیر مالی',
+          company: 'گروه صنعتی آریا',
+          content:
+            'با این نرم‌افزار، زمان صدور فاکتور و گزارش‌گیری مالی ما به یک سوم کاهش یافت',
+          avatar: '/images/testimonial-2.webp',
+          companyLogo: '/images/company-2.webp',
+        },
+      ],
+      cta: {
+        title: 'حسابداری خود را دیجیتال کنید',
+        desc: 'امروز شروع کنید و از مزایای حسابداری هوشمند بهره‌مند شوید',
+        primaryButton: 'شروع رایگان',
+        secondaryButton: 'درخواست دمو',
+      },
+    },
+  },
+  {
+    name: 'بازاریابی اجتماعی',
+    category: 'marketing',
+    enName: 'social-marketing',
+    content: {
+      heroSection: {
+        title: 'بازاریابی اجتماعی حرفه‌ای',
+        desc: 'کمپین‌های بازاریابی قدرتمند در شبکه‌های اجتماعی ایجاد کنید. محتوا را برنامه‌ریزی کرده، عملکرد را تجزیه و تحلیل کنید و فروش را افزایش دهید.',
+        ctaText: 'شروع کمپین',
+        image: '/images/social-marketing-hero.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'برنامه‌ریزی محتوا',
+          desc: 'پست‌های خود را از قبل برنامه‌ریزی کرده و در زمان مناسب منتشر کنید',
+          image: '/images/social-scheduling.webp',
+        },
+        {
+          title: 'آنالیز عملکرد',
+          desc: 'عملکرد کمپین‌های خود را با گزارش‌های تفصیلی پیگیری کنید',
+          image: '/images/social-analytics.webp',
+        },
+        {
+          title: 'مدیریت چند پلتفرم',
+          desc: 'تمام شبکه‌های اجتماعی خود را از یک مکان مدیریت کنید',
+          image: '/images/social-multiplatform.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'content-planner',
+          title: 'برنامه‌ریز محتوا',
+          desc: 'محتوای یک ماه آینده خود را برنامه‌ریزی کنید',
+        },
+      ],
+      imageGallery: [
+        '/images/social-gallery-1.webp',
+        '/images/social-gallery-2.webp',
+        '/images/social-gallery-3.webp',
+      ],
+      testimonials: [
+        {
+          name: 'حسین کریمی',
+          position: 'مدیر بازاریابی',
+          company: 'استارتاپ تک',
+          content:
+            'با این ابزار، تعامل مشتریان ما در شبکه‌های اجتماعی ۳۰۰ درصد افزایش یافت',
+          avatar: '/images/testimonial-3.webp',
+          companyLogo: '/images/company-3.webp',
+        },
+      ],
+      cta: {
+        title: 'کمپین بعدی خود را شروع کنید',
+        desc: 'با ابزارهای حرفه‌ای بازاریابی اجتماعی، برند خود را به سطح بعدی برسانید',
+        primaryButton: 'شروع کمپین',
+        secondaryButton: 'مشاهده نمونه کار',
+      },
+    },
+  },
+  {
+    name: 'CRM',
+    category: 'sales',
+    enName: 'CRM',
+    content: {
+      heroSection: {
+        title: 'مدیریت ارتباط با مشتری',
+        desc: 'روابط خود با مشتریان را به شکل حرفه‌ای مدیریت کنید. از مرحله اولیه آشنایی تا فروش نهایی، همه فرآیند را کنترل کنید.',
+        ctaText: 'شروع فروش',
+        image: '/images/crm-hero.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'پیگیری مشتریان',
+          desc: 'تمام اطلاعات مشتریان و تاریخچه تعاملات را در یک مکان نگهداری کنید',
+          image: '/images/crm-tracking.webp',
+        },
+        {
+          title: 'مدیریت فرصت‌های فروش',
+          desc: 'فرصت‌های فروش را شناسایی و پیگیری کرده تا به فروش تبدیل کنید',
+          image: '/images/crm-opportunities.webp',
+        },
+        {
+          title: 'گزارش‌گیری فروش',
+          desc: 'عملکرد فروش خود را با داشبوردهای تعاملی تجزیه و تحلیل کنید',
+          image: '/images/crm-reports.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'sales-pipeline',
+          title: 'مسیر فروش',
+          desc: 'مراحل فروش خود را بصورت تعاملی مدیریت کنید',
+        },
+      ],
+      imageGallery: [
+        '/images/crm-gallery-1.webp',
+        '/images/crm-gallery-2.webp',
+        '/images/crm-gallery-3.webp',
+      ],
+      testimonials: [
+        {
+          name: 'سارا موسوی',
+          position: 'مدیر فروش',
+          company: 'شرکت پیشران',
+          content: 'نرخ تبدیل فرصت‌های فروش ما با این سیستم ۴۵ درصد بهبود یافت',
+          avatar: '/images/testimonial-4.webp',
+          companyLogo: '/images/company-4.webp',
+        },
+      ],
+      cta: {
+        title: 'فروش خود را افزایش دهید',
+        desc: 'با ابزارهای CRM حرفه‌ای، مشتریان بیشتری جذب کنید',
+        primaryButton: 'شروع رایگان',
+        secondaryButton: 'درخواست مشاوره',
+      },
+    },
+  },
+  {
+    name: 'ایمیل مارکتینگ',
+    category: 'marketing',
+    enName: 'email-marketing',
+    content: {
+      heroSection: {
+        title: 'ایمیل مارکتینگ هوشمند',
+        desc: 'کمپین‌های ایمیلی موثر طراحی کنید. با قالب‌های آماده و ابزارهای اتوماسیون، مشتریان را درگیر کرده و فروش را افزایش دهید.',
+        ctaText: 'شروع کمپین',
+        image: '/images/email-marketing-hero.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'طراحی ایمیل',
+          desc: 'با ویرایشگر drag & drop، ایمیل‌های زیبا و جذاب طراحی کنید',
+          image: '/images/email-design.webp',
+        },
+        {
+          title: 'اتوماسیون',
+          desc: 'سیناریوهای خودکار برای ارسال ایمیل‌ها بر اساس رفتار مشتریان',
+          image: '/images/email-automation.webp',
+        },
+        {
+          title: 'آنالیز عملکرد',
+          desc: 'نرخ باز شدن، کلیک و تبدیل ایمیل‌های خود را پیگیری کنید',
+          image: '/images/email-analytics.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'email-builder',
+          title: 'سازنده ایمیل',
+          desc: 'ایمیل خود را با ابزار طراحی تعاملی بسازید',
+        },
+      ],
+      imageGallery: [
+        '/images/email-gallery-1.webp',
+        '/images/email-gallery-2.webp',
+        '/images/email-gallery-3.webp',
+      ],
+      testimonials: [
+        {
+          name: 'امیر حسینی',
+          position: 'مدیر دیجیتال مارکتینگ',
+          company: 'فروشگاه آنلاین مهر',
+          content: 'نرخ باز شدن ایمیل‌های ما با این پلتفرم از ۱۵٪ به ۴۲٪ رسید',
+          avatar: '/images/testimonial-5.webp',
+          companyLogo: '/images/company-5.webp',
+        },
+      ],
+      cta: {
+        title: 'کمپین ایمیلی خود را شروع کنید',
+        desc: 'همین امروز اولین کمپین ایمیل مارکتینگ خود را راه‌اندازی کنید',
+        primaryButton: 'شروع رایگان',
+        secondaryButton: 'مشاهده قالب‌ها',
+      },
+    },
+  },
+]
+export async function GET() {
+  return NextResponse.json(data)
 }
