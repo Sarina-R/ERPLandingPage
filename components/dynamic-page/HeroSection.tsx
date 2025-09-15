@@ -1,44 +1,89 @@
-import { Button } from '../ui/button'
+// components/HeroSection.tsx
+import { Button } from '@/components/ui/button'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
 
 interface HeroSectionProps {
   title: string
   description: string
   ctaText: string
-  image: string
 }
 
 export default function HeroSection({
   title,
   description,
   ctaText,
-  image,
 }: HeroSectionProps) {
+  const [firstWord, ...restWords] = title.split(' ')
+  const restOfTitle = restWords.join(' ')
+
   return (
-    <section className='relative py-20 px-4 overflow-hidden'>
-      <div className='max-w-7xl mx-auto'>
-        <div className='grid lg:grid-cols-2 gap-12 items-center'>
-          <div className='space-y-8'>
-            <h1 className='text-4xl md:text-6xl font-bold leading-tight bg-gradient-to-br from-primary to-blue-600 bg-clip-text text-transparent'>
-              {title}
-            </h1>
-            <p className='text-lg md:text-xl text-muted-foreground leading-relaxed'>
-              {description}
-            </p>
-            <div className='flex flex-col sm:flex-row gap-4'>
-              <Button size='lg' className='text-lg px-8 py-6'>
-                {ctaText}
+    <section className='mt-16 text-center border-y relative'>
+      <span className='absolute -top-[10px] -left-[10px] w-5 h-5 flex items-center justify-center'>
+        <span className='absolute w-px h-full bg-black/30 dark:bg-white/30'></span>
+        <span className='absolute h-px w-full bg-black/30 dark:bg-white/30'></span>
+      </span>
+      <span className='absolute -bottom-[10px] -right-[10px] w-5 h-5 flex items-center justify-center'>
+        <span className='absolute w-px h-full bg-black/30 dark:bg-white/30'></span>
+        <span className='absolute h-px w-full bg-black/30 dark:bg-white/30'></span>
+      </span>
+      {/* <span className='absolute -top-[10px] -right-[10px] w-5 h-5 flex items-center justify-center'>
+        <span className='absolute w-px h-full bg-black/30 dark:bg-white/30'></span>
+        <span className='absolute h-px w-full bg-black/30 dark:bg-white/30'></span>
+      </span>
+      <span className='absolute -bottom-[10px] -left-[10px] w-5 h-5 flex items-center justify-center'>
+        <span className='absolute w-px h-full bg-black/30 dark:bg-white/30'></span>
+        <span className='absolute h-px w-full bg-black/30 dark:bg-white/30'></span>
+      </span> */}
+
+      <div className='px-4 sm:px-6 lg:px-8 max-w-4xl py-20 space-y-8 mx-auto'>
+        <h1 className='text-5xl md:text-6xl font-bold tracking-tight'>
+          <span className='relative'>
+            {firstWord}{' '}
+            <span className='absolute left-0 bottom-0 w-full h-2 bg-cyan-400/70 -z-10'></span>
+          </span>
+          {restOfTitle}
+        </h1>
+
+        <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
+          {description}
+        </p>
+
+        <div className='flex justify-center gap-4 flex-wrap'>
+          <Button className='bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-6 py-6'>
+            {ctaText}
+          </Button>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant='outline' className='text-lg px-6 py-6'>
+                Meet an advisor
               </Button>
-            </div>
-          </div>
-          <div className='relative'>
-            <div className='absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-600/20 rounded-3xl blur-3xl'></div>
-            <img
-              src={image}
-              alt={title}
-              className='relative w-full h-auto rounded-2xl shadow-2xl'
-            />
-          </div>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem>
+                Micro business (&lt; 5 employees)
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                Small Business (6-50 employees)
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                Mid-size company (51-250 employees)
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                Large company (&gt;250 employees)
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
+
+        <p className='text-sm text-muted-foreground'>
+          Free, forever, with unlimited users.
+        </p>
       </div>
     </section>
   )

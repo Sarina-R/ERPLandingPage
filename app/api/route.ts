@@ -6,6 +6,7 @@ const data = [
     category: 'productivity',
     enName: 'knowledge',
     content: {
+      img: 'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
       heroSection: {
         title: 'سیستم مدیریت دانش هوشمند',
         desc: 'تمام اطلاعات و دانش سازمان خود را در یک مکان متمرکز کنید. با ابزارهای قدرتمند جستجو و سازماندهی، به راحتی به اطلاعات مورد نیاز دسترسی پیدا کنید.',

@@ -9,7 +9,6 @@ import React, {
 } from 'react'
 import axios from 'axios'
 
-// Define types based on your data structure
 interface HeroSection {
   title: string
   desc: string
@@ -46,6 +45,7 @@ interface CTA {
 }
 
 interface AppContent {
+  img: string
   heroSection: HeroSection
   featureShowcase: Feature[]
   interactiveElements: InteractiveElement[]

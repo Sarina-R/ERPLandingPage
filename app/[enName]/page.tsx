@@ -10,18 +10,17 @@ import InteractiveElements from '@/components/dynamic-page/InteractiveElements'
 import ImageGallery from '@/components/dynamic-page/ImageGallery'
 import Testimonials from '@/components/dynamic-page/Testimonials'
 import CTASection from '@/components/dynamic-page/CTASection'
+import Image from 'next/image'
 
 export default function AppPage() {
   const params = useParams()
   const enName = params?.enName as string
   const { getAppByEnName, loading, error } = useAppContext()
 
-  // Show loading state
   if (loading) {
     return <LoadingSpinner />
   }
 
-  // Show error state
   if (error) {
     return (
       <div className='min-h-screen flex items-center justify-center'>
@@ -35,51 +34,67 @@ export default function AppPage() {
     )
   }
 
-  // Get the specific app data
   const app = getAppByEnName(enName)
 
-  // Show 404 if app not found
   if (!app) {
     return <NotFound />
   }
 
   const { content } = app
 
+  {
+    console.log('content.img', content.img)
+  }
   return (
-    <main className='min-h-screen bg-background'>
-      {/* Hero Section */}
-      <HeroSection
-        title={content.heroSection.title}
-        description={content.heroSection.desc}
-        ctaText={content.heroSection.ctaText}
-        image={content.heroSection.image}
-      />
+    <div className='bg-background max-w-6xl m-auto px-4 md:px-6'>
+      <main className='min-h-screen border-x'>
+        {/* Hero Section */}
+        <HeroSection
+          title={content.heroSection.title}
+          description={content.heroSection.desc}
+          ctaText={content.heroSection.ctaText}
+        />
+        <div className='p-18 relative'>
+          <span className='absolute top-18 left-0 h-px w-full bg-black/10 dark:bg-white/10' />
+          <span className='absolute bottom-18 left-0 h-px w-full bg-black/10 dark:bg-white/10' />
+          <span className='absolute left-18 top-0 h-full w-px bg-black/10 dark:bg-white/10' />
+          <span className='absolute right-18 top-0 h-full w-px bg-black/10 dark:bg-white/10' />
 
-      {/* Feature Showcase */}
-      <FeatureShowcase features={content.featureShowcase} />
+          <div className=''>
+            <Image
+              src={content.img}
+              alt='screenshot'
+              width={500}
+              height={500}
+              className='h-full w-full '
+            />
+          </div>
+        </div>
 
-      {/* Interactive Elements */}
-      {content.interactiveElements.length > 0 && (
-        <InteractiveElements elements={content.interactiveElements} />
-      )}
+        <div className='p-18 relative'>
+          <span className='absolute top-18 left-0 h-px w-full bg-black/10 dark:bg-white/10' />
+          <span className='absolute bottom-18 left-0 h-px w-full bg-black/10 dark:bg-white/10' />
+          <span className='absolute left-18 top-0 h-full w-px bg-black/10 dark:bg-white/10' />
+          <span className='absolute right-18 top-0 h-full w-px bg-black/10 dark:bg-white/10' />
 
-      {/* Image Gallery */}
-      {content.imageGallery.length > 0 && (
-        <ImageGallery images={content.imageGallery} />
-      )}
-
-      {/* Testimonials */}
-      {content.testimonials.length > 0 && (
-        <Testimonials testimonials={content.testimonials} />
-      )}
-
-      {/* CTA Section */}
-      <CTASection
-        title={content.cta.title}
-        description={content.cta.desc}
-        primaryButton={content.cta.primaryButton}
-        secondaryButton={content.cta.secondaryButton}
-      />
-    </main>
+          <FeatureShowcase features={content.featureShowcase} />
+        </div>
+        {content.interactiveElements.length > 0 && (
+          <InteractiveElements elements={content.interactiveElements} />
+        )}
+        {content.imageGallery.length > 0 && (
+          <ImageGallery images={content.imageGallery} />
+        )}
+        {content.testimonials.length > 0 && (
+          <Testimonials testimonials={content.testimonials} />
+        )}
+        <CTASection
+          title={content.cta.title}
+          description={content.cta.desc}
+          primaryButton={content.cta.primaryButton}
+          secondaryButton={content.cta.secondaryButton}
+        />
+      </main>
+    </div>
   )
 }
