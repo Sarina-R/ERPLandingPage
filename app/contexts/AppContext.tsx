@@ -26,6 +26,7 @@ interface InteractiveElement {
   type: string
   title: string
   desc: string
+  image: string
 }
 
 interface Testimonial {
