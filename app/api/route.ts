@@ -26,12 +26,6 @@ const data = [
           image:
             'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
         },
-        {
-          title: 'مدیریت دسترسی',
-          desc: 'تعیین کنید چه کسی به محتوای شما دسترسی دارد. حتی می‌توانید صفحات را با عموم به اشتراک بگذارید',
-          image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        },
       ],
       interactiveElements: [
         {
