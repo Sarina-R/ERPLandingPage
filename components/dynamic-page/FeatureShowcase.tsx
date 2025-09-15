@@ -10,9 +10,9 @@ interface FeatureShowcaseProps {
 
 export default function FeatureShowcase({ features }: FeatureShowcaseProps) {
   return (
-    <section className='py-20 px-4 bg-muted/30'>
+    <section className='border-b'>
       <div className='max-w-7xl mx-auto'>
-        <div className='text-center mb-16'>
+        <div className='text-center mb-16 py-16 border-b'>
           <h2 className='text-3xl md:text-4xl font-bold mb-4'>
             ویژگی‌های کلیدی
           </h2>
@@ -20,23 +20,49 @@ export default function FeatureShowcase({ features }: FeatureShowcaseProps) {
             کشف کنید که چگونه این ابزار می‌تواند کسب‌وکار شما را متحول کند
           </p>
         </div>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className=''>
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className='group bg-background rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1'
-            >
-              <div className='mb-6 overflow-hidden rounded-xl'>
-                <img
-                  src={feature.image}
-                  alt={feature.title}
-                  className='w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300'
-                />
-              </div>
-              <h3 className='text-xl font-semibold mb-3'>{feature.title}</h3>
-              <p className='text-muted-foreground leading-relaxed'>
-                {feature.desc}
-              </p>
+            <div key={index} className=''>
+              {index % 2 === 0 ? (
+                <>
+                  <div className='border-y grid grid-cols-3'>
+                    <div className='p-6 max-w-80 border-l col-span-1'>
+                      <h3 className='text-xl font-semibold'>{feature.title}</h3>
+                      <p className='text-muted-foreground leading-relaxed pt-2'>
+                        {feature.desc}
+                      </p>
+                    </div>
+                  </div>
+                  <div className='grid grid-cols-3'>
+                    <div className='col-span-1 border-l'></div>
+                    <img
+                      src={feature.image}
+                      alt={feature.title}
+                      className='w-full h-full object-cover col-span-2'
+                    />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className='border-y grid grid-cols-3'>
+                    <div className='col-span-2'></div>
+                    <div className='p-6 border-r col-span-1 text-left'>
+                      <h3 className='text-xl font-semibold'>{feature.title}</h3>
+                      <p className='text-muted-foreground leading-relaxed pt-2'>
+                        {feature.desc}
+                      </p>
+                    </div>
+                  </div>
+                  <div className='grid grid-cols-3'>
+                    <img
+                      src={feature.image}
+                      alt={feature.title}
+                      className='w-full h-full object-cover col-span-2'
+                    />
+                    <div className='col-span-1 border-r'></div>
+                  </div>
+                </>
+              )}
             </div>
           ))}
         </div>

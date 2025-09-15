@@ -17,17 +17,20 @@ const data = [
         {
           title: 'ویرایشگر متن پیشرفته',
           desc: 'با استفاده از میانبرهای قدرتمند، محتوای خود را در بهترین شکل ممکن ارائه دهید',
-          image: '/images/knowledge-editor.webp',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
         },
         {
           title: 'سازماندهی انعطاف‌پذیر',
           desc: 'محتوای خود را با فیلدهای سفارشی مرتب کرده و با نماهای شخصی‌سازی شده مرور کنید',
-          image: '/images/knowledge-organize.webp',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
         },
         {
           title: 'مدیریت دسترسی',
           desc: 'تعیین کنید چه کسی به محتوای شما دسترسی دارد. حتی می‌توانید صفحات را با عموم به اشتراک بگذارید',
-          image: '/images/knowledge-access.webp',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
         },
       ],
       interactiveElements: [
