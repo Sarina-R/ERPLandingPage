@@ -35,6 +35,13 @@ const data = [
           image:
             'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
         },
+        {
+          type: 'demo0',
+          title: 'آزمایش رایگان',
+          desc: 'سیستم مدیریت دانش را به مدت 15 روز رایگان امتحان کنید',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+        },
       ],
       imageGallery: [
         '/images/knowledge-gallery-1.webp',
