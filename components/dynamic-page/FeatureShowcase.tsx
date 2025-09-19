@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface Feature {
   title: string
   desc: string
@@ -25,35 +27,37 @@ export default function FeatureShowcase({ features }: FeatureShowcaseProps) {
             <div key={index} className=''>
               {index % 2 === 0 ? (
                 <>
-                  <div className='border-y grid grid-cols-3'>
-                    <div className='p-6 max-w-80 border-l col-span-1'>
+                  <div className='border-y grid md:grid-cols-3'>
+                    <div className='p-6 md:max-w-80 md:border-l col-span-1 text-center md:text-right'>
                       <h3 className='text-xl font-semibold'>{feature.title}</h3>
                       <p className='text-muted-foreground leading-relaxed pt-2'>
                         {feature.desc}
                       </p>
                     </div>
                   </div>
-                  <div className='grid grid-cols-3'>
+                  <div className='grid sm:grid-cols-3'>
                     <div className='col-span-1 border-l'></div>
-                    <img
+                    <Image
                       src={feature.image}
                       alt={feature.title}
+                      width={400}
+                      height={400}
                       className='w-full h-full object-cover col-span-2'
                     />
                   </div>
                 </>
               ) : (
                 <>
-                  <div className='border-y grid grid-cols-3'>
+                  <div className='border-y grid md:grid-cols-3'>
                     <div className='col-span-2'></div>
-                    <div className='p-6 border-r col-span-1 text-left'>
+                    <div className='p-6 border-r col-span-1 text-center md:text-left'>
                       <h3 className='text-xl font-semibold'>{feature.title}</h3>
                       <p className='text-muted-foreground leading-relaxed pt-2'>
                         {feature.desc}
                       </p>
                     </div>
                   </div>
-                  <div className='grid grid-cols-3'>
+                  <div className='grid sm:grid-cols-3'>
                     <img
                       src={feature.image}
                       alt={feature.title}
