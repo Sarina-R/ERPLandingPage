@@ -9,8 +9,9 @@ import FeatureShowcase from '@/components/dynamic-page/FeatureShowcase'
 import InteractiveElements from '@/components/dynamic-page/InteractiveElements'
 import ImageGallery from '@/components/dynamic-page/ImageGallery'
 import Testimonials from '@/components/dynamic-page/Testimonials'
-import CTASection from '@/components/dynamic-page/CTASection'
 import Image from 'next/image'
+import CTASection from '@/components/page-components/CTASection'
+import OtherApps from '@/components/dynamic-page/OtherApps'
 
 export default function AppPage() {
   const params = useParams()
@@ -70,7 +71,9 @@ export default function AppPage() {
             />
           </div>
         </div>
-
+        {content.interactiveElements.length > 0 && (
+          <InteractiveElements elements={content.interactiveElements} />
+        )}
         <div className='p-18 relative'>
           <span className='absolute top-18 left-0 h-px w-full bg-black/10 dark:bg-white/10' />
           <span className='absolute bottom-18 left-0 h-px w-full bg-black/10 dark:bg-white/10' />
@@ -79,21 +82,15 @@ export default function AppPage() {
 
           <FeatureShowcase features={content.featureShowcase} />
         </div>
-        {content.interactiveElements.length > 0 && (
-          <InteractiveElements elements={content.interactiveElements} />
-        )}
+        {/* <OtherApps apps={app} /> */}
+
         {content.imageGallery.length > 0 && (
           <ImageGallery images={content.imageGallery} />
         )}
         {content.testimonials.length > 0 && (
           <Testimonials testimonials={content.testimonials} />
         )}
-        <CTASection
-          title={content.cta.title}
-          description={content.cta.desc}
-          primaryButton={content.cta.primaryButton}
-          secondaryButton={content.cta.secondaryButton}
-        />
+        <CTASection />
       </main>
     </div>
   )

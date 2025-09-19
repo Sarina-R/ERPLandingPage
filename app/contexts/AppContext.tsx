@@ -45,7 +45,7 @@ interface CTA {
   secondaryButton: string
 }
 
-interface AppContent {
+export interface AppContent {
   img: string
   heroSection: HeroSection
   featureShowcase: Feature[]
@@ -59,6 +59,7 @@ interface AppData {
   name: string
   category: string
   enName: string
+  imageSrc: string
   content: AppContent
 }
 

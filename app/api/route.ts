@@ -5,6 +5,7 @@ const data = [
     name: 'مدیریت دانش',
     category: 'productivity',
     enName: 'knowledge',
+    imageSrc: '/oodo-pic/icon-1.svg',
     content: {
       img: 'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
       heroSection: {
@@ -243,63 +244,183 @@ const data = [
       },
     },
   },
+  // {
+  //   name: 'ایمیل مارکتینگ',
+  //   category: 'marketing',
+  //   enName: 'email-marketing',
+  //   content: {
+  //     heroSection: {
+  //       title: 'ایمیل مارکتینگ هوشمند',
+  //       desc: 'کمپین‌های ایمیلی موثر طراحی کنید. با قالب‌های آماده و ابزارهای اتوماسیون، مشتریان را درگیر کرده و فروش را افزایش دهید.',
+  //       ctaText: 'شروع کمپین',
+  //       image: '/images/email-marketing-hero.webp',
+  //     },
+  //     featureShowcase: [
+  //       {
+  //         title: 'طراحی ایمیل',
+  //         desc: 'با ویرایشگر drag & drop، ایمیل‌های زیبا و جذاب طراحی کنید',
+  //         image: '/images/email-design.webp',
+  //       },
+  //       {
+  //         title: 'اتوماسیون',
+  //         desc: 'سیناریوهای خودکار برای ارسال ایمیل‌ها بر اساس رفتار مشتریان',
+  //         image: '/images/email-automation.webp',
+  //       },
+  //       {
+  //         title: 'آنالیز عملکرد',
+  //         desc: 'نرخ باز شدن، کلیک و تبدیل ایمیل‌های خود را پیگیری کنید',
+  //         image: '/images/email-analytics.webp',
+  //       },
+  //     ],
+  //     interactiveElements: [
+  //       {
+  //         type: 'email-builder',
+  //         title: 'سازنده ایمیل',
+  //         desc: 'ایمیل خود را با ابزار طراحی تعاملی بسازید',
+  //       },
+  //     ],
+  //     imageGallery: [
+  //       '/images/email-gallery-1.webp',
+  //       '/images/email-gallery-2.webp',
+  //       '/images/email-gallery-3.webp',
+  //     ],
+  //     testimonials: [
+  //       {
+  //         name: 'امیر حسینی',
+  //         position: 'مدیر دیجیتال مارکتینگ',
+  //         company: 'فروشگاه آنلاین مهر',
+  //         content: 'نرخ باز شدن ایمیل‌های ما با این پلتفرم از ۱۵٪ به ۴۲٪ رسید',
+  //         avatar: '/images/testimonial-5.webp',
+  //         companyLogo: '/images/company-5.webp',
+  //       },
+  //     ],
+  //     cta: {
+  //       title: 'کمپین ایمیلی خود را شروع کنید',
+  //       desc: 'همین امروز اولین کمپین ایمیل مارکتینگ خود را راه‌اندازی کنید',
+  //       primaryButton: 'شروع رایگان',
+  //       secondaryButton: 'مشاهده قالب‌ها',
+  //     },
+  //   },
+  // },
+  {
+    name: 'استودیو',
+    category: 'creative',
+    enName: 'studio',
+    imageSrc: '/oodo-pic/icon (5).svg',
+  },
+  {
+    name: 'اشتراکات',
+    category: 'finance',
+    enName: 'subscription',
+    imageSrc: '/oodo-pic/icon (6).svg',
+  },
+  {
+    name: 'اجاره',
+    category: 'finance',
+    enName: 'rental',
+    imageSrc: '/oodo-pic/icon (7).svg',
+  },
+  {
+    name: 'فروشگاه',
+    category: 'sales',
+    enName: 'point-of-sale',
+    imageSrc: '/oodo-pic/icon (8).svg',
+  },
+  {
+    name: 'بحث و گفتگو',
+    category: 'communication',
+    enName: 'discuss',
+    imageSrc: '/oodo-pic/icon (9).svg',
+  },
+  {
+    name: 'اسناد',
+    category: 'productivity',
+    enName: 'documents',
+    imageSrc: '/oodo-pic/icon (10).svg',
+  },
+  {
+    name: 'پروژه',
+    category: 'productivity',
+    enName: 'project',
+    imageSrc: '/oodo-pic/icon (11).svg',
+  },
+  {
+    name: 'حضور و غیاب',
+    category: 'hr',
+    enName: 'timesheets',
+    imageSrc: '/oodo-pic/icon (12).svg',
+  },
+  {
+    name: 'خدمات میدانی',
+    category: 'operations',
+    enName: 'field-service',
+    imageSrc: '/oodo-pic/icon (13).svg',
+  },
+  {
+    name: 'برنامه‌ریزی',
+    category: 'productivity',
+    enName: 'planning',
+    imageSrc: '/oodo-pic/icon (14).svg',
+  },
+  {
+    name: 'پشتیبانی',
+    category: 'support',
+    enName: 'helpdesk',
+    imageSrc: '/oodo-pic/icon (15).svg',
+  },
+  {
+    name: 'وب‌سایت',
+    category: 'creative',
+    enName: 'website',
+    imageSrc: '/oodo-pic/icon (16).svg',
+  },
+  {
+    name: 'بازاریابی اجتماعی',
+    category: 'marketing',
+    enName: 'social-marketing',
+    imageSrc: '/oodo-pic/icon (17).svg',
+  },
   {
     name: 'ایمیل مارکتینگ',
     category: 'marketing',
     enName: 'email-marketing',
-    content: {
-      heroSection: {
-        title: 'ایمیل مارکتینگ هوشمند',
-        desc: 'کمپین‌های ایمیلی موثر طراحی کنید. با قالب‌های آماده و ابزارهای اتوماسیون، مشتریان را درگیر کرده و فروش را افزایش دهید.',
-        ctaText: 'شروع کمپین',
-        image: '/images/email-marketing-hero.webp',
-      },
-      featureShowcase: [
-        {
-          title: 'طراحی ایمیل',
-          desc: 'با ویرایشگر drag & drop، ایمیل‌های زیبا و جذاب طراحی کنید',
-          image: '/images/email-design.webp',
-        },
-        {
-          title: 'اتوماسیون',
-          desc: 'سیناریوهای خودکار برای ارسال ایمیل‌ها بر اساس رفتار مشتریان',
-          image: '/images/email-automation.webp',
-        },
-        {
-          title: 'آنالیز عملکرد',
-          desc: 'نرخ باز شدن، کلیک و تبدیل ایمیل‌های خود را پیگیری کنید',
-          image: '/images/email-analytics.webp',
-        },
-      ],
-      interactiveElements: [
-        {
-          type: 'email-builder',
-          title: 'سازنده ایمیل',
-          desc: 'ایمیل خود را با ابزار طراحی تعاملی بسازید',
-        },
-      ],
-      imageGallery: [
-        '/images/email-gallery-1.webp',
-        '/images/email-gallery-2.webp',
-        '/images/email-gallery-3.webp',
-      ],
-      testimonials: [
-        {
-          name: 'امیر حسینی',
-          position: 'مدیر دیجیتال مارکتینگ',
-          company: 'فروشگاه آنلاین مهر',
-          content: 'نرخ باز شدن ایمیل‌های ما با این پلتفرم از ۱۵٪ به ۴۲٪ رسید',
-          avatar: '/images/testimonial-5.webp',
-          companyLogo: '/images/company-5.webp',
-        },
-      ],
-      cta: {
-        title: 'کمپین ایمیلی خود را شروع کنید',
-        desc: 'همین امروز اولین کمپین ایمیل مارکتینگ خود را راه‌اندازی کنید',
-        primaryButton: 'شروع رایگان',
-        secondaryButton: 'مشاهده قالب‌ها',
-      },
-    },
+    imageSrc: '/oodo-pic/icon (18).svg',
+  },
+  {
+    name: 'خرید',
+    category: 'operations',
+    enName: 'purchase',
+    imageSrc: '/oodo-pic/icon (19).svg',
+  },
+  {
+    name: 'موجودی انبار',
+    category: 'operations',
+    enName: 'inventory',
+    imageSrc: '/oodo-pic/icon (20).svg',
+  },
+  {
+    name: 'تولید',
+    category: 'operations',
+    enName: 'manufacturing',
+    imageSrc: '/oodo-pic/icon (21).svg',
+  },
+  {
+    name: 'فروش',
+    category: 'sales',
+    enName: 'sales',
+    imageSrc: '/oodo-pic/icon (22).svg',
+  },
+  {
+    name: 'منابع انسانی',
+    category: 'hr',
+    enName: 'hr',
+    imageSrc: '/oodo-pic/icon (23).svg',
+  },
+  {
+    name: 'داشبورد',
+    category: 'analytics',
+    enName: 'dashboard',
+    imageSrc: '/oodo-pic/icon (24).svg',
   },
 ]
 export async function GET() {
