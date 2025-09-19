@@ -25,11 +25,10 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     return () => mediaQuery.removeEventListener('change', handleChange as any)
   }, [])
 
-  // کنترل تعداد عکس‌ها
   const limitedImages = isLarge ? images.slice(0, 3) : images.slice(0, 4)
 
   return (
-    <section className='px-18'>
+    <section className='px-10 md:px-18'>
       <div className='border-x px-4 mx-auto py-20'>
         <div className='text-center mb-16'>
           <h2 className='text-3xl md:text-4xl font-bold mb-4'>گالری تصاویر</h2>

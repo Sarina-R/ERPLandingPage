@@ -74,11 +74,11 @@ export default function AppPage() {
         {content.interactiveElements.length > 0 && (
           <InteractiveElements elements={content.interactiveElements} />
         )}
-        <div className='p-18 relative'>
-          <span className='absolute top-18 left-0 h-px w-full bg-black/10 dark:bg-white/10' />
-          <span className='absolute bottom-18 left-0 h-px w-full bg-black/10 dark:bg-white/10' />
-          <span className='absolute left-18 top-0 h-full w-px bg-black/10 dark:bg-white/10' />
-          <span className='absolute right-18 top-0 h-full w-px bg-black/10 dark:bg-white/10' />
+        <div className='p-10 md:p-18 relative'>
+          <span className='absolute top-10 md:top-18 left-0 h-px w-full bg-black/10 dark:bg-white/10' />
+          <span className='absolute bottom-10 md:bottom-18 left-0 h-px w-full bg-black/10 dark:bg-white/10' />
+          <span className='absolute left-10 md:left-18 top-0 h-full w-px bg-black/10 dark:bg-white/10' />
+          <span className='absolute right-10 md:right-18 top-0 h-full w-px bg-black/10 dark:bg-white/10' />
 
           <FeatureShowcase features={content.featureShowcase} />
         </div>

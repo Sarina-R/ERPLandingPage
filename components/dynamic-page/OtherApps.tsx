@@ -45,7 +45,7 @@ const OtherApps: React.FC<OtherAppsProps> = ({ currentApp }) => {
 
   return (
     <section className='border-t'>
-      <div className='px-18'>
+      <div className='px-10 md:px-18'>
         <h2 className='text-2xl font-bold text-center text-neutral-800 py-12 dark:text-neutral-200 border-x'>
           سایر برنامه‌ها
         </h2>
