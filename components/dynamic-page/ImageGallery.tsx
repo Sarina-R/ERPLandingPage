@@ -18,8 +18,8 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
 
     handleChange(mediaQuery)
 
-    mediaQuery.addEventListener('change', handleChange as any)
-    return () => mediaQuery.removeEventListener('change', handleChange as any)
+    mediaQuery.addEventListener('change', handleChange)
+    return () => mediaQuery.removeEventListener('change', handleChange)
   }, [])
 
   const limitedImages = isLarge ? images.slice(0, 3) : images.slice(0, 4)

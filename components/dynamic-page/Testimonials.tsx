@@ -46,7 +46,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
                 />
               </div>
               <blockquote className='text-muted-foreground italic leading-relaxed'>
-                "{testimonial.content}"
+                &quot;{testimonial.content}&quot;
               </blockquote>
               <div className='mt-4 text-sm font-medium text-primary'>
                 {testimonial.company}
