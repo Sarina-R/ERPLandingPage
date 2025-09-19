@@ -50,7 +50,7 @@ const OtherApps: React.FC<OtherAppsProps> = ({ currentApp }) => {
           سایر برنامه‌ها
         </h2>
       </div>
-      <div className='grid sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto'>
+      <div className='grid grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto'>
         {otherApps.map((app) => (
           <Link
             key={app.enName}
@@ -67,10 +67,10 @@ const OtherApps: React.FC<OtherAppsProps> = ({ currentApp }) => {
               />
             </div>
             <div className='flex flex-col'>
-              <h3 className='text-base font-semibold text-neutral-800 dark:text-neutral-200'>
+              <h3 className='text-sm md:text-base font-semibold text-neutral-800 dark:text-neutral-200'>
                 {app.name}
               </h3>
-              <p className='text-sm text-neutral-600 dark:text-neutral-400'>
+              <p className='text-xs md:text-sm text-neutral-600 dark:text-neutral-400'>
                 {app.category}
               </p>
             </div>
