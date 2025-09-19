@@ -1,4 +1,3 @@
-// app/components/ImageGallery.tsx
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -12,15 +11,13 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
   const [isLarge, setIsLarge] = useState(false)
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 1024px)') // lg breakpoint
+    const mediaQuery = window.matchMedia('(min-width: 1024px)')
     const handleChange = (e: MediaQueryListEvent | MediaQueryList) => {
       setIsLarge(e.matches)
     }
 
-    // initial check
     handleChange(mediaQuery)
 
-    // listener
     mediaQuery.addEventListener('change', handleChange as any)
     return () => mediaQuery.removeEventListener('change', handleChange as any)
   }, [])
@@ -31,8 +28,8 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     <section className='px-10 md:px-18'>
       <div className='border-x px-4 mx-auto py-20'>
         <div className='text-center mb-16'>
-          <h2 className='text-3xl md:text-4xl font-bold mb-4'>گالری تصاویر</h2>
-          <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
+          <h2 className='text-2xl md:text-3xl font-bold mb-4'>گالری تصاویر</h2>
+          <p className='text-base text-muted-foreground max-w-2xl mx-auto'>
             نگاهی به رابط کاربری و امکانات سیستم بیاندازید
           </p>
         </div>

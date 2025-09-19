@@ -1,4 +1,3 @@
-// components/HeroSection.tsx
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -31,17 +30,9 @@ export default function HeroSection({
         <span className='absolute w-px h-full bg-black/30 dark:bg-white/30'></span>
         <span className='absolute h-px w-full bg-black/30 dark:bg-white/30'></span>
       </span>
-      {/* <span className='absolute -top-[10px] -right-[10px] w-5 h-5 flex items-center justify-center'>
-        <span className='absolute w-px h-full bg-black/30 dark:bg-white/30'></span>
-        <span className='absolute h-px w-full bg-black/30 dark:bg-white/30'></span>
-      </span>
-      <span className='absolute -bottom-[10px] -left-[10px] w-5 h-5 flex items-center justify-center'>
-        <span className='absolute w-px h-full bg-black/30 dark:bg-white/30'></span>
-        <span className='absolute h-px w-full bg-black/30 dark:bg-white/30'></span>
-      </span> */}
 
       <div className='px-4 sm:px-6 lg:px-8 max-w-4xl py-20 space-y-8 mx-auto'>
-        <h1 className='text-5xl md:text-6xl font-bold tracking-tight'>
+        <h1 className='text-4xl md:text-5xl font-bold tracking-tight'>
           <span className='relative'>
             {firstWord}{' '}
             <span className='absolute left-0 bottom-0 w-full h-2 bg-cyan-400/70 -z-10'></span>
@@ -49,18 +40,18 @@ export default function HeroSection({
           {restOfTitle}
         </h1>
 
-        <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
+        <p className='text-base text-muted-foreground max-w-2xl mx-auto'>
           {description}
         </p>
 
         <div className='flex justify-center gap-4 flex-wrap'>
-          <Button className='bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-6 py-6'>
+          <Button className='bg-primary text-primary-foreground hover:bg-primary/90 text-base px-6 py-6'>
             {ctaText}
           </Button>
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant='outline' className='text-lg px-6 py-6'>
+              <Button variant='outline' className='text-base px-6 py-6'>
                 Meet an advisor
               </Button>
             </DropdownMenuTrigger>
@@ -81,7 +72,7 @@ export default function HeroSection({
           </DropdownMenu>
         </div>
 
-        <p className='text-sm text-muted-foreground'>
+        <p className='text-xs text-muted-foreground'>
           Free, forever, with unlimited users.
         </p>
       </div>

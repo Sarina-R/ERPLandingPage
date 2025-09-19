@@ -15,10 +15,10 @@ export default function FeatureShowcase({ features }: FeatureShowcaseProps) {
     <section className='border-b'>
       <div className='max-w-7xl mx-auto'>
         <div className='text-center mb-16 py-16 border-b'>
-          <h2 className='text-3xl md:text-4xl font-bold mb-4'>
+          <h2 className='text-2xl md:text-3xl font-bold mb-4'>
             ویژگی‌های کلیدی
           </h2>
-          <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
+          <p className='text-base text-muted-foreground max-w-2xl mx-auto'>
             کشف کنید که چگونه این ابزار می‌تواند کسب‌وکار شما را متحول کند
           </p>
         </div>
@@ -29,8 +29,8 @@ export default function FeatureShowcase({ features }: FeatureShowcaseProps) {
                 <>
                   <div className='border-y grid md:grid-cols-3'>
                     <div className='p-6 md:max-w-80 md:border-l col-span-1 text-center md:text-right'>
-                      <h3 className='text-xl font-semibold'>{feature.title}</h3>
-                      <p className='text-muted-foreground leading-relaxed pt-2'>
+                      <h3 className='text-lg font-semibold'>{feature.title}</h3>
+                      <p className='text-sm text-muted-foreground leading-relaxed pt-2'>
                         {feature.desc}
                       </p>
                     </div>
@@ -51,8 +51,8 @@ export default function FeatureShowcase({ features }: FeatureShowcaseProps) {
                   <div className='border-y grid md:grid-cols-3'>
                     <div className='col-span-2'></div>
                     <div className='p-6 border-r col-span-1 text-center md:text-left'>
-                      <h3 className='text-xl font-semibold'>{feature.title}</h3>
-                      <p className='text-muted-foreground leading-relaxed pt-2'>
+                      <h3 className='text-lg font-semibold'>{feature.title}</h3>
+                      <p className='text-sm text-muted-foreground leading-relaxed pt-2'>
                         {feature.desc}
                       </p>
                     </div>
