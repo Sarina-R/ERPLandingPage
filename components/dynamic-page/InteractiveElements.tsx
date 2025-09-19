@@ -8,6 +8,7 @@ import {
   BookOpen,
   Zap,
 } from 'lucide-react'
+import Image from 'next/image'
 
 interface InteractiveElement {
   type: string
@@ -62,9 +63,6 @@ export default function InteractiveElements({
         return <Star className='w-4 h-4' />
       case 'فرهنگ':
         return <Heart className='w-4 h-4' />
-      case 'demo':
-      case 'demo0':
-        return <BookOpen className='w-4 h-4' />
       default:
         return <BookOpen className='w-4 h-4' />
     }
@@ -155,32 +153,33 @@ export default function InteractiveElements({
             )}
 
             {activeElement.image && (
-              <img
+              <Image
                 key={`${activeElement.image}-${activeIndex}`}
                 src={activeElement.image}
                 alt={activeElement.title || 'تصویر اسلاید'}
+                width={400}
+                height={400}
                 className={`w-full h-full object-cover transition-all duration-700 ease-in-out ${
                   imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                 } hover:scale-105`}
                 onLoad={() => setImageLoaded(true)}
                 onError={() => setImageLoaded(true)}
-                loading='lazy'
               />
             )}
 
             <div className='absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent' />
 
-            <div className='absolute bottom-8 right-8 bg-background/90 backdrop-blur-sm p-6 rounded-2xl border border-foreground/10 max-w-xs'>
-              <div className='flex items-center gap-3 mb-3'>
+            <div className='absolute bottom-8 right-8 bg-background/90 backdrop-blur-sm p-2 md:p-6 rounded-2xl border border-foreground/10 max-w-xs'>
+              <div className='flex items-center gap-3 mb-2 md:mb-3'>
                 {getTypeIcon(activeElement.type)}
-                <span className='font-medium text-sm text-foreground'>
+                <span className='font-medium text-xs md:text-sm text-foreground'>
                   {activeElement.type || 'نامشخص'}
                 </span>
               </div>
-              <h3 className='font-bold text-base mb-2 text-foreground'>
+              <h3 className='font-bold text-sm md:text-base mb-2 text-foreground'>
                 {activeElement.title || 'بدون عنوان'}
               </h3>
-              <div className='w-12 h-1 bg-foreground/30 rounded-full'>
+              <div className='w-12 h-px md:h-1 bg-foreground/30 rounded-full'>
                 <div
                   className='h-full bg-foreground rounded-full transition-all'
                   style={{
