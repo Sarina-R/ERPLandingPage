@@ -82,7 +82,7 @@ export default function AppPage() {
 
           <FeatureShowcase features={content.featureShowcase} />
         </div>
-        {/* <OtherApps apps={app} /> */}
+        <OtherApps currentApp={app.enName} />
 
         {content.imageGallery.length > 0 && (
           <ImageGallery images={content.imageGallery} />
