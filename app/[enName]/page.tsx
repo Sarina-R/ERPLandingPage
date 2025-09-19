@@ -87,9 +87,9 @@ export default function AppPage() {
         {content.imageGallery.length > 0 && (
           <ImageGallery images={content.imageGallery} />
         )}
-        {content.testimonials.length > 0 && (
+        {/* {content.testimonials.length > 0 && (
           <Testimonials testimonials={content.testimonials} />
-        )}
+        )} */}
         <CTASection />
       </main>
     </div>
