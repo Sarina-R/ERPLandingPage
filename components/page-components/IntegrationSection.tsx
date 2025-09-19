@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Grid3X3, Link2 } from 'lucide-react'
 import Link from 'next/link'
@@ -12,9 +14,6 @@ interface ConnectionLineProps {
 
 const IntegrationSection: React.FC = () => {
   const { apps, loading, error } = useAppContext()
-
-  if (loading) return <div>در حال بارگذاری...</div>
-  if (error) return <div>خطا: {error}</div>
 
   const centerPoint = { x: 400, y: 300 }
 
@@ -68,7 +67,7 @@ const IntegrationSection: React.FC = () => {
     containerHeight: number = 600
   ) => {
     const cols = 6
-    const rows = Math.ceil(apps.length / cols)
+    const rows = Math.ceil(24 / cols) // Fixed to 24 boxes
     const cellWidth = containerWidth / cols
     const cellHeight = containerHeight / rows
 
@@ -98,6 +97,16 @@ const IntegrationSection: React.FC = () => {
     return positions[position] || { x: 0, y: 0 }
   }
 
+  // Create a fixed array of 24 items to ensure consistent grid size
+  const placeholderApps = Array.from({ length: 24 }, (_, index) => ({
+    enName: `app-${index}`,
+    name: `App ${index + 1}`,
+    imageSrc: '/placeholder.png', // Fallback image
+  }))
+
+  // Use apps if available, otherwise use placeholders
+  const displayApps = loading || error ? placeholderApps : apps.slice(0, 24)
+
   return (
     <section className='py-24 bg-gradient-to-b from-background to-muted/20 overflow-hidden'>
       {/* Header */}
@@ -124,21 +133,25 @@ const IntegrationSection: React.FC = () => {
           {/* Integration Grid */}
           <div className='relative border border-border/50 rounded-3xl bg-card/50 backdrop-blur-sm p-6 sm:p-12'>
             <div className='grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 relative z-10'>
-              {apps.map((app, index) => {
+              {displayApps.map((app, index) => {
                 const itemPosition = getGridItemPosition(index)
 
                 return (
                   <Link href={`/${app.enName}`} key={index}>
                     <div className='relative'>
                       <div className='group relative aspect-square flex flex-col items-center justify-center p-4 rounded-2xl border hover:border-border/60 bg-background/80 hover:bg-background transition-all duration-300 hover:shadow-lg hover:scale-105'>
-                        <div className='w-8 sm:w-10 h-8 mb-3 flex items-center justify-center'>
-                          <Image
-                            width={50}
-                            height={50}
-                            src={app.imageSrc}
-                            alt={app.name}
-                            className='w-8 sm:w-10 h-8 sm:h-10 object-contain transition-transform group-hover:scale-110'
-                          />
+                        <div className='w-8 sm:w-10 h-8 sm:h-10 mb-3 flex items-center justify-center'>
+                          {loading || error ? (
+                            <div className='w-8 sm:w-10 h-8 sm:h-10 bg-muted rounded-lg' />
+                          ) : (
+                            <Image
+                              width={50}
+                              height={50}
+                              src={app.imageSrc}
+                              alt={app.name}
+                              className='w-8 sm:w-10 h-8 sm:h-10 object-contain transition-transform group-hover:scale-110'
+                            />
+                          )}
                         </div>
                         <span className='text-[9px] sm:text-xs font-medium text-center leading-tight'>
                           {app.name}
