@@ -163,7 +163,7 @@ export default function InteractiveElements({
                   imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                 } hover:scale-105`}
                 onLoad={() => setImageLoaded(true)}
-                onError={() => setImageLoaded(true)} // در صورت خطا، لودر مخفی می‌شود
+                onError={() => setImageLoaded(true)}
                 loading='lazy'
               />
             )}
