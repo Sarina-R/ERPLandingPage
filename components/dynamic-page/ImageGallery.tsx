@@ -1,6 +1,7 @@
+// app/components/ImageGallery.tsx
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface ImageGalleryProps {
   images: string[]
@@ -8,10 +9,28 @@ interface ImageGalleryProps {
 
 export default function ImageGallery({ images }: ImageGalleryProps) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
+  const [isLarge, setIsLarge] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 1024px)') // lg breakpoint
+    const handleChange = (e: MediaQueryListEvent | MediaQueryList) => {
+      setIsLarge(e.matches)
+    }
+
+    // initial check
+    handleChange(mediaQuery)
+
+    // listener
+    mediaQuery.addEventListener('change', handleChange as any)
+    return () => mediaQuery.removeEventListener('change', handleChange as any)
+  }, [])
+
+  // کنترل تعداد عکس‌ها
+  const limitedImages = isLarge ? images.slice(0, 3) : images.slice(0, 4)
 
   return (
-    <section className='py-20 px-4 bg-muted/20'>
-      <div className='max-w-7xl mx-auto'>
+    <section className='px-18'>
+      <div className='border-x px-4 mx-auto py-20'>
         <div className='text-center mb-16'>
           <h2 className='text-3xl md:text-4xl font-bold mb-4'>گالری تصاویر</h2>
           <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
@@ -19,7 +38,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           </p>
         </div>
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-          {images.map((image, index) => (
+          {limitedImages.map((image, index) => (
             <div
               key={index}
               className='relative group cursor-pointer overflow-hidden rounded-2xl'
@@ -51,7 +70,6 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           ))}
         </div>
 
-        {/* Modal for selected image */}
         {selectedImage && (
           <div
             className='fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4'
