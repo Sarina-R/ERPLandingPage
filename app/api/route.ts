@@ -5,7 +5,8 @@ const data = [
     name: 'مدیریت دانش',
     category: 'productivity',
     enName: 'knowledge',
-    imageSrc: '/oodo-pic/icon-1.svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(1).svg',
     content: {
       img: 'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
       heroSection: {
@@ -72,6 +73,8 @@ const data = [
     name: 'حسابداری',
     category: 'finance',
     enName: 'accounting',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(2).svg',
     content: {
       heroSection: {
         title: 'حسابداری هوشمند و کامل',
@@ -131,6 +134,8 @@ const data = [
     name: 'بازاریابی اجتماعی',
     category: 'marketing',
     enName: 'social-marketing',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(3).svg',
     content: {
       heroSection: {
         title: 'بازاریابی اجتماعی حرفه‌ای',
@@ -190,6 +195,8 @@ const data = [
     name: 'CRM',
     category: 'sales',
     enName: 'CRM',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(4).svg',
     content: {
       heroSection: {
         title: 'مدیریت ارتباط با مشتری',
@@ -306,121 +313,141 @@ const data = [
     name: 'استودیو',
     category: 'creative',
     enName: 'studio',
-    imageSrc: '/oodo-pic/icon (5).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(5).svg',
   },
   {
     name: 'اشتراکات',
     category: 'finance',
     enName: 'subscription',
-    imageSrc: '/oodo-pic/icon (6).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(6).svg',
   },
   {
     name: 'اجاره',
     category: 'finance',
     enName: 'rental',
-    imageSrc: '/oodo-pic/icon (7).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(7).svg',
   },
   {
     name: 'فروشگاه',
     category: 'sales',
     enName: 'point-of-sale',
-    imageSrc: '/oodo-pic/icon (8).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(8).svg',
   },
   {
     name: 'بحث و گفتگو',
     category: 'communication',
     enName: 'discuss',
-    imageSrc: '/oodo-pic/icon (9).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(9).svg',
   },
   {
     name: 'اسناد',
     category: 'productivity',
     enName: 'documents',
-    imageSrc: '/oodo-pic/icon (10).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(10).svg',
   },
   {
     name: 'پروژه',
     category: 'productivity',
     enName: 'project',
-    imageSrc: '/oodo-pic/icon (11).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(11).svg',
   },
   {
     name: 'حضور و غیاب',
     category: 'hr',
     enName: 'timesheets',
-    imageSrc: '/oodo-pic/icon (12).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(12).svg',
   },
   {
     name: 'خدمات میدانی',
     category: 'operations',
     enName: 'field-service',
-    imageSrc: '/oodo-pic/icon (13).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(13).svg',
   },
   {
     name: 'برنامه‌ریزی',
     category: 'productivity',
     enName: 'planning',
-    imageSrc: '/oodo-pic/icon (14).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(14).svg',
   },
   {
     name: 'پشتیبانی',
     category: 'support',
     enName: 'helpdesk',
-    imageSrc: '/oodo-pic/icon (15).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(15).svg',
   },
   {
     name: 'وب‌سایت',
     category: 'creative',
     enName: 'website',
-    imageSrc: '/oodo-pic/icon (16).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(16).svg',
   },
   {
     name: 'بازاریابی اجتماعی',
     category: 'marketing',
     enName: 'social-marketing',
-    imageSrc: '/oodo-pic/icon (17).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(17).svg',
   },
   {
     name: 'ایمیل مارکتینگ',
     category: 'marketing',
     enName: 'email-marketing',
-    imageSrc: '/oodo-pic/icon (18).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(18).svg',
   },
   {
     name: 'خرید',
     category: 'operations',
     enName: 'purchase',
-    imageSrc: '/oodo-pic/icon (19).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(19).svg',
   },
   {
     name: 'موجودی انبار',
     category: 'operations',
     enName: 'inventory',
-    imageSrc: '/oodo-pic/icon (20).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(20).svg',
   },
   {
     name: 'تولید',
     category: 'operations',
     enName: 'manufacturing',
-    imageSrc: '/oodo-pic/icon (21).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(21).svg',
   },
   {
     name: 'فروش',
     category: 'sales',
     enName: 'sales',
-    imageSrc: '/oodo-pic/icon (22).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(22).svg',
   },
   {
     name: 'منابع انسانی',
     category: 'hr',
     enName: 'hr',
-    imageSrc: '/oodo-pic/icon (23).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(23).svg',
   },
   {
     name: 'داشبورد',
     category: 'analytics',
     enName: 'dashboard',
-    imageSrc: '/oodo-pic/icon (24).svg',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(24).svg',
   },
 ]
 export async function GET() {
