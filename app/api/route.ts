@@ -6,7 +6,7 @@ const data = [
     category: 'productivity',
     enName: 'knowledge',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(1).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(24).svg',
     content: {
       img: 'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
       heroSection: {
@@ -77,59 +77,98 @@ const data = [
     category: 'finance',
     enName: 'accounting',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(2).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(23).svg',
     content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-hero-image.webp',
       heroSection: {
-        title: 'حسابداری هوشمند و کامل',
-        desc: 'تمام امور مالی کسب‌وکار خود را با نرم‌افزار حسابداری پیشرفته مدیریت کنید. از صدور فاکتور تا گزارش‌گیری مالی، همه چیز در یک مکان.',
+        title: 'حسابداری مدرن و سریع',
+        desc: 'با نرم‌افزار حسابداری اودوو، تجربه‌ای متفاوت از مدیریت مالی داشته باشید. رابط کاربری سریع، بدون نیاز به ورود دستی داده‌ها و گزارش‌گیری لحظه‌ای.',
         ctaText: 'شروع رایگان',
         image: '/images/accounting-hero.webp',
       },
       featureShowcase: [
         {
-          title: 'صدور فاکتور آنلاین',
-          desc: 'فاکتورهای حرفه‌ای ایجاد کرده و به راحتی برای مشتریان ارسال کنید',
-          image: '/images/accounting-invoice.webp',
+          title: 'سرعت بی‌نظیر',
+          desc: 'عملیات حسابداری در کمتر از 90 میلی‌ثانیه پردازش می‌شود، سریع‌تر از یک چشم به هم زدن!',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20180948.png',
         },
         {
-          title: 'گزارش‌گیری مالی',
-          desc: 'گزارش‌های مالی جامع و دقیق برای تصمیم‌گیری‌های بهتر',
-          image: '/images/accounting-reports.webp',
+          title: 'بدون نیاز به ورود داده',
+          desc: 'با هوش مصنوعی پیشرفته، 98% داده‌های فاکتور به صورت خودکار شناسایی می‌شوند.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-vendor-bill.webp',
         },
         {
-          title: 'مدیریت بانک',
-          desc: 'تطبیق خودکار تراکنش‌های بانکی و مدیریت حساب‌های مختلف',
-          image: '/images/accounting-bank.webp',
+          title: 'تجربه موبایلی',
+          desc: 'هزینه‌ها را با موبایل ثبت کنید و هوش مصنوعی بقیه کار را انجام دهد.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-mobile-01.webp',
+        },
+        {
+          title: 'تطبیق بانکی هوشمند',
+          desc: 'اتصال به 28,000 بانک در سراسر جهان و تطبیق 95% تراکنش‌ها به صورت خودکار.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-mobile-02.webp',
         },
       ],
       interactiveElements: [
         {
-          type: 'calculator',
-          title: 'محاسبه مالیات',
-          desc: 'مالیات معاملات خود را به راحتی محاسبه کنید',
+          type: 'interactive-demo',
+          title: 'پیش‌نمایش فاکتور الکترونیکی',
+          desc: 'فاکتورهای الکترونیکی را در فرمت‌های مختلف مانند Peppol ایجاد، ارسال و دریافت کنید. با چند کلیک، فرآیند فاکتورسازی را تجربه کنید.',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20175751.png',
+          action: {
+            label: 'امتحان کنید',
+            url: '/demo/invoicing',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'تجربه گزارش‌گیری لحظه‌ای',
+          desc: 'گزارش‌های مالی تعاملی و دقیق را در لحظه مشاهده کنید و تصمیم‌گیری‌های هوشمندانه‌تری داشته باشید.',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20175612.png',
+          action: {
+            label: 'مشاهده دمو',
+            url: '/demo/reporting',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'مدیریت جریان نقدی',
+          desc: 'جریان نقدی ورودی و خروجی را به صورت بلادرنگ رصد کنید و مدیریت مالی خود را بهبود دهید.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-vendor-bill.webp',
+          action: {
+            label: 'شروع دمو',
+            url: '/demo/cashflow',
+          },
         },
       ],
       imageGallery: [
-        '/images/accounting-gallery-1.webp',
-        '/images/accounting-gallery-2.webp',
-        '/images/accounting-gallery-3.webp',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20175751.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20175612.png',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-vendor-bill.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-mobile-02.webp',
       ],
       testimonials: [
         {
-          name: 'مریم رضایی',
-          position: 'مدیر مالی',
-          company: 'گروه صنعتی آریا',
+          name: 'ویم ون دن براند',
+          position: 'مدیر بخش مالیات، حقوقی و حسابداری',
+          company: 'KPMG',
           content:
-            'با این نرم‌افزار، زمان صدور فاکتور و گزارش‌گیری مالی ما به یک سوم کاهش یافت',
-          avatar: '/images/testimonial-2.webp',
-          companyLogo: '/images/company-2.webp',
+            'با اودوو، بستن مالیات VAT که قبلاً 4 روز طول می‌کشید، حالا در 3 ساعت انجام می‌شود و خدمات بهتری به مشتریان ارائه می‌دهیم.',
+          avatar: '/images/testimonial-wim.webp',
+          companyLogo: '/images/kpmg-logo.webp',
         },
       ],
       cta: {
-        title: 'حسابداری خود را دیجیتال کنید',
-        desc: 'امروز شروع کنید و از مزایای حسابداری هوشمند بهره‌مند شوید',
+        title: 'رشد کسب‌وکار خود را آزاد کنید',
+        desc: 'با حسابداری اودوو، مدیریت مالی خود را ساده و هوشمند کنید. همین حالا شروع کنید!',
         primaryButton: 'شروع رایگان',
-        secondaryButton: 'درخواست دمو',
+        secondaryButton: 'اطلاعات بیشتر',
       },
     },
   },
@@ -138,7 +177,7 @@ const data = [
     category: 'marketing',
     enName: 'social-marketing',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(3).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(22).svg',
     content: {
       heroSection: {
         title: 'بازاریابی اجتماعی حرفه‌ای',
@@ -199,7 +238,7 @@ const data = [
     category: 'sales',
     enName: 'CRM',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(4).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(21).svg',
     content: {
       heroSection: {
         title: 'مدیریت ارتباط با مشتری',
@@ -317,140 +356,140 @@ const data = [
     category: 'creative',
     enName: 'studio',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(5).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(20).svg',
   },
   {
     name: 'اشتراکات',
     category: 'finance',
     enName: 'subscription',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(6).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(19).svg',
   },
   {
     name: 'اجاره',
     category: 'finance',
     enName: 'rental',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(7).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(18).svg',
   },
   {
     name: 'فروشگاه',
     category: 'sales',
     enName: 'point-of-sale',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(8).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(17).svg',
   },
   {
     name: 'بحث و گفتگو',
     category: 'communication',
     enName: 'discuss',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(9).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(16).svg',
   },
   {
     name: 'اسناد',
     category: 'productivity',
     enName: 'documents',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(10).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(15).svg',
   },
   {
     name: 'پروژه',
     category: 'productivity',
     enName: 'project',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(11).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(14).svg',
   },
   {
     name: 'حضور و غیاب',
     category: 'hr',
     enName: 'timesheets',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(12).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(13).svg',
   },
   {
     name: 'خدمات میدانی',
     category: 'operations',
     enName: 'field-service',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(13).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(12).svg',
   },
   {
     name: 'برنامه‌ریزی',
     category: 'productivity',
     enName: 'planning',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(14).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(11).svg',
   },
   {
     name: 'پشتیبانی',
     category: 'support',
     enName: 'helpdesk',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(15).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(10).svg',
   },
   {
     name: 'وب‌سایت',
     category: 'creative',
     enName: 'website',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(16).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(9).svg',
   },
   {
     name: 'بازاریابی اجتماعی',
     category: 'marketing',
     enName: 'social-marketing',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(17).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(8).svg',
   },
   {
     name: 'ایمیل مارکتینگ',
     category: 'marketing',
     enName: 'email-marketing',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(18).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(7).svg',
   },
   {
     name: 'خرید',
     category: 'operations',
     enName: 'purchase',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(19).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(6).svg',
   },
   {
     name: 'موجودی انبار',
     category: 'operations',
     enName: 'inventory',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(20).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(5).svg',
   },
   {
     name: 'تولید',
     category: 'operations',
     enName: 'manufacturing',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(21).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(4).svg',
   },
   {
     name: 'فروش',
     category: 'sales',
     enName: 'sales',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(22).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(3).svg',
   },
   {
     name: 'منابع انسانی',
     category: 'hr',
     enName: 'hr',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(23).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(1).svg',
   },
   {
     name: 'داشبورد',
     category: 'analytics',
     enName: 'dashboard',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(24).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(2).svg',
   },
 ]
 export async function GET() {
