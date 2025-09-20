@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Vazirmatn } from 'next/font/google'
 import { AppProvider } from './contexts/AppContext'
-import Navigation from '@/components/Navigation'
 import './globals.css'
 
 const geistSans = Geist({
@@ -52,8 +51,6 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {' '}
-            <Navigation menuItems={menuItems} />
             {children}
             <footer className='border-t border-border'>
               <div className='max-w-6xl mx-auto px-6 pb-16'>
