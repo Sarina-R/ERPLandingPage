@@ -69,7 +69,7 @@ export default function InteractiveElements({
   }
 
   return (
-    <section className='border-y'>
+    <section id='dashboard' className='border-y'>
       <div
         className='relative overflow-hidden'
         onMouseEnter={() => setIsHovered(true)}

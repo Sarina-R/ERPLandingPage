@@ -12,7 +12,7 @@ interface FeatureShowcaseProps {
 
 export default function FeatureShowcase({ features }: FeatureShowcaseProps) {
   return (
-    <section className='border-b'>
+    <section id='features' className='border-b'>
       <div className='max-w-7xl mx-auto'>
         <div className='text-center mb-16 py-16 border-b'>
           <h2 className='text-2xl md:text-3xl font-bold mb-4'>

@@ -6,7 +6,6 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   const menuItems = [
-    { label: 'ماژول‌ها', href: '#modules' },
     { label: 'داشبورد', href: '#dashboard' },
     { label: 'ویژگی‌ها', href: '#features' },
     { label: 'سایر برنامه‌ها', href: '#other-apps' },

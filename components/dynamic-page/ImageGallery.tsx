@@ -25,7 +25,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
   const limitedImages = isLarge ? images.slice(0, 3) : images.slice(0, 4)
 
   return (
-    <section className='px-10 md:px-18'>
+    <section id='gallery' className='px-10 md:px-18'>
       <div className='border-x px-4 mx-auto py-20'>
         <div className='text-center mb-16'>
           <h2 className='text-2xl md:text-3xl font-bold mb-4'>گالری تصاویر</h2>
