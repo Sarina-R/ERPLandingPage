@@ -1,12 +1,10 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme-provider'
-import { Button } from '@/components/ui/button'
-import { ThemeToggle } from '@/components/theme-toggle'
-import './globals.css'
-import Image from 'next/image'
 import { Vazirmatn } from 'next/font/google'
 import { AppProvider } from './contexts/AppContext'
+import Navigation from '@/components/Navigation'
+import './globals.css'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -36,6 +34,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const menuItems = [
+    { label: 'ماژول‌ها', href: '#modules' },
+    { label: 'قیمت‌ها', href: '#pricing' },
+    { label: 'داشبورد', href: '#dashboard' },
+    { label: 'از اینجا شروع کنید', href: '#cta' },
+  ]
   return (
     <html lang='fa' dir='rtl' suppressHydrationWarning>
       <body
@@ -48,62 +52,9 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {/* Navigation */}
-            <nav className='border-b border-border backdrop-blur-sm sticky top-0 z-50 bg-background/80'>
-              <div className='max-w-6xl mx-auto px-6 py-4'>
-                <div className='flex items-center justify-between'>
-                  <div className='flex items-center gap-3'>
-                    <div className='w-8 h-8 flex items-center justify-center'>
-                      <Image
-                        src='https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/logo/avis-mono-dark.png'
-                        alt='logo'
-                        width={30}
-                        height={30}
-                        className='object-contain invert dark:invert-0'
-                      />
-                    </div>
-                    <span className='text-xl font-bold'>آویس</span>
-                  </div>
-                  <div className='hidden md:flex items-center gap-8'>
-                    <a
-                      href='#modules'
-                      className='text-muted-foreground hover:text-foreground transition-colors text-sm font-medium'
-                    >
-                      ماژول‌ها
-                    </a>
-                    <a
-                      href='#pricing'
-                      className='text-muted-foreground hover:text-foreground transition-colors text-sm font-medium'
-                    >
-                      قیمت‌ها
-                    </a>
-                    <a
-                      href='#dashboard'
-                      className='text-muted-foreground hover:text-foreground transition-colors text-sm font-medium'
-                    >
-                      داشبورد
-                    </a>
-                    <a
-                      href='#cta'
-                      className='text-muted-foreground hover:text-foreground transition-colors text-sm font-medium'
-                    >
-                      از اینجا شروع کنید
-                    </a>
-                  </div>
-                  <div className='flex items-center gap-2'>
-                    <ThemeToggle />
-                    <Button
-                      size='sm'
-                      className='bg-primary text-primary-foreground hover:bg-primary/90'
-                    >
-                      شروع پروژه
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </nav>
+            {' '}
+            <Navigation menuItems={menuItems} />
             {children}
-
             <footer className='border-t border-border'>
               <div className='max-w-6xl mx-auto px-6 pb-16'>
                 <div className='pt-8 flex flex-col md:flex-row justify-between items-center gap-6'>
