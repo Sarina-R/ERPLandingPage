@@ -1,18 +1,9 @@
-// components/OtherApps.tsx
 'use client'
 
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { AppContent, useAppContext } from '@/app/contexts/AppContext'
-
-interface AppData {
-  name: string
-  category: string
-  enName: string
-  imageSrc?: string
-  content: AppContent
-}
+import { useAppContext } from '@/app/contexts/AppContext'
 
 interface OtherAppsProps {
   currentApp: string
@@ -54,7 +45,7 @@ const OtherApps: React.FC<OtherAppsProps> = ({ currentApp }) => {
         {otherApps.map((app) => (
           <Link
             key={app.enName}
-            href={`/apps/${app.enName}`}
+            href={`${app.enName}`}
             className='flex items-center gap-4 p-6 border'
           >
             <div className='flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-900'>
