@@ -343,6 +343,71 @@ const data = [
     enName: 'studio',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(20).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/studio/hero_image.webp',
+      heroSection: {
+        title: 'اپلیکیشن خودتو با آویس بساز!',
+        desc: 'بدون نیاز به حتی یه خط کد! فقط بکش و رها کن، همه‌چی رو به سلیقه خودت درست کن. ساده، سریع و دقیقا همون چیزی که می‌خوای!',
+        ctaText: 'همین حالا شروع کن',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/studio/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'اپ جدیدت رو بدون دردسر بساز!',
+          desc: 'فقط ویژگی‌هایی که لازم داری رو انتخاب کن، بقیه‌ش رو آویس برات انجام می‌ده.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/studio/your_new_app_not_from_scratch.webp',
+        },
+        {
+          title: 'دیگه خبری از قالب‌های خشک و یه‌جور نیست!',
+          desc: 'کافیه با کشیدن و رها کردن، فیلدهای جدید اضافه کنی و صفحه‌هاتو شخصی‌سازی کنی: برچسب، نوع، ظاهر، قابلیت‌ها و کلی چیز دیگه. همه‌چیز دست خودته!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/studio/no_more_one_size_fits_all.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'interactive-demo',
+          title: 'مدارکت، دقیقاً همون‌جوری کن که می‌خوای!',
+          desc: 'از ظاهر گرفته تا محتوا رو خودت تنظیم کن. فاکتوراتو دقیق کن، گزارش‌هاتو تغییر بده یا حتی از صفر سندای جدید بساز.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/studio/make_your_documents_1.webp',
+          action: {
+            label: 'امتحانش کن',
+            url: '/demo/avis-studio',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'بذار آویس استودیو به جاش کار کنه!',
+          desc: 'شرط‌ها و کارهای خودکار تعریف کن تا هر تغییر توی رکوردها به صورت خودکار انجام بشه.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/studio/let_odoo_studio_do_the_work.webp',
+          action: {
+            label: 'دمو رو ببین',
+            url: '/demo/avis-studio-reporting',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'بدون نیاز به کدنویسی',
+          desc: 'بدون حتی یه خط کد! ساخت اپلیکیشن هیچ‌وقت انقدر ساده و سریع نبوده.',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20155356.png',
+          action: {
+            label: 'شروع کن',
+            url: '/demo/avis-studio-nocode',
+          },
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/studio/make_your_documents_1.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/studio/let_odoo_studio_do_the_work.webp',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20155356.png',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/studio/hero_image.webp',
+      ],
+    },
   },
   {
     name: 'اشتراکات',
