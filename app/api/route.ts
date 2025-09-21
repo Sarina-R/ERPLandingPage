@@ -415,6 +415,77 @@ const data = [
     enName: 'subscription',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(19).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/subscription/hero-image.webp',
+      heroSection: {
+        title: 'اپلیکیشن خودتو با آویس بساز!',
+        desc: 'بدون نیاز به حتی یه خط کد! فقط بکش و رها کن، همه‌چی رو به سلیقه خودت درست کن. ساده، سریع و دقیقا همون چیزی که می‌خوای!',
+        ctaText: 'همین حالا شروع کن',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/studio/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'عملکرد فروشتو ببر بالا!',
+          desc: 'به هرکسی توی تیم فروش کمک کن توانایی‌هاشو شکوفا کنه؛ با تحلیل عملکرد تک‌تک اعضا.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/2016/subscriptions/subscriptions_screenshot_06.gif',
+        },
+        {
+          title: 'تحلیل درآمداتو همیشه دم‌دست داشته باش!',
+          desc: 'از داشبورد پر از جزئیات با شاخصایی مثل MRR و LTV سر دربیار. فقط کافیه روی ردیف‌های فاکتور کلیک کنی تا ریز آمارو ببینی!',
+          image:
+            'https://odoocdn.com/web/image/11191450/Subscriptions-Analytics.png',
+        },
+        {
+          title: 'آینده کسب‌وکارتو پیش‌بینی کن!',
+          desc: 'توی چند ثانیه پیش‌بینی بساز، رشدتو بشناس و کمک کن شرکتت به اهدافش برسه. با آمار درست می‌تونی ببینی کارای الان چه نتیجه‌ای دارن.',
+          image:
+            'https://odoocdn.com/web/image/11191421/Subscriptions-Retention-Analysis.png',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'interactive-demo',
+          title: 'دیگه لازم نیست مشتریا برای هر کاری لاگین کنن!',
+          desc: 'ثبت‌نام ساده‌س، راحت وارد می‌شن و فروش‌هاتو بیشتر می‌کنه',
+          image:
+            'https://odoocdn.com/web/image/11147961/Subscriptions-Monthly.png',
+          action: {
+            label: 'امتحانش کن',
+            url: '/demo/avis-studio',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'مشتریات یه پرتال ساده و کاربرپسند بده!',
+          desc: 'همه اطلاعات و قراردادهاشون جلو چشماشونه، بی‌دردسر و سریع.',
+          image:
+            'https://odoocdn.com/web/image/11191501/Subscription-Portal.png',
+          action: {
+            label: 'دمو رو ببین',
+            url: '/demo/avis-studio-reporting',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'پرداخت‌ها رو خودکار کن و وقتتو ذخیره کن!',
+          desc: 'صورتحسابا خودشون صادر می‌شن و مدیریت همه‌چی راحت‌تر می‌شه.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/2016/subscriptions/subscriptions_screenshot_04.gif',
+          action: {
+            label: 'شروع کن',
+            url: '/demo/avis-studio-nocode',
+          },
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/web/image/11126708/Subscriptions-Template.png',
+        // 'https://odoocdn.com/openerp_website/static/src/img/apps/studio/let_odoo_studio_do_the_work.webp',
+        // 'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20155356.png',
+        // 'https://odoocdn.com/openerp_website/static/src/img/apps/studio/hero_image.webp',
+      ],
+    },
   },
   {
     name: 'اجاره',
