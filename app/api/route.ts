@@ -173,64 +173,91 @@ const data = [
     },
   },
   {
-    name: 'بازاریابی اجتماعی',
+    name: 'امضا',
     category: 'marketing',
-    enName: 'social-marketing',
+    enName: 'sign',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(22).svg',
     content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/sign/hero_image.webp',
       heroSection: {
-        title: 'بازاریابی اجتماعی حرفه‌ای',
-        desc: 'کمپین‌های بازاریابی قدرتمند در شبکه‌های اجتماعی ایجاد کنید. محتوا را برنامه‌ریزی کرده، عملکرد را تجزیه و تحلیل کنید و فروش را افزایش دهید.',
-        ctaText: 'شروع کمپین',
-        image: '/images/social-marketing-hero.webp',
+        title: 'امضای اسناد با آویس، به همین سادگی!',
+        desc: 'با آویس ساین، اسنادت رو به‌راحتی آنلاین بفرست، امضا کن و تأیید بگیر. یه راه ساده و سریع برای همه کارهای کسب‌وکارت!',
+        ctaText: 'همین حالا شروع کن',
+        image: '/images/avis-sign-hero.webp',
       },
       featureShowcase: [
         {
-          title: 'برنامه‌ریزی محتوا',
-          desc: 'پست‌های خود را از قبل برنامه‌ریزی کرده و در زمان مناسب منتشر کنید',
-          image: '/images/social-scheduling.webp',
+          title: 'خودکارش کن، امضا بزن',
+          desc: 'فیلدهای اماده یا قابل ویرایش رو فقط drag-and-drop کن. کارای تکراری رو با قالب‌های آماده خودکار کن. یه بار سندت رو بنویس و خیلی پربازده‌تر کار کن',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/simplify_automate_sign.webp',
         },
         {
-          title: 'آنالیز عملکرد',
-          desc: 'عملکرد کمپین‌های خود را با گزارش‌های تفصیلی پیگیری کنید',
-          image: '/images/social-analytics.webp',
+          title: 'هرجا، هر وقت',
+          desc: 'فیلدهای اماده یا قابل ویرایش رو فقط بکش و رها کن. کارای تکراری رو با قالب‌های آماده خودکار کن. یه بار سندت رو بنویس و خیلی پربازده‌تر کار کن!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/sign_online.webp',
         },
         {
-          title: 'مدیریت چند پلتفرم',
-          desc: 'تمام شبکه‌های اجتماعی خود را از یک مکان مدیریت کنید',
-          image: '/images/social-multiplatform.webp',
+          title: 'فرآیند امضات دست خودته!',
+          desc: 'وضعیت سند رو لحظه‌ای ببین، درخواست امضا و یادآوری‌ها رو سریع بفرست و همیشه از پیشرفت قرارداد‌هات باخبر باش.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/control.webp',
         },
       ],
       interactiveElements: [
         {
-          type: 'content-planner',
-          title: 'برنامه‌ریز محتوا',
-          desc: 'محتوای یک ماه آینده خود را برنامه‌ریزی کنید',
+          type: 'interactive-demo',
+          title: 'امضای الکترونیکی',
+          desc: 'با امضا کردن آنلاین PDFها هم تو زمان صرفه جویی میکنی، هم تو پول و هم درخت‌ها رو نجات میدی!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+          action: {
+            label: 'بزن بریم',
+            url: '/demo/avis-sign',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'کاملا قانونی',
+          desc: 'مطابق با eIDAS (برای همه کشورهای اروپایی)، قانون ESIGN ایالات متحده (ایالات متحده)، ITA و ICA (هند) و همچنین!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+          action: {
+            label: 'بزن بریم',
+            url: '/demo/avis-sign',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'ریمایندر برای اعضا',
+          desc: 'میتونی برای اعضات یه ریمایندر اتوماتیک درست کنی تا یادشون بمونه امضا کنن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
+          action: {
+            label: 'یه دمو ببین',
+            url: '/demo/avis-sign-tracking',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'ترتیب امضا رو خودت بچین',
+          desc: 'با آویس مشخص کن کی باید امضا کنه تا همه‌چیز منظم پیش بره و هرکس به موقع باخبر بشه.',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20180948.png',
+          action: {
+            label: 'امتحانش کن',
+            url: '/demo/avis-sign-order',
+          },
         },
       ],
       imageGallery: [
-        '/images/social-gallery-1.webp',
-        '/images/social-gallery-2.webp',
-        '/images/social-gallery-3.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/simplify_automate_sign.webp',
       ],
-      testimonials: [
-        {
-          name: 'حسین کریمی',
-          position: 'مدیر بازاریابی',
-          company: 'استارتاپ تک',
-          content:
-            'با این ابزار، تعامل مشتریان ما در شبکه‌های اجتماعی ۳۰۰ درصد افزایش یافت',
-          avatar: '/images/testimonial-3.webp',
-          companyLogo: '/images/company-3.webp',
-        },
-      ],
-      cta: {
-        title: 'کمپین بعدی خود را شروع کنید',
-        desc: 'با ابزارهای حرفه‌ای بازاریابی اجتماعی، برند خود را به سطح بعدی برسانید',
-        primaryButton: 'شروع کمپین',
-        secondaryButton: 'مشاهده نمونه کار',
-      },
     },
   },
   {
@@ -293,64 +320,6 @@ const data = [
       },
     },
   },
-  // {
-  //   name: 'ایمیل مارکتینگ',
-  //   category: 'marketing',
-  //   enName: 'email-marketing',
-  //   content: {
-  //     heroSection: {
-  //       title: 'ایمیل مارکتینگ هوشمند',
-  //       desc: 'کمپین‌های ایمیلی موثر طراحی کنید. با قالب‌های آماده و ابزارهای اتوماسیون، مشتریان را درگیر کرده و فروش را افزایش دهید.',
-  //       ctaText: 'شروع کمپین',
-  //       image: '/images/email-marketing-hero.webp',
-  //     },
-  //     featureShowcase: [
-  //       {
-  //         title: 'طراحی ایمیل',
-  //         desc: 'با ویرایشگر drag & drop، ایمیل‌های زیبا و جذاب طراحی کنید',
-  //         image: '/images/email-design.webp',
-  //       },
-  //       {
-  //         title: 'اتوماسیون',
-  //         desc: 'سیناریوهای خودکار برای ارسال ایمیل‌ها بر اساس رفتار مشتریان',
-  //         image: '/images/email-automation.webp',
-  //       },
-  //       {
-  //         title: 'آنالیز عملکرد',
-  //         desc: 'نرخ باز شدن، کلیک و تبدیل ایمیل‌های خود را پیگیری کنید',
-  //         image: '/images/email-analytics.webp',
-  //       },
-  //     ],
-  //     interactiveElements: [
-  //       {
-  //         type: 'email-builder',
-  //         title: 'سازنده ایمیل',
-  //         desc: 'ایمیل خود را با ابزار طراحی تعاملی بسازید',
-  //       },
-  //     ],
-  //     imageGallery: [
-  //       '/images/email-gallery-1.webp',
-  //       '/images/email-gallery-2.webp',
-  //       '/images/email-gallery-3.webp',
-  //     ],
-  //     testimonials: [
-  //       {
-  //         name: 'امیر حسینی',
-  //         position: 'مدیر دیجیتال مارکتینگ',
-  //         company: 'فروشگاه آنلاین مهر',
-  //         content: 'نرخ باز شدن ایمیل‌های ما با این پلتفرم از ۱۵٪ به ۴۲٪ رسید',
-  //         avatar: '/images/testimonial-5.webp',
-  //         companyLogo: '/images/company-5.webp',
-  //       },
-  //     ],
-  //     cta: {
-  //       title: 'کمپین ایمیلی خود را شروع کنید',
-  //       desc: 'همین امروز اولین کمپین ایمیل مارکتینگ خود را راه‌اندازی کنید',
-  //       primaryButton: 'شروع رایگان',
-  //       secondaryButton: 'مشاهده قالب‌ها',
-  //     },
-  //   },
-  // },
   {
     name: 'استودیو',
     category: 'creative',
