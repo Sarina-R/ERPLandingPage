@@ -181,27 +181,27 @@ const data = [
     content: {
       img: 'https://odoocdn.com/openerp_website/static/src/img/apps/sign/hero_image.webp',
       heroSection: {
-        title: 'امضای اسناد با آویس، به همین سادگی!',
-        desc: 'با آویس ساین، اسنادت رو به‌راحتی آنلاین بفرست، امضا کن و تأیید بگیر. یه راه ساده و سریع برای همه کارهای کسب‌وکارت!',
+        title: 'امضای آنلاین با آویس، ساده‌تر از همیشه!',
+        desc: 'با آویس ساین، سندتو راحت آنلاین بفرست، امضا بگیر و همه‌چیز رو سریع و مطمئن پیش ببر. وقتشه کاغذ بازی رو کنار بذاری!',
         ctaText: 'همین حالا شروع کن',
         image: '/images/avis-sign-hero.webp',
       },
       featureShowcase: [
         {
-          title: 'خودکارش کن، امضا بزن',
-          desc: 'فیلدهای اماده یا قابل ویرایش رو فقط drag-and-drop کن. کارای تکراری رو با قالب‌های آماده خودکار کن. یه بار سندت رو بنویس و خیلی پربازده‌تر کار کن',
+          title: 'ساده کن، خودکارش کن، امضا بزن!',
+          desc: 'فیلدهای آماده یا قابل ویرایش رو فقط بکش و رها کن. کارای تکراری رو با قالب‌های آماده خودکار کن. یه بار سندتو درست کن و همیشه راحت‌تر کار کن.',
           image:
             'https://odoocdn.com/openerp_website/static/src/img/apps/sign/simplify_automate_sign.webp',
         },
         {
-          title: 'هرجا، هر وقت',
-          desc: 'فیلدهای اماده یا قابل ویرایش رو فقط بکش و رها کن. کارای تکراری رو با قالب‌های آماده خودکار کن. یه بار سندت رو بنویس و خیلی پربازده‌تر کار کن!',
+          title: 'امضا از هرجا، هر وقت',
+          desc: 'فرقی نداره موبایل باشه، لپ‌تاپ یا تبلت؛ مشتری‌هات راحت سند رو باز می‌کنن، بررسی می‌کنن و فقط با چند کلیک امضا می‌زنن.',
           image:
             'https://odoocdn.com/openerp_website/static/src/img/apps/sign/sign_online.webp',
         },
         {
-          title: 'فرآیند امضات دست خودته!',
-          desc: 'وضعیت سند رو لحظه‌ای ببین، درخواست امضا و یادآوری‌ها رو سریع بفرست و همیشه از پیشرفت قرارداد‌هات باخبر باش.',
+          title: 'فرآیند امضا دست خودته!',
+          desc: 'وضعیت سند رو لحظه‌ای دنبال کن، درخواست امضا و یادآوری‌ها رو سریع بفرست و همیشه از پیشرفت قرارداد‌هات باخبر باش.',
           image:
             'https://odoocdn.com/openerp_website/static/src/img/apps/sign/control.webp',
         },
@@ -209,8 +209,19 @@ const data = [
       interactiveElements: [
         {
           type: 'interactive-demo',
-          title: 'امضای الکترونیکی',
-          desc: 'با امضا کردن آنلاین PDFها هم تو زمان صرفه جویی میکنی، هم تو پول و هم درخت‌ها رو نجات میدی!',
+          title: 'امضای الکترونیکی راحت',
+          desc: 'PDFها رو آنلاین امضا کن؛ هم تو زمان صرفه‌جویی میشه، هم تو هزینه و هم به طبیعت کمک می‌کنیم!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+          action: {
+            label: 'امتحانش کن',
+            url: '/demo/avis-sign',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'قانونی و معتبر',
+          desc: 'امضاهای آویس با استانداردهای جهانی مثل eIDAS اروپا، ESIGN آمریکا و قوانین هند هماهنگه. پس خیالت راحت!',
           image:
             'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
           action: {
@@ -220,19 +231,8 @@ const data = [
         },
         {
           type: 'interactive-demo',
-          title: 'کاملا قانونی',
-          desc: 'مطابق با eIDAS (برای همه کشورهای اروپایی)، قانون ESIGN ایالات متحده (ایالات متحده)، ITA و ICA (هند) و همچنین!',
-          image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
-          action: {
-            label: 'بزن بریم',
-            url: '/demo/avis-sign',
-          },
-        },
-        {
-          type: 'interactive-demo',
-          title: 'ریمایندر برای اعضا',
-          desc: 'میتونی برای اعضات یه ریمایندر اتوماتیک درست کنی تا یادشون بمونه امضا کنن.',
+          title: 'یادآوری خودکار برای اعضا',
+          desc: 'دیگه کسی امضا کردن یادش نمی‌ره! یه ریمایندر اتوماتیک بساز تا همه به موقع سند رو امضا کنن.',
           image:
             'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
           action: {
@@ -242,8 +242,8 @@ const data = [
         },
         {
           type: 'interactive-demo',
-          title: 'ترتیب امضا رو خودت بچین',
-          desc: 'با آویس مشخص کن کی باید امضا کنه تا همه‌چیز منظم پیش بره و هرکس به موقع باخبر بشه.',
+          title: 'ترتیب امضا دست خودته',
+          desc: 'خودت مشخص کن چه کسی اول یا بعدی امضا کنه تا همه‌چیز منظم و به‌موقع پیش بره.',
           image:
             'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20180948.png',
           action: {
@@ -267,57 +267,85 @@ const data = [
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(21).svg',
     content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/sign/hero_image.webp',
       heroSection: {
-        title: 'مدیریت ارتباط با مشتری',
-        desc: 'روابط خود با مشتریان را به شکل حرفه‌ای مدیریت کنید. از مرحله اولیه آشنایی تا فروش نهایی، همه فرآیند را کنترل کنید.',
-        ctaText: 'شروع فروش',
-        image: '/images/crm-hero.webp',
+        title: 'امضای آنلاین با آویس، ساده‌تر از همیشه!',
+        desc: 'با آویس ساین، سندتو راحت آنلاین بفرست، امضا بگیر و همه‌چیز رو سریع و مطمئن پیش ببر. وقتشه کاغذ بازی رو کنار بذاری!',
+        ctaText: 'همین حالا شروع کن',
+        image: '/images/avis-sign-hero.webp',
       },
       featureShowcase: [
         {
-          title: 'پیگیری مشتریان',
-          desc: 'تمام اطلاعات مشتریان و تاریخچه تعاملات را در یک مکان نگهداری کنید',
-          image: '/images/crm-tracking.webp',
+          title: 'ساده کن، خودکارش کن، امضا بزن!',
+          desc: 'فیلدهای آماده یا قابل ویرایش رو فقط بکش و رها کن. کارای تکراری رو با قالب‌های آماده خودکار کن. یه بار سندتو درست کن و همیشه راحت‌تر کار کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/simplify_automate_sign.webp',
         },
         {
-          title: 'مدیریت فرصت‌های فروش',
-          desc: 'فرصت‌های فروش را شناسایی و پیگیری کرده تا به فروش تبدیل کنید',
-          image: '/images/crm-opportunities.webp',
+          title: 'امضا از هرجا، هر وقت',
+          desc: 'فرقی نداره موبایل باشه، لپ‌تاپ یا تبلت؛ مشتری‌هات راحت سند رو باز می‌کنن، بررسی می‌کنن و فقط با چند کلیک امضا می‌زنن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/sign_online.webp',
         },
         {
-          title: 'گزارش‌گیری فروش',
-          desc: 'عملکرد فروش خود را با داشبوردهای تعاملی تجزیه و تحلیل کنید',
-          image: '/images/crm-reports.webp',
+          title: 'فرآیند امضا دست خودته!',
+          desc: 'وضعیت سند رو لحظه‌ای دنبال کن، درخواست امضا و یادآوری‌ها رو سریع بفرست و همیشه از پیشرفت قرارداد‌هات باخبر باش.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/control.webp',
         },
       ],
       interactiveElements: [
         {
-          type: 'sales-pipeline',
-          title: 'مسیر فروش',
-          desc: 'مراحل فروش خود را بصورت تعاملی مدیریت کنید',
+          type: 'interactive-demo',
+          title: 'امضای الکترونیکی راحت',
+          desc: 'PDFها رو آنلاین امضا کن؛ هم تو زمان صرفه‌جویی میشه، هم تو هزینه و هم به طبیعت کمک می‌کنیم!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+          action: {
+            label: 'امتحانش کن',
+            url: '/demo/avis-sign',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'قانونی و معتبر',
+          desc: 'امضاهای آویس با استانداردهای جهانی مثل eIDAS اروپا، ESIGN آمریکا و قوانین هند هماهنگه. پس خیالت راحت!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+          action: {
+            label: 'بزن بریم',
+            url: '/demo/avis-sign',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'یادآوری خودکار برای اعضا',
+          desc: 'دیگه کسی امضا کردن یادش نمی‌ره! یه ریمایندر اتوماتیک بساز تا همه به موقع سند رو امضا کنن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
+          action: {
+            label: 'یه دمو ببین',
+            url: '/demo/avis-sign-tracking',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'ترتیب امضا دست خودته',
+          desc: 'خودت مشخص کن چه کسی اول یا بعدی امضا کنه تا همه‌چیز منظم و به‌موقع پیش بره.',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20180948.png',
+          action: {
+            label: 'امتحانش کن',
+            url: '/demo/avis-sign-order',
+          },
         },
       ],
       imageGallery: [
-        '/images/crm-gallery-1.webp',
-        '/images/crm-gallery-2.webp',
-        '/images/crm-gallery-3.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/simplify_automate_sign.webp',
       ],
-      testimonials: [
-        {
-          name: 'سارا موسوی',
-          position: 'مدیر فروش',
-          company: 'شرکت پیشران',
-          content: 'نرخ تبدیل فرصت‌های فروش ما با این سیستم ۴۵ درصد بهبود یافت',
-          avatar: '/images/testimonial-4.webp',
-          companyLogo: '/images/company-4.webp',
-        },
-      ],
-      cta: {
-        title: 'فروش خود را افزایش دهید',
-        desc: 'با ابزارهای CRM حرفه‌ای، مشتریان بیشتری جذب کنید',
-        primaryButton: 'شروع رایگان',
-        secondaryButton: 'درخواست مشاوره',
-      },
     },
   },
   {
