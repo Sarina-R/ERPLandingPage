@@ -267,84 +267,73 @@ const data = [
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(21).svg',
     content: {
-      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/sign/hero_image.webp',
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/crm/hero_image.webp',
       heroSection: {
-        title: 'امضای آنلاین با آویس، ساده‌تر از همیشه!',
-        desc: 'با آویس ساین، سندتو راحت آنلاین بفرست، امضا بگیر و همه‌چیز رو سریع و مطمئن پیش ببر. وقتشه کاغذ بازی رو کنار بذاری!',
-        ctaText: 'همین حالا شروع کن',
-        image: '/images/avis-sign-hero.webp',
+        title: 'ابزار مدیریت مشتری‌ها که واقعاً کسب‌وکارت رو جلو می‌بره',
+        desc: 'با CRM آویس، سرنخ‌ها رو پیگیری کن، پیش‌بینی‌های دقیق داشته باش و روی اون چیزی تمرکز کن که واقعاً مهمه: بستن فرصت‌ها و رشد فروش.',
+        ctaText: 'بزن بریم — رایگان امتحان کن',
+        image: '/images/avis-crm-hero.webp',
       },
       featureShowcase: [
         {
-          title: 'ساده کن، خودکارش کن، امضا بزن!',
-          desc: 'فیلدهای آماده یا قابل ویرایش رو فقط بکش و رها کن. کارای تکراری رو با قالب‌های آماده خودکار کن. یه بار سندتو درست کن و همیشه راحت‌تر کار کن.',
+          title: 'چشم‌انداز فوری از فرصت‌ها',
+          desc: 'هر فرصت مثل یه کارت نمایش داده میشه با همه‌ی اطلاعات ضروری؛ مراحل مختلف کار بهت نشون داده میشه تا بدونی درآمدها در کدوم مرحله‌ان.',
           image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/simplify_automate_sign.webp',
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20135745.png',
         },
         {
-          title: 'امضا از هرجا، هر وقت',
-          desc: 'فرقی نداره موبایل باشه، لپ‌تاپ یا تبلت؛ مشتری‌هات راحت سند رو باز می‌کنن، بررسی می‌کنن و فقط با چند کلیک امضا می‌زنن.',
+          title: 'سازماندهی کارآمد با دید کانبان',
+          desc: 'فرصت‌ها رو بر اساس مرحله‌شون دسته‌بندی کن، با کشیدن و رها کردن پیشرفتِ کارها رو راحت مدیریت کن.',
           image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/sign_online.webp',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/crm/effortless_communication.webp',
         },
         {
-          title: 'فرآیند امضا دست خودته!',
-          desc: 'وضعیت سند رو لحظه‌ای دنبال کن، درخواست امضا و یادآوری‌ها رو سریع بفرست و همیشه از پیشرفت قرارداد‌هات باخبر باش.',
+          title: 'ارتباطات بی دردسر',
+          desc: 'ایمیل‌ها، تماس‌ها، جلسات همه در یکجا؛ همیشه با مشتری در تماس باش و هیچ چیزی گم نشه.',
           image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/control.webp',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/crm/quotation.webp',
         },
       ],
       interactiveElements: [
         {
           type: 'interactive-demo',
-          title: 'امضای الکترونیکی راحت',
-          desc: 'PDFها رو آنلاین امضا کن؛ هم تو زمان صرفه‌جویی میشه، هم تو هزینه و هم به طبیعت کمک می‌کنیم!',
+          title: 'اتوماسیون کامل',
+          desc: 'سرنخ‌ها رو خودکار ایجاد کن، تیم رو خودش اختصاص بده و فعالیت‌ها رو برنامه ریزی کن؛ وقتتو روی چیزای مهم‌تر بذار.',
           image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20141626.png',
           action: {
             label: 'امتحانش کن',
-            url: '/demo/avis-sign',
+            url: '/demo/avis-crm',
           },
         },
         {
           type: 'interactive-demo',
-          title: 'قانونی و معتبر',
-          desc: 'امضاهای آویس با استانداردهای جهانی مثل eIDAS اروپا، ESIGN آمریکا و قوانین هند هماهنگه. پس خیالت راحت!',
+          title: 'امتیازدهی هوشمند به سرنخ‌ها',
+          desc: 'سرنخ زیاد داری؟ ما با هوش مصنوعی به کارت میاییم — اولویت‌ها معلوم تا تو بتونی روی مهم‌ترین‌شون وقت بذاری.',
           image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
-          action: {
-            label: 'بزن بریم',
-            url: '/demo/avis-sign',
-          },
-        },
-        {
-          type: 'interactive-demo',
-          title: 'یادآوری خودکار برای اعضا',
-          desc: 'دیگه کسی امضا کردن یادش نمی‌ره! یه ریمایندر اتوماتیک بساز تا همه به موقع سند رو امضا کنن.',
-          image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20141545.png',
           action: {
             label: 'یه دمو ببین',
-            url: '/demo/avis-sign-tracking',
+            url: '/demo/avis-crm-lead-scoring',
           },
         },
         {
           type: 'interactive-demo',
-          title: 'ترتیب امضا دست خودته',
-          desc: 'خودت مشخص کن چه کسی اول یا بعدی امضا کنه تا همه‌چیز منظم و به‌موقع پیش بره.',
+          title: 'گزارش‌گیری و داشبوردها',
+          desc: 'داده‌ها رو لحظه‌ای ببین، پیش‌بینی کن، گزارش‌ها رو بررسی کن و روند تیم و فروش رو رصد کن.',
           image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20180948.png',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/crm/reporting.webp',
           action: {
-            label: 'امتحانش کن',
-            url: '/demo/avis-sign-order',
+            label: 'شروع کن',
+            url: '/demo/avis-crm-reporting',
           },
         },
       ],
       imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/simplify_automate_sign.webp',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20141626.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20141545.png',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/crm/effortless_communication.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/crm/reporting.webp',
       ],
     },
   },
