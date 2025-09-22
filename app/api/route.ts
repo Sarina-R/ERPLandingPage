@@ -88,28 +88,28 @@ const data = [
       },
       featureShowcase: [
         {
-          title: 'سرعت بی‌نظیر',
-          desc: 'عملیات حسابداری در کمتر از 90 میلی‌ثانیه پردازش می‌شود، سریع‌تر از یک چشم به هم زدن!',
-          image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20180948.png',
-        },
-        {
           title: 'بدون نیاز به ورود داده',
           desc: 'با هوش مصنوعی پیشرفته، 98% داده‌های فاکتور به صورت خودکار شناسایی می‌شوند.',
           image:
             'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-vendor-bill.webp',
         },
         {
-          title: 'تجربه موبایلی',
-          desc: 'هزینه‌ها را با موبایل ثبت کنید و هوش مصنوعی بقیه کار را انجام دهد.',
+          title: 'تجربه گزارش‌گیری لحظه‌ای',
+          desc: 'گزارش‌های مالی تعاملی و دقیق را در لحظه مشاهده کنید و تصمیم‌گیری‌های هوشمندانه‌تری داشته باشید.',
           image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-mobile-01.webp',
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20175612.png',
         },
         {
-          title: 'تطبیق بانکی هوشمند',
-          desc: 'اتصال به 28,000 بانک در سراسر جهان و تطبیق 95% تراکنش‌ها به صورت خودکار.',
+          title: 'مدیریت جریان نقدی',
+          desc: 'جریان نقدی ورودی و خروجی را به صورت بلادرنگ رصد کنید و مدیریت مالی خود را بهبود دهید.',
           image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-mobile-02.webp',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-vendor-bill.webp',
+        },
+        {
+          title: 'سرعت بی‌نظیر',
+          desc: 'عملیات حسابداری در کمتر از 90 میلی‌ثانیه پردازش می‌شود، سریع‌تر از یک چشم به هم زدن!',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20180948.png',
         },
       ],
       interactiveElements: [
@@ -126,24 +126,25 @@ const data = [
         },
         {
           type: 'interactive-demo',
-          title: 'تجربه گزارش‌گیری لحظه‌ای',
-          desc: 'گزارش‌های مالی تعاملی و دقیق را در لحظه مشاهده کنید و تصمیم‌گیری‌های هوشمندانه‌تری داشته باشید.',
+          title: 'تجربه موبایلی',
+          desc: 'هزینه‌ها را با موبایل ثبت کنید و هوش مصنوعی بقیه کار را انجام دهد.',
           image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20175612.png',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-mobile-01.webp',
           action: {
-            label: 'مشاهده دمو',
-            url: '/demo/reporting',
+            label: 'امتحان کنید',
+            url: '/demo/invoicing',
           },
         },
         {
           type: 'interactive-demo',
-          title: 'مدیریت جریان نقدی',
-          desc: 'جریان نقدی ورودی و خروجی را به صورت بلادرنگ رصد کنید و مدیریت مالی خود را بهبود دهید.',
+
+          title: 'تطبیق بانکی هوشمند',
+          desc: 'اتصال به 28,000 بانک در سراسر جهان و تطبیق 95% تراکنش‌ها به صورت خودکار.',
           image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-vendor-bill.webp',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-mobile-02.webp',
           action: {
-            label: 'شروع دمو',
-            url: '/demo/cashflow',
+            label: 'امتحان کنید',
+            url: '/demo/invoicing',
           },
         },
       ],
