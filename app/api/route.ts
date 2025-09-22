@@ -418,8 +418,8 @@ const data = [
     content: {
       img: 'https://odoocdn.com/openerp_website/static/src/img/apps/subscription/hero-image.webp',
       heroSection: {
-        title: 'اپلیکیشن خودتو با آویس بساز!',
-        desc: 'بدون نیاز به حتی یه خط کد! فقط بکش و رها کن، همه‌چی رو به سلیقه خودت درست کن. ساده، سریع و دقیقا همون چیزی که می‌خوای!',
+        title: 'مدیریت مشتری‌ها!',
+        desc: ' مدیریت مشتری و صورتحساب دوره‌ای، به ساده‌ترین شکل ممکن! با چند تا قابلیت ساده می‌تونی اشتراک‌ها رو اتوماتیک مدیریت کنی. دیگه وقتتو بذار روی سرویس و رابطه با مشتری، چون بقیه کارها مثل قرارداد، فاکتور خودکار، مالیات و پرداختا رو آویس خودش اوکی می‌کنه',
         ctaText: 'همین حالا شروع کن',
         image:
           'https://odoocdn.com/openerp_website/static/src/img/apps/studio/hero_image.webp',
@@ -493,6 +493,70 @@ const data = [
     enName: 'rental',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(18).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/rental/hero_image.webp',
+      heroSection: {
+        title: 'یه راه‌حل بلندمدت برای قراردادای کوتاه‌مدت!',
+        desc: 'اپلیکیشن اجاره آویس کل پروسه اجاره رو واست آسون کرده. محصولاتو مدیریت کن، زمان تحویل رو مشخص کن و قراردادارو همه از یه جا ببند',
+        ctaText: 'همین حالا شروع کن',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/studio/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'یه راه‌حل بلندمدت برای قراردادای کوتاه‌مدت!',
+          desc: 'به اپلیکیشن اجاره آویس کل پروسه اجاره رو واست آسون کرده. محصولاتو مدیریت کن، زمان تحویل رو مشخص کن و قراردادارو همه از یه جا ببند.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental_product.webp',
+        },
+        {
+          title: 'تو وقت صرفه‌جویی کن، آنلاین اجاره بده!',
+          desc: 'رزرو و اجاره آنلاین هیچ‌وقت به این راحتی نبوده! مشتری‌ها می‌تونن محصولاتتو ببینن، تاریخو انتخاب کنن و همون‌جا تو سایت رزروشونو کامل کنن',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental_meeting_room.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'interactive-demo',
+          title: 'درخواست امضا خیلی راحت',
+          desc: 'قرارداد اجاره، فرم بیمه یا هر مدرک دیگه‌ای رو آپلود کن و قبل از اینکه محصول از انبارت بیرون بره، امضای دیجیتال مشتری رو بگیر',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental_agreement.webp',
+          action: {
+            label: 'امتحانش کن',
+            url: '/demo/avis-studio',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'روزای غیرقابل اجاره',
+          desc: 'روزایی که تحویل یا بازگشت نداری رو راحت مشخص کن تا کسی رزرو نزنه.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental-days.webp',
+          action: {
+            label: 'دمو رو ببین',
+            url: '/demo/avis-studio-reporting',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'هزینه تأخیر',
+          desc: 'جریمه دیرکرد تحویل رو به صورت پیش‌فرض بذار تا همه‌چی منظم پیش بره.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental-delay.webp',
+          action: {
+            label: 'شروع کن',
+            url: '/demo/avis-studio-nocode',
+          },
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental_agreement.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental-days.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental-delay.webp',
+      ],
+    },
   },
   {
     name: 'فروشگاه',
