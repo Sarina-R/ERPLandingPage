@@ -1031,6 +1031,60 @@ const data = [
     enName: 'helpdesk',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(8).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/helpdesk/helpdesk-dashboard.webp',
+      heroSection: {
+        title: 'تیم پشتیبانیت یه ارتقا می‌خواد',
+        desc: 'هلپ‌دسک آویس همون پلتفرم تیکتینگیه که تیم‌تو ساپورت می‌کنه، تا اونا هم بتونن مشتری‌هاتو ساپورت کنن. دیگه خداحافظ پیچیدگی! سلام به یه دنیای جدید از پشتیبانی راحت، سریع و مشتری‌محور',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/helpdesk/helpdesk-dashboard.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'پیگیری، اولویت‌بندی و حل تیکت‌های مشتری',
+          desc: `تیکت‌ها رو همون‌جوری که می‌خوای مدیریت کن، با نمای کانبان فوق‌العاده.
+یه نگاه بنداز، فوراً حجم کار تیم‌تو ببین و وضعیت هر تیکت رو بر اساس قوانین SLA اختصاصی خودت بررسی کن.`,
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/helpdesk/helpdesk-tickets-overview.webp',
+        },
+        {
+          title: 'پشتیبانی هوشمندتر برای مشتری‌ها',
+          desc: `یه پایگاه دانش داخلی آماده داری!
+سوالات پرتکرار (FAQ)، ویدیوهای آموزشی و پرزنتیشن‌هاتو مستقیم به تیکت وصل کن.
+دور محصولت یه جامعه بساز با استفاده از انجمن‌ها`,
+          image: 'https://odoocdn.com/web/image/3090531',
+        },
+        {
+          title: 'اجازه بده مشتری‌ها خودشون تیکتشونو ببندن',
+          desc: `خودمختاری بده، بهره‌وری رو بالا ببر.
+احتمال خطا رو کم کن، سوءتفاهم‌ها رو کنار بذار و زمان بیشتری به تیم هلپ‌دسکت بده تا روی موضوعات مهم‌تر تمرکز کنه.`,
+          image: 'https://odoocdn.com/web/image/24786968/close-ticket.jpg',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'پشتیبانی',
+          title: 'بهینه‌شده برای بهره‌وری',
+          desc: 'قوانین SLA رو بساز و بذار آویس خودش کارها رو جلو ببره',
+          image: 'https://odoocdn.com/web/image/25283223/helpdesk-3.png',
+        },
+        {
+          type: 'پشتیبانی',
+          title: 'قالب آماده برای جواب دادن',
+          desc: 'قالب ایمیل پویا بساز برای پاسخ‌های پرتکرار',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/help-desk/Screenshot%202025-09-28%20180438.png',
+        },
+        {
+          type: 'پشتیبانی',
+          title: 'ارجاع تیکت',
+          desc: 'فقط با یه کلیک تیکت رو به مدیرت ارجاع بده',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/help-desk/Screenshot%202025-09-28%20180523.png',
+        },
+      ],
+    },
   },
   {
     name: 'وب‌سایت',
