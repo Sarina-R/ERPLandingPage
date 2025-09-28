@@ -49,8 +49,8 @@ export interface AppContent {
   img: string
   heroSection: HeroSection
   featureShowcase: Feature[]
-  interactiveElements: InteractiveElement[]
-  imageGallery: string[]
+  interactiveElements?: InteractiveElement[]
+  imageGallery?: string[]
   testimonials: Testimonial[]
   cta: CTA
 }

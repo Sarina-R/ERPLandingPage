@@ -71,7 +71,7 @@ export default function AppPage() {
             />
           </div>
         </div>
-        {content.interactiveElements.length > 0 && (
+        {content.interactiveElements && (
           <InteractiveElements elements={content.interactiveElements} />
         )}
         <div className='p-10 md:p-18 relative'>
@@ -84,9 +84,7 @@ export default function AppPage() {
         </div>
         <OtherApps currentApp={app.enName} />
 
-        {content.imageGallery.length > 0 && (
-          <ImageGallery images={content.imageGallery} />
-        )}
+        {content.imageGallery && <ImageGallery images={content.imageGallery} />}
         {/* {content.testimonials.length > 0 && (
           <Testimonials testimonials={content.testimonials} />
         )} */}
