@@ -643,6 +643,77 @@ const data = [
     enName: 'discuss',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(16).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/discuss/hero_image.webp',
+      heroSection: {
+        title: 'ارتباط آسون و بی‌دردسر',
+        desc: 'دیگه خبری از چندتا اپ پراکنده یا تماس‌های قاطی‌پاطی نیست',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'Avis Discuss: مرکز ارتباطات همه‌جانبه',
+          desc: 'با آویس دیسکاس همه‌چی دم دستته: چت مستقیم، واتساپ، لایوچت، تماس صوتی و تصویری، همه تو یه جا.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/discuss/communication_hub.webp',
+        },
+        {
+          title: 'فروش بدون مرز',
+          desc: 'خرید آنلاین کن، حضوری تحویل بگیر! دیگه بین کانال‌های فروش سردرگمی نداری. حتی می‌تونی سفارش‌های بزرگ رو از قبل آماده کنی.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/discuss/message_channels.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          title: 'سفارش‌دهی خودکار، برگ برنده',
+          desc: 'بذار مشتری‌ها خودشون همه کار کنن؛ چه از طریق کیوسک، چه از گوشی‌شون. از انتخاب محصول تا پرداخت، همه‌چی دست خودشونه.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/pos/self_service_for_the_win_kiosk.webp',
+        },
+        {
+          type: 'interactive-demo',
+          title: 'پرداخت یکپارچه',
+          desc: 'از نقدی و چک گرفته تا کارت بانکی و روش‌های پرداخت جدید، همه رو تو آویس می‌تونی راحت اضافه کنی.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/pos/cross_channel_selling_2.webp',
+          action: {
+            label: 'امتحانش کنید',
+            url: '/demo/avis-pos-loyalty',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'برنامه‌های وفاداری مشتری',
+          desc: 'مشتریان با برنامه‌های وفاداری آویس حسابی جذب می‌شن: امتیاز، پاداش، و کارت هدیه. بازپرداخت داری؟ کیف پول الکترونیکی هست.',
+          image:
+            'https://artfulthinkers.com/wp-content/uploads/2017/05/iStock_000067235071_Double-768x602.jpg',
+          action: {
+            label: 'امتحانش کنید',
+            url: '/demo/avis-pos-loyalty',
+          },
+        },
+        {
+          type: 'interactive-demo',
+          title: 'پرداخت‌های آفلاین',
+          desc: 'وقتی داری خرید میکنی و قطع میشی با پرداخت آفلاین وقتی وصل شدی به طور خودکار حساب میکنی!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/pos/cross_channel_selling_1.webp',
+          action: {
+            label: 'شروع کنید',
+            url: '/demo/avis-pos-offline',
+          },
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/banner-shop.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/kitchen_display.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/self_ordering.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+      ],
+    },
   },
   {
     name: 'اسناد',
