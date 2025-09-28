@@ -2,82 +2,11 @@ import { NextResponse } from 'next/server'
 
 const data = [
   {
-    name: 'مدیریت دانش',
-    category: 'productivity',
-    enName: 'knowledge',
-    imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(24).svg',
-    content: {
-      img: 'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-      heroSection: {
-        title: 'سیستم مدیریت دانش هوشمند',
-        desc: 'تمام اطلاعات و دانش سازمان خود را در یک مکان متمرکز کنید. با ابزارهای قدرتمند جستجو و سازماندهی، به راحتی به اطلاعات مورد نیاز دسترسی پیدا کنید.',
-        ctaText: 'شروع رایگان',
-        image: '/images/knowledge-hero.webp',
-      },
-      featureShowcase: [
-        {
-          title: 'ویرایشگر متن پیشرفته',
-          desc: 'با استفاده از میانبرهای قدرتمند، محتوای خود را در بهترین شکل ممکن ارائه دهید',
-          image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        },
-        {
-          title: 'سازماندهی انعطاف‌پذیر',
-          desc: 'محتوای خود را با فیلدهای سفارشی مرتب کرده و با نماهای شخصی‌سازی شده مرور کنید',
-          image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        },
-      ],
-      interactiveElements: [
-        {
-          type: 'demo',
-          title: 'آزمایش رایگان',
-          desc: 'سیستم مدیریت دانش را به مدت 15 روز رایگان امتحان کنید',
-          image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        },
-        {
-          type: 'demo0',
-          title: 'آزمایش رایگان',
-          desc: 'سیستم مدیریت دانش را به مدت 15 روز رایگان امتحان کنید',
-          image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        },
-      ],
-      imageGallery: [
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-      ],
-      testimonials: [
-        {
-          name: 'علی احمدی',
-          position: 'مدیر فناوری اطلاعات',
-          company: 'شرکت نوآوری پارس',
-          content:
-            'سیستم مدیریت دانش به ما کمک کرد تا تمام اطلاعات پراکنده سازمان را در یک مکان جمع‌آوری کنیم',
-          avatar: '/images/testimonial-1.webp',
-          companyLogo: '/images/company-1.webp',
-        },
-      ],
-      cta: {
-        title: 'آماده شروع هستید؟',
-        desc: 'همین امروز سیستم مدیریت دانش خود را راه‌اندازی کنید',
-        primaryButton: 'شروع رایگان',
-        secondaryButton: 'مشاهده دمو',
-      },
-    },
-  },
-  {
     name: 'حسابداری',
     category: 'finance',
     enName: 'accounting',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(23).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(24).svg',
     content: {
       img: 'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-hero-image.webp',
       heroSection: {
@@ -170,6 +99,77 @@ const data = [
         desc: 'با حسابداری اودوو، مدیریت مالی خود را ساده و هوشمند کنید. همین حالا شروع کنید!',
         primaryButton: 'شروع رایگان',
         secondaryButton: 'اطلاعات بیشتر',
+      },
+    },
+  },
+  {
+    name: 'مدیریت دانش',
+    category: 'productivity',
+    enName: 'knowledge',
+    imageSrc:
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(23).svg',
+    content: {
+      img: 'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+      heroSection: {
+        title: 'سیستم مدیریت دانش هوشمند',
+        desc: 'تمام اطلاعات و دانش سازمان خود را در یک مکان متمرکز کنید. با ابزارهای قدرتمند جستجو و سازماندهی، به راحتی به اطلاعات مورد نیاز دسترسی پیدا کنید.',
+        ctaText: 'شروع رایگان',
+        image: '/images/knowledge-hero.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'ویرایشگر متن پیشرفته',
+          desc: 'با استفاده از میانبرهای قدرتمند، محتوای خود را در بهترین شکل ممکن ارائه دهید',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+        },
+        {
+          title: 'سازماندهی انعطاف‌پذیر',
+          desc: 'محتوای خود را با فیلدهای سفارشی مرتب کرده و با نماهای شخصی‌سازی شده مرور کنید',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'demo',
+          title: 'آزمایش رایگان',
+          desc: 'سیستم مدیریت دانش را به مدت 15 روز رایگان امتحان کنید',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+        },
+        {
+          type: 'demo0',
+          title: 'آزمایش رایگان',
+          desc: 'سیستم مدیریت دانش را به مدت 15 روز رایگان امتحان کنید',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+        },
+      ],
+      imageGallery: [
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+      ],
+      testimonials: [
+        {
+          name: 'علی احمدی',
+          position: 'مدیر فناوری اطلاعات',
+          company: 'شرکت نوآوری پارس',
+          content:
+            'سیستم مدیریت دانش به ما کمک کرد تا تمام اطلاعات پراکنده سازمان را در یک مکان جمع‌آوری کنیم',
+          avatar: '/images/testimonial-1.webp',
+          companyLogo: '/images/company-1.webp',
+        },
+      ],
+      cta: {
+        title: 'آماده شروع هستید؟',
+        desc: 'همین امروز سیستم مدیریت دانش خود را راه‌اندازی کنید',
+        primaryButton: 'شروع رایگان',
+        secondaryButton: 'مشاهده دمو',
       },
     },
   },
@@ -720,7 +720,7 @@ const data = [
     category: 'productivity',
     enName: 'documents',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(16).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(14).svg',
     content: {
       img: 'https://odoocdn.com/openerp_website/static/src/img/apps/documents/hero_image.webp',
       heroSection: {
@@ -777,7 +777,7 @@ const data = [
     category: 'productivity',
     enName: 'project',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(14).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(13).svg',
     content: {
       img: 'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-hero-image.webp',
       heroSection: {
@@ -844,81 +844,81 @@ const data = [
     },
   },
   {
-    name: 'حضور و غیاب',
+    name: 'برگه ساعت کارکرد',
     category: 'hr',
     enName: 'timesheets',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(13).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(11).svg',
   },
   {
     name: 'خدمات میدانی',
     category: 'operations',
     enName: 'field-service',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(12).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(10).svg',
   },
   {
     name: 'برنامه‌ریزی',
     category: 'productivity',
     enName: 'planning',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(11).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(9).svg',
   },
   {
     name: 'پشتیبانی',
     category: 'support',
     enName: 'helpdesk',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(10).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(8).svg',
   },
   {
     name: 'وب‌سایت',
     category: 'creative',
     enName: 'website',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(9).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(7).svg',
   },
   {
     name: 'بازاریابی اجتماعی',
     category: 'marketing',
     enName: 'social-marketing',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(8).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(6).svg',
   },
   {
     name: 'ایمیل مارکتینگ',
     category: 'marketing',
     enName: 'email-marketing',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(7).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(5).svg',
   },
   {
     name: 'خرید',
     category: 'operations',
     enName: 'purchase',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(6).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(4).svg',
   },
   {
     name: 'موجودی انبار',
     category: 'operations',
     enName: 'inventory',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(5).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(16).svg',
   },
   {
     name: 'تولید',
     category: 'operations',
     enName: 'manufacturing',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(4).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(3).svg',
   },
   {
     name: 'فروش',
     category: 'sales',
     enName: 'sales',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(3).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(2).svg',
   },
   {
     name: 'منابع انسانی',
@@ -932,7 +932,7 @@ const data = [
     category: 'analytics',
     enName: 'dashboard',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(2).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(12).svg',
   },
 ]
 export async function GET() {
