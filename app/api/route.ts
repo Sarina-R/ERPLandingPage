@@ -906,6 +906,63 @@ const data = [
     enName: 'field-service',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(10).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/field-service/field-service-hero-image.webp',
+      heroSection: {
+        title: 'سرویس‌های میدانی‌تو تحت کنترل داشته باش',
+        desc: 'آویس بهترین راه‌حل برای کسب‌وکارهای خدمات میدانیه. برنامه‌ی تیم‌تو مرتب کن، کارهای حضوری رو مدیریت کن و از راحتی تایم‌شیت و فاکتورهای یکپارچه لذت ببر',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'برنامه‌ریزی عالی = اجرای عالی',
+          desc: 'قدرت برنامه‌ریزی دست توئه. بین نماهای مختلف جابه‌جا شو: یه نمای ساده و شهودی با کارت‌های کانبان، مدیریت کارهای تیم توی نمای گانت، یا حتی مرتب کردن قرارها بر اساس موقعیت روی نقشه.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/field-service/field-service-planning.webp',
+        },
+        {
+          title: 'نمای تقویم',
+          desc: 'ساده و بی‌دردسر. برنامه‌ی تیم‌تو بر اساس روز، هفته یا ساعت تنظیم و آپدیت کن',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/field-service/field-service-calendar-view.webp',
+        },
+        {
+          title: 'مثل خدماتی که میگیری برنامه ریزی می‌کنی، عالی و دقیق!',
+          desc: '',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/field-service/field-service-invoice.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'مدیریت همه چیز!',
+          title: 'مدیریت موجودی انبار',
+          desc: 'قطعات مصرف‌شده رو موقع سرویس حضوری ثبت کن و هزینه‌ی اضافه رو فاکتور بزن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/field-service/field-service-invoicing.webp',
+        },
+        {
+          type: 'مدیریت همه چیز!',
+          title: 'امضای کارمند و مشتری رو بگیر',
+          desc: 'اپیلیکیشن قدرتمند آویس اینجاست که همه چیز رو پوشش بده.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/field-service/field-service-worksheet.webp',
+        },
+        {
+          type: 'مدیریت همه چیز!',
+          title: 'زمان صرف‌شده برای هر قرار رو ثبت کن',
+          desc: 'همه قرارها رو از اول تا آخر توی گوشیت هندل کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/field-service/field-service-timesheet.webp',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/reporting-pivot.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/hero_image.webp',
+      ],
+    },
   },
   {
     name: 'برنامه‌ریزی',
