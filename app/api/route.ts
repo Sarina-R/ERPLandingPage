@@ -778,6 +778,70 @@ const data = [
     enName: 'project',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(14).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-hero-image.webp',
+      heroSection: {
+        title: 'پروژه‌های شلوغ پلوغ؟! ما همچین چیزی نمی‌شناسیم 😎',
+        desc: 'آویس بهترین نرم‌افزار مدیریت پروژه‌ست. تسک‌ها و ذی‌نفع‌ها رو مدیریت کن، یه نمای کامل از پروژه بگیر و بهره‌وری تیم‌تو چند برابر کن',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'یه داشبورد کامل داشته باش که همه‌چی رو دم دستت بیاره',
+          desc: '',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-dashboard.webp',
+        },
+        {
+          title: 'همکاری تیمی = بهره‌وری بیشتر',
+          desc: 'مشتری‌هاتو هم درگیر کن! مشخص کن کدوم بخش از پروژه رو ببینن یا حتی ویرایش کنن. همه‌ی ارتباطاتتو هم تو یه محیط ساده مدیریت کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-chatter.webp',
+        },
+        {
+          title: 'زمان همون پوله!',
+          desc: 'میتونی مشتری‌هاتو بر اساس زمان صرف‌شده روی تسک‌ها صورت‌حساب کنی یا پروژه‌های بزرگ رو به مراحل کوچیک تقسیم کنی و هزینه‌هاشو مدیریت کنی.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-timesheets.webp',
+        },
+        {
+          title: 'برنامه ریزی کن',
+          desc: 'برنامه‌ریزی آینده‌ت رو شفاف ببین. با یه نگاه می‌دونی چه تسک‌هایی تو راهن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-planning.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'مدیریت پروژه',
+          title: 'یادداشت چسبونک‌ها!',
+          desc: 'نمای Kanban تسک‌ها رو مرحله به مرحله مرتب می‌کنه. فقط با درگ‌اَند‌دراپ مثل استیکی‌نوت همه‌چی رو مرتب نگه دار',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-28%20134952.png',
+        },
+        {
+          type: 'مدیریت پروژه',
+          title: 'برنامه‌ریزی و زمان‌بندی',
+          desc: 'نمای Gantt یه تایم‌لاین کامله که نشون می‌ده چه تسکایی کی شروع می‌شن، وابستگی‌هاشون چیه و چه تاریخی برنامه‌ریزی شدن',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-28%20135004.png',
+        },
+        {
+          type: 'مدیریت پروژه',
+          title: 'کلید همه چیز دقته',
+          desc: 'نمای لیست همه دیتای لازم رو نشون می‌ده و حتی اجازه می‌ده کارای گروهی (batch actions) انجام بدی. ساده و در عین حال قدرتمند',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-28%20135015.png',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-overview-budgets.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-overview-milestones.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-overview-profitability.webp',
+      ],
+    },
   },
   {
     name: 'حضور و غیاب',
