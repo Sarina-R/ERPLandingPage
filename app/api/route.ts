@@ -642,7 +642,7 @@ const data = [
     category: 'communication',
     enName: 'discuss',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(16).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(15).svg',
     content: {
       img: 'https://odoocdn.com/openerp_website/static/src/img/apps/discuss/hero_image.webp',
       heroSection: {
@@ -720,7 +720,57 @@ const data = [
     category: 'productivity',
     enName: 'documents',
     imageSrc:
-      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(15).svg',
+      'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(16).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/documents/hero_image.webp',
+      heroSection: {
+        title: 'دوران کاغذ تموم شد',
+        desc: 'با آویس داکیومنت، همه فایل‌هاتو آنلاین و یه‌جا مدیریت کن. دیگه نیازی به اسکن قرارداد، وارد کردن دستی فاکتورها یا پروسه‌های طولانی تأیید نیست.',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'همه‌چی دم دستت، مرتب و دسته‌بندی‌شده!',
+          desc: 'هر سند توی ورک‌اسپیس خودش ذخیره می‌شه و با تگ‌گذاری هیچ‌وقت گم نمی‌شه. وقتشه ذهنت و دسکتاپتو خلوت کنی',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/documents/organization.webp',
+        },
+        {
+          title: 'PDF ها رو تقسیم بندی کن',
+          desc: 'یه PDF چندصفحه‌ای رو با یه کلیک به چند سند جدا تقسیم کن. خیلی کاربردیه مخصوصاً وقتی با دسته‌ای از اسناد سروکار داری.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/documents/split.webp',
+        },
+        {
+          title: 'شیت‌ها',
+          desc: 'مستقیم از توی اپ شیت بساز یا روی شیت‌هایی که جای دیگه ساختی کار کن',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/documents/spreadsheets.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          title: 'هنر همکاری مؤثر',
+          desc: 'اشتراک‌گذاری فایل با تاریخ انقضا، ارتباط با همکار، مشتری و تأمین‌کننده همگی یه‌جا! هر وقت لازم باشه به اطلاعات مهم دسترسی داری',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-28%20132843.png',
+        },
+        {
+          title: 'هنر همکاری مؤثر',
+          desc: 'اشتراک‌گذاری فایل با تاریخ انقضا، ارتباط با همکار، مشتری و تأمین‌کننده همگی یه‌جا! هر وقت لازم باشه به اطلاعات مهم دسترسی داری',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-28%20132850.png',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/banner-shop.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/kitchen_display.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/self_ordering.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+      ],
+    },
   },
   {
     name: 'پروژه',
