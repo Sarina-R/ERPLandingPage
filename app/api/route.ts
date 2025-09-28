@@ -849,6 +849,56 @@ const data = [
     enName: 'timesheets',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(11).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/hero_image.webp',
+      heroSection: {
+        title: 'وقتت رو هدر نده. ثبتش کن',
+        desc: 'آویس تایم‌شیت به تیمت کمک می‌کنه ساعت‌های قابل‌صورتحساب رو ثبت و تأیید کنن، زمان صرف‌شده روی کارها رو تصویب کنن و صدور فاکتور خدماتت رو خیلی ساده کنن — همش تو یه محیط بی‌دردسر',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'این همه ساعت کجا رفت؟ دیگه حدس نزن',
+          desc: 'ردیابی زمان هوشمند: یه تایمر سریع روشن کن و مطمئن باش تایم‌شیت‌ها همیشه به پروژه، تسک یا سفارش فروش درست وصل می‌شن. دیگه هیچ داده‌ای گم نمیشه.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/timesheet.webp',
+        },
+        {
+          title: 'حالت‌های مختلف نمایش',
+          desc: 'بین ۵ حالت نمایش مختلف جابه‌جا شو و هر وقت خواستی، نمای مناسب‌تو انتخاب کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/views.webp',
+        },
+        {
+          title: 'تایمر',
+          desc: 'از هرجایی با میانبرهای کیبورد تایمر رو شروع یا متوقف کن. همین لحظه ببین کی روی چی کار می‌کنه و ساعات اضافه‌کاری تیمت رو پیگیری کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/timer-and-filters.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'مدیریت زمان',
+          title: 'هر دقیقه رو بشمار',
+          desc: 'سودآور بمون. یه نمای کلی از ساعت‌های قابل‌صورتحساب داشته باش — بر اساس اعضای تیم، پروژه، تسک و نوع فاکتورسازیت.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/reporting-pivot.webp',
+        },
+        {
+          type: 'مدیریت زمان',
+          title: 'هر دقیقه رو بشمار',
+          desc: 'سودآور بمون. یه نمای کلی از ساعت‌های قابل‌صورتحساب داشته باش — بر اساس اعضای تیم، پروژه، تسک و نوع فاکتورسازیت.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/reporting-bar-chart.webp',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/reporting-pivot.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/hero_image.webp',
+      ],
+    },
   },
   {
     name: 'خدمات میدانی',
