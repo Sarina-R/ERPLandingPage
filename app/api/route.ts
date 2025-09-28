@@ -970,6 +970,60 @@ const data = [
     enName: 'planning',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(9).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/planning/planning-shifts-overview.webp',
+      heroSection: {
+        title: 'برای بدترین حالت برنامه‌ریزی کن، به بهترین نتیجه امیدوار باش',
+        desc: 'برنامه‌ریزی آویس زمان‌بندی‌تو ساده می‌کنه و بهره‌وری تیم‌تو بالا می‌بره. شیفت‌ها و منابع رو یکپارچه مدیریت کن و به کارمندات قدرت بده تا هماهنگی بی‌نقصی داشته باشن',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'زمان‌بندی‌تو یه لِوِل ببر بالا',
+          desc: `برنامه‌تو تصویری کن و بهینه‌اش کن. با ابزار گانت چارت شگفت‌انگیز، وضوح و کارایی بیشتری بگیر. قالب‌ها، زمان‌بندی خودکار و وظایف تکراری باعث میشه مدیریت برنامه‌هات راحت‌تر از همیشه باشه
+          پ.ن: ما گانت‌مون انقدر خوبه که نمی‌تونیم صبر کنیم تا ببینیش! 😅`,
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/planning/planning-shift-scheduling.webp',
+        },
+        {
+          title: 'می‌تونی شیفت منو پوشش بدی؟',
+          desc: 'برنامه‌ت زیر کنترله. شیفت بساز و خیلی راحت با درگ و دراپ به هر کسی اختصاص بده یا تغییرش بده. با گزینه‌های همکاری، همه‌ی اعضای تیم می‌تونن شیفت‌های خالی رو ببینن و بین خودشون جابه‌جا کنن',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/planning/planning-shift-swapping.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'برنامه ریزی',
+          title: 'شیفت‌های خالی',
+          desc: 'بذار بدون مسئول بمونه و بعد با یه درگ ساده به کسی اختصاص بده',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20165549.png',
+        },
+        {
+          type: 'برنامه ریزی',
+          title: 'جلوگیری از تداخل',
+          desc: 'اگه یه نفر رو هم‌زمان برای چندتا شیفت برنامه‌ریزی کنی، سیستم سریع بهت اخطار میده.',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20165501.png',
+        },
+        {
+          type: 'برنامه ریزی',
+          title: 'زمان بندی',
+          desc: 'همه‌ی شیفت‌ها رو بر اساس نقش، کارمند یا پروژه مدیریت کن',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20135015.png',
+        },
+      ],
+      imageGallery: [
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20165549.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20135015.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20165523.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20135015.png',
+      ],
+    },
   },
   {
     name: 'پشتیبانی',
