@@ -1489,6 +1489,56 @@ const data = [
     enName: 'hr',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(1).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/employees/hero_image.webp',
+      heroSection: {
+        title: 'یه مرکز جدید برای همه اطلاعات کارمندات',
+        desc: 'اپ کارمندان آویس خیلی بیشتر از یه لیست ساده‌ست. این یه مرکز برای کلی ویژگی‌های منابع انسانیه!',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'اون مهارت‌ها رو به رخ بکش',
+          desc: 'مهارت‌های خاص هر کارمند رو ثبت کن تا دفعه بعد که دنبال یه متخصص جاوااسکریپت فرانسوی‌زبان بودی، دقیق بدونی به کی زنگ بزنی!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/employees/show_off_those_skills.webp',
+        },
+        {
+          title: 'مدیریت مرخصی‌ها رو تو دست بگیر',
+          desc: 'با سیستم ردیابی مرخصی یکپارچه، درخواست‌های مرخصی رو زیر نظر داشته باش. با گزارش حضور و غیاب، کارمندا رو چک کن و درخواست‌های تعطیلات رو سریع تأیید کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/employees/take_control_of_time_off.webp',
+        },
+        {
+          title: 'براساس عملکرد، ارزیابی کن',
+          desc: 'ارزیابی‌های کارمندا رو برنامه‌ریزی کن و پیشرفت مهارت‌هاشون رو بسنج.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/employees/performance_appraisals.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'مدیریت کارمندان',
+          title: 'همه آدما، تو یه جا',
+          desc: 'یه نگاه کلی به همه بخش‌ها بنداز و بعد برو سراغ جزئیات. کارمندات رو بر اساس ساعت کاری، عنوان شغلی یا حتی وضعیت قرارداد مرتب کن تا تیم‌ت رو از هر زاویه‌ای کامل ببینی.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/employees/all_in_one_place.webp',
+        },
+        {
+          type: 'مدیریت کارمندان',
+          title: 'چیزای خصوصی، خصوصی بمونن',
+          desc: 'با تنظیمات دسترسی محدود، اطلاعات شخصی کارمندا مثل شماره تماس اضطراری، اطلاعات ویزا و غیره رو محافظت کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/employees/stuff_private.webp',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/employees/all_in_one_place.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/employees/stuff_private.webp',
+      ],
+    },
   },
   {
     name: 'داشبورد',
