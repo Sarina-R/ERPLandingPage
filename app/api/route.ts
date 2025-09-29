@@ -1205,6 +1205,58 @@ const data = [
     enName: 'email-marketing',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(5).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_01.jpg',
+      heroSection: {
+        title: 'بیخیال! بابت ایمیل فرستادن پول نده!',
+        desc: 'با آویس ایمیل مارکتینگ، تو چند ثانیه ایمیل‌های حرفه‌ای بساز و درست همون موقع که باید، به مخاطبای درست برسونشون!',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_01.jpg',
+      },
+      featureShowcase: [
+        {
+          title: 'دیتابیست رو دسته‌بندی کن',
+          desc: `برای باز شدن و کلیک بیشتر!
+نتایجت رو با فرستادن کمپین به گروه‌های هدفمند تو دیتابیست بهتر کن. از لیست مخاطبات، سرنخ‌ها، مشتری‌ها یا هر گروه دیگه‌ای رو بر اساس کشور، تاریخ، شغل و... انتخاب کن تا محتوات فقط به کسایی برسه که خودت می‌خوای.`,
+          image: 'https://odoocdn.com/web/image/11142787/Mass-Mail-New.png',
+        },
+        {
+          title: 'با آمار و داده‌ها، ایمیل‌های خفن‌تری بفرست!',
+          desc: `با آمار دقیق و لحظه‌ای، هر ایمیلی که می‌فرستی رو زیر نظر بگیر. تعداد سرنخ‌ها، سفارش‌ها، درآمد، نرخ باز شدن ایمیل، نرخ پرش و نرخ کلیک رو راحت چک کن و استراتژی بازاریابی‌ت رو حسابی قوی‌تر کن. فرصت‌هایی که ایجاد شدن و درآمد پیش‌بینی‌شده رو هم دنبال کن.`,
+          image: 'https://odoocdn.com/web/image/11142929/Mass-Mail-Summary.png',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'ایمیل مارکتینگ',
+          title: 'کمپین‌های باحال بساز',
+          desc: `از صفر شروع کن یا یکی از قالب‌های ما رو انتخاب کن. بدون نیاز به دانش فنی، کمپین‌های ایمیلی باحال بساز که حسابی به دل مخاطبات بشینه. با یه نرم‌افزار ساده و بصری، رو محتوا و ظاهر ایمیلت کامل کنترل داری.`,
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_02.jpg',
+        },
+        {
+          type: 'ایمیل مارکتینگ',
+          title: 'حوصله طراحی خبرنامه نداری؟ اشکال نداره!',
+          desc: `فقط یکی از قالب‌های آماده‌مون رو انتخاب کن، یه کم چیدمانش رو تغییر بده، پیام و عکست رو اضافه کن و آماده‌ای که کمپین جدیدت رو بفرستی!`,
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_03.jpg',
+        },
+        {
+          type: 'ایمیل مارکتینگ',
+          title: 'رو هر دستگاهی کار می‌کنه',
+          desc: `مطمئن باش خبرنامۀ ایمیلی‌ت روی هر صفحه‌ای—تبلت، موبایل، لپ‌تاپ یا کامپیوتر—عالی نمایش داده می‌شه. محتوامون خودش با صفحه مخاطبت تنظیم می‌شه، فاصله‌ها رو درست می‌کنه و تصاویر رو بهینه می‌کنه تا رو هر دستگاهی راحت خونده بشه.`,
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_05.png',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/web/image/11170514/Link-Tracker.png',
+        'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_08.gif',
+        'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_02.jpg',
+        'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_03.jpg',
+      ],
+    },
   },
   {
     name: 'خرید',
