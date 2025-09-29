@@ -1445,6 +1445,43 @@ const data = [
     enName: 'sales',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(2).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/hero_image.webp',
+      heroSection: {
+        title: 'بیشتر بفروش با پیشنهادات فوری!',
+        desc: 'با ابزار قدرتمند پیشنهاد قیمت آویس، به‌سرعت پیشنهادات تمیز، حرفه‌ای و تعاملی بساز.',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title:
+            'از قالب‌های پیشنهاد قیمت برای خودکار کردن سفارش‌های رایج استفاده کن ',
+          desc: 'قیمت‌گذاری و مالیات درست رو برای هر مشتری خودکار اعمال کن. کارای وقت‌گیر رو کنار بذار و روی چیزی که مهمه تمرکز کن: فروش!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sales/quote_template.webp',
+        },
+        {
+          title: 'با پرتال مشتری، سریع‌تر معامله ببند',
+          desc: 'بذار مشتریا خودشون دست‌به‌کار بشن! مشتریا می‌تونن به پیشنهادات، سفارش‌های فروش، سفارش‌های تحویل و کلی چیز دیگه دسترسی داشته باشن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sales/customer_portal_02.webp',
+        },
+        {
+          title: 'فقط روی سرنخ‌های باکیفیت تمرکز کن',
+          desc: 'از بازدیدهای وب‌سایت، کمپین‌های بازاریابی، ایمیل‌های مستعار، ثبت‌نام رویدادها و غیره سرنخ‌های باکیفیت تولید کن. امتیازدهی سرنخ‌ها با هوش مصنوعی بهت نشون می‌ده کدوم سرنخ‌ها ارزش وقت تیم فروشت رو دارن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sales/qualified_leads.webp',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sales/unique_pricing.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sales/ai_powered.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sales/manage_01.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/sales/manage_02.webp',
+      ],
+    },
   },
   {
     name: 'منابع انسانی',
