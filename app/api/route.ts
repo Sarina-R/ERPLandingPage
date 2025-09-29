@@ -1264,6 +1264,65 @@ const data = [
     enName: 'purchase',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(4).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_01.jpg',
+      heroSection: {
+        title: 'سریع‌تر انبار رو پر کن و هیچ‌وقت کم نیار!',
+        desc: 'از درخواست‌های خرید (RFQ) گرفته تا رسیدها، از مدل‌های مختلف محصول تا صورت‌حساب‌های فروشنده... راحت بشین و بذار نرم‌افزار همه‌کاره‌ی خرید آویس کارا رو برات انجام بده!',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'قراردادهای خرید انعطاف‌پذیر برای هر موقعیت',
+          desc: `با قراردادهای خرید قابل تنظیم و خودکار، خرید رو بهینه کن. با درخواست‌های جایگزین بهترین قیمت‌ها رو بگیر، خطوط محصول رو مقایسه کن و سفارش‌های تکراری رو با قراردادهای کلی ساده‌تر کن.`,
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/flexible_1.webp',
+        },
+        {
+          title: 'همه جزئیات کوچیکی که خرید رو ممکن می‌کنه',
+          desc: `مثل مدل‌های مختلف محصول، بسته‌بندی‌ها، واحدهای اندازه‌گیری و غیره.
+یه قدم فراتر برو و سیستم‌های فروش حضوری و تجارت الکترونیک رو هم هماهنگ کن.`,
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/all_the_small_things_1.webp',
+        },
+        {
+          title: 'شرکتای بیشتر، مشکلات کمتر',
+          desc: 'یه محیط آویس، چند تا شرکت: تطبیق بانکی رو خودکار کن، مدیریت سفارش‌ها و فاکتورها رو ساده کن و داده‌ها رو بین شرکت‌های مختلف راحت به اشتراک بذار.',
+          image:
+            'hhttps://odoocdn.com/openerp_website/static/src/img/apps/purchase/features_2.webp',
+        },
+        {
+          title: 'تصمیم‌های خرید هوشمندانه‌تر',
+          desc: 'با چیزای مهم هم‌گام بمون. لیست قیمت فروشنده‌ها، مراجع، تخفیف‌ها و موجودی محصولات رو به دیتابیس خودت وارد کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/features_1.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'خرید کردن',
+          title: 'خودکارسازی درخواست‌های خرید',
+          desc: 'برای آدمای پرمشغله که می‌خوان سریع کاراشونو روبراه کنن! هر درخواست خرید و سفارش رو با قوانین سفارش‌دهی خودکار ساده کن و وقتت رو برای چیزای مهم‌تر آزاد کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/automated_rfq_4.webp',
+        },
+        {
+          type: 'خرید کردن',
+          title: 'کنترل کامل فرآیندهای خرید',
+          desc: 'قوانین و روش‌های خودت رو بساز و همه‌چیز رو هماهنگ کن! قوانین و روش‌های پر کردن انبار رو به دلخواه خودت تنظیم کن و فرآیندهای مهم رو هر جا لازم بود هماهنگ کن — قدرت دست توئه!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/automated_rfq_2.webp',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/charge_vendors_2.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/charge_vendors_1.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/all_the_small_things_2.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/flexible_2.webp',
+      ],
+    },
   },
   {
     name: 'موجودی انبار',
@@ -1271,6 +1330,68 @@ const data = [
     enName: 'inventory',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(16).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/hero_image.webp',
+      heroSection: {
+        title: 'بالاخره یه سیستم انبارداری مدرن!',
+        desc: 'با اپ مدیریت انبار آویس، دیگه نگران کمبود موجودی نباش، کاراتو سریع‌تر کن، مسیرها رو بهینه کن و همه‌چیز رو لحظه‌ای زیر نظر داشته باش! یادآورهای فروشنده رو هم خودکار کن!',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'انبارت رو بهینه کن',
+          desc: 'با استراتژی‌های هوشمند مثل قوانین مین-مکس، MTO یا برنامه تولید اصلی، انبارت همیشه پره. بذار آویس پیشنهاد بده یا سفارش‌های خرید رو خودکار فعال کن. پیگیری فروشنده‌ها رو هم خودکار کن تا چیزی از قلم نیفته: تأیید سفارش خرید، تأیید زمان‌بندی دریافت چند روز قبل و اینجور چیزا.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/automate_vendor.webp',
+        },
+        {
+          title: 'پر کردن انبار بدون نقص',
+          desc: 'مدیریت موجودی لحظه‌ای با کلی ویژگی: شماره سریال، لات‌ها، بسته‌بندی، استراتژی‌های رزرو، شمارش دوره‌ای، شاخص‌های کلیدی و غیره. جست‌وجوی سریع موجودی: تو یه چشم به هم زدن جای همه محصولاتت تو انبارهای مختلف یا شرکت‌های چندگانه رو پیدا کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/optimize_warehouse.webp',
+        },
+        {
+          title: 'مسافت‌ها رو با مسیرهای هوشمند کم کن',
+          desc: 'خرید بهینه: مسیرهای پیچیده رو تو آویس نقشه‌برداری کن و انتقال‌ها رو خودکار برنامه‌ریزی کن. با اقدامات بین اپ‌های مختلف، زنجیره تأمین رو کامل کنترل کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/smarts_routes.webp',
+        },
+        {
+          title: 'ردیابی کامل',
+          desc: '',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/reservation_mechanism.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'مدیریت انبار',
+          title: 'حرکات برداشت رو کم کن',
+          desc: 'استراتژی مناسب خودت رو انتخاب کن: برداشت تکی، خوشه‌ای، موجی یا دسته‌ای. با استراتژی‌های رزرو چندگانه، کالاها رو آزاد کن. با روش درست، می‌تونی با همون تیم ۳۰٪ بیشتر محصول جمع کنی و بسته‌بندی کنی.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/wave-picking.svg',
+        },
+        {
+          type: 'مدیریت انبار',
+          title: 'برداشت موجی',
+          desc: 'سفارش‌های برداشت رو بر اساس راهرو یا منطقه شروع کن و تو محل بسته‌بندی جمع کن. عالی برای انبارهای بزرگ',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/cluster-picking.svg',
+        },
+        {
+          type: 'مدیریت انبار',
+          title: 'برداشت خوشه‌ای',
+          desc: 'چند سفارش رو تو یه مسیر جمع کن و همزمان آماده کن تا تو بسته‌بندی وقت صرفه‌جویی بشه. مناسب برای محصولات کوچیک',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/batch-picking.svg',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/traceability.webp',
+      ],
+    },
   },
   {
     name: 'تولید',
