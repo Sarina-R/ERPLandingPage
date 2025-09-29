@@ -1546,6 +1546,50 @@ const data = [
     enName: 'dashboard',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(12).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/hero_image.webp',
+      heroSection: {
+        title: 'تصمیم‌گیرا کار رو به شانس نمی‌سپارن',
+        desc: 'ابزارهای هوش تجاری آویس بهت قدرت می‌دن که کسب‌وکارت رو جلو ببری. از داده‌های مالی‌ت بینش‌های ارزشمند بگیر و یه برنامه برنده بچین!',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'دیگه کپی-پیست نکن',
+          desc: 'بدون دردسر خروجی-ورودی. داده‌هات خودکار از دیتابیس به نمودارها و صفحه‌گسترده‌ها می‌رن و همیشه به‌روز می‌مونن. هزینه پروژه، سفارش‌های فروش و بازدیدهای سایت',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/copy_paste.webp',
+        },
+        {
+          title: 'ببین، تصمیم بگیر، موفق شو',
+          desc: 'یه داشبورد برای دسترسی به همه اطلاعات. داده‌هات تو دسته‌های قابل تنظیم مرتب می‌شن و به شکل‌های بصری ساده درمیان تا تصمیم‌گیری آگاهانه راحت‌تر بشه.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/dashboard.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'داشبورد',
+          title: 'لحظه کلیدی کسب‌وکارت',
+          desc: 'گزارش‌های پویا با دیزاینی کاملا قابل درک و کاربر پسند!.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/copy_paste.webp',
+        },
+        {
+          type: 'داشبورد',
+          title: 'دسترسی به گزارش‌ها',
+          desc: 'گزارش‌های دلخواه رو به‌راحتی بساز و ادیت کن و داده‌های لحظه‌ای رو ببین',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/pivot_02.webp',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/copy_paste.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/pivot_02.webp',
+      ],
+    },
   },
 ]
 export async function GET() {
