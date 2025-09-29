@@ -1092,6 +1092,65 @@ const data = [
     enName: 'website',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(7).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/website/hero_image.webp',
+      heroSection: {
+        title: 'یه وبسایت حرفه‌ای، فقط توی چند دقیقه',
+        desc: 'آویس وبسایت داره نگاه همه رو به طراحی وب تغییر میده. با رابط کاربری ساده و سرراستش، می‌تونی وبسایتت رو راحت بسازی، مدیریت کنی و هرجوری خواستی شخصی‌سازیش کنی',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/website/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'رویاپردازی؟ فقط بسازش!',
+          desc: `بذار هوش مصنوعی بر اساس صنعتت، چیدمان و محتوای وبسایت رو بهت پیشنهاد بده.
+
+بیزینست رو مشخص کن
+
+لوگوتو اضافه کن
+
+قابلیت‌های اضافه رو انتخاب کن
+
+تم مورد علاقه‌تو بردار
+همین! وبسایتت آماده‌ست. هرکسی می‌تونه این کارو بکنه`,
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/website/configurator.webp',
+        },
+        {
+          title: 'سایتتو مثل یه طراح بساز',
+          desc: `با درگ‌اَند‌دراپ بلوک‌ها، همه‌چی دست خودته. می‌خوای چیدمان رو دقیق‌تر تنظیم کنی؟ روی عکسا فیلتر و افکت بذاری؟ یه المان رو انیمیت کنی؟ مشکلی نیست! همه اینا رو همون‌جا روی صفحه انجام بده`,
+          image: 'https://odoocdn.com/web/image/3090531',
+        },
+        {
+          title: 'دستیار هوش مصنوعی همیشه کنارت',
+          desc: `کپی‌رایتینگت رو قوی‌تر کن با ChatGPT. از آویس بخواه محتوای وبسایتت رو فقط با یه پرامپت بسازه یا متن فعلیت رو با یه کلیک تغییر لحن بده..`,
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/website/ai.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'ساخت وبسایت',
+          title: 'سایتتو مثل یه طراح بساز!',
+          desc: 'با درگ‌اَند‌دراپ بلوک‌ها، همه‌چی دست خودته. می‌خوای چیدمان رو دقیق‌تر تنظیم کنی؟ روی عکسا فیلتر و افکت بذاری؟ یه المان رو انیمیت کنی؟ مشکلی نیست! همه اینا رو همون‌جا روی صفحه انجام بده.',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20130053.png',
+        },
+        {
+          type: 'ساخت وبسایت',
+          title: 'مقیاس‌پذیر و کاملأ یکپارچه',
+          desc: 'با قابلیت‌های فوق‌العاده خیلی ساده بیزینست رو رشد بده. فرآیندها رو ساده کن، تجربه کاربر رو بهتر کن و همه‌چیز رو تو یه سیستم یکپارچه مدیریت کن تا کسب‌وکار رو راحت‌تر پیش ببری.',
+          image:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20130039.png',
+        },
+      ],
+      imageGallery: [
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20124126.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20124202.png',
+        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20131259.png',
+      ],
+    },
   },
   {
     name: 'بازاریابی اجتماعی',
