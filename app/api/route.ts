@@ -1399,6 +1399,45 @@ const data = [
     enName: 'manufacturing',
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(3).svg',
+    content: {
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/hero_image.webp',
+      heroSection: {
+        title: 'بهترین اپ تولید ناب!',
+        desc: 'MRP + MES + PLM + کیفیت + کارگاه + نگهداری همه‌چیز تو یه پلتفرم ساده و سریع که نیازاتو برآورده می‌کنه!',
+        ctaText: 'همین حالا شروع کنید - رایگان است',
+        image:
+          'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/hero_image.webp',
+      },
+      featureShowcase: [
+        {
+          title: 'عملیات شبیه‌سازی‌شده لحظه‌ای',
+          desc: 'سفارش‌های تولید رو با برنامه‌ریزی ظرفیت لحظه‌ای، موجودی قطعات و کنترل هزینه شبیه‌سازی کن. پیشنهادهای پر کردن به‌موقع بگیر و انتخاب کن که قطعات رو چطور تأمین کنی: تولید کن، بخر، برون‌سپاری کن یا از انبار دیگه بیار.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/operations.webp',
+        },
+        {
+          title: 'برنامه‌ریزی که همیشه یه قدم جلوت نگه می‌داره',
+          desc: 'سفارش‌های تولید رو برنامه‌ریزی کن و منابع رو با ظرفیت محدود مدیریت کن. با نمودار گانت به‌راحتی همه‌چیز رو تنظیم کن.',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/schedule.webp',
+        },
+      ],
+      interactiveElements: [
+        {
+          type: 'مدیریت تولید',
+          title: 'ثبت تولید و قطعات',
+          desc: 'سفارش‌ها رو پردازش کن، عملیات رو سریع‌تر کن و خطاهای ورودی رو کم کن. از همون لحظه اول کار می‌کنه، سریع و بدون تأخیر! بدون وای‌فای هم کار می‌کنه پس نگران قطعی اینترنت نباش!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/barcode.webp',
+        },
+      ],
+      imageGallery: [
+        'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/become_paperless_02.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/sigma_6.webp',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/kaizen.svg',
+        'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/features_01.webp',
+      ],
+    },
   },
   {
     name: 'فروش',
