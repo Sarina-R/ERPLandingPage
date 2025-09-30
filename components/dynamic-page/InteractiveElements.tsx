@@ -159,7 +159,7 @@ export default function InteractiveElements({
                 alt={activeElement.title || 'تصویر اسلاید'}
                 width={400}
                 height={400}
-                className={`w-full h-full dark:filter dark:invert-[97%] object-contain transition-all duration-700 ease-in-out ${
+                className={`w-full h-full preserve-colors-dark-css object-contain transition-all duration-700 ease-in-out ${
                   imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                 } hover:scale-105`}
                 onLoad={() => setImageLoaded(true)}

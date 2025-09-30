@@ -175,3 +175,32 @@ body {
       100% { stroke: currentColor; r: 2.5; opacity: 0.9; }
     }
  
+
+    /* Add this to your global CSS file */
+
+/* Define the SVG filter */
+.dark-theme-filters {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Apply filter only in dark mode */
+.dark .preserve-colors-dark {
+  filter: url(#preserve-colors-invert);
+}
+
+/* Alternative pure CSS approach (less accurate but simpler) */
+.dark .preserve-colors-dark-css {
+  filter: 
+    invert(1) 
+    hue-rotate(180deg) 
+    saturate(0.8) 
+    brightness(1);
+}
+
+/* For images that should fully invert (pure grayscale images) */
+.dark .full-invert-dark {
+  filter: invert(0.97);
+}

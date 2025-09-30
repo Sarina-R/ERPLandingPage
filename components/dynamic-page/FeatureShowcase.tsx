@@ -42,7 +42,7 @@ export default function FeatureShowcase({ features }: FeatureShowcaseProps) {
                       alt={feature.title}
                       width={400}
                       height={400}
-                      className='w-full h-full dark:filter dark:invert-[97%] object-cover col-span-2'
+                      className='w-full h-full preserve-colors-dark-css object-cover col-span-2'
                     />
                   </div>
                 </>
@@ -61,7 +61,7 @@ export default function FeatureShowcase({ features }: FeatureShowcaseProps) {
                     <img
                       src={feature.image}
                       alt={feature.title}
-                      className='w-full h-full dark:filter dark:invert-[97%] object-cover col-span-2'
+                      className='w-full h-full preserve-colors-dark-css object-cover col-span-2'
                     />
                     <div className='col-span-1 border-r'></div>
                   </div>
