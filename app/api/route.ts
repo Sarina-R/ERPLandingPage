@@ -109,68 +109,39 @@ const data = [
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(23).svg',
     content: {
-      img: 'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/knowledge/hero_image.webp.png',
       heroSection: {
-        title: 'سیستم مدیریت دانش هوشمند',
-        desc: 'تمام اطلاعات و دانش سازمان خود را در یک مکان متمرکز کنید. با ابزارهای قدرتمند جستجو و سازماندهی، به راحتی به اطلاعات مورد نیاز دسترسی پیدا کنید.',
+        title: 'دانش همون قدرته!',
+        desc: 'آویس نالج میذاره همه اطلاعات مهم سازمانت رو یه جا داشته باشی! با آویس نالج، همه اطلاعات کلیدی‌ت رو متمرکز کن، به‌صورت تیمی روش کار کن و از هر اپ آویسی‌ای بهش دسترسی داشته باش!',
         ctaText: 'شروع رایگان',
         image: '/images/knowledge-hero.webp',
       },
       featureShowcase: [
         {
-          title: 'ویرایشگر متن پیشرفته',
-          desc: 'با استفاده از میانبرهای قدرتمند، محتوای خود را در بهترین شکل ممکن ارائه دهید',
+          title: 'هر ایده‌ای رو منتقل کن، هر صفحه‌ای رو بساز',
+          desc: 'با ویرایشگر متن قدرتمند! با میانبر / محتوات رو به بهترین شکل ارائه بده و داده‌های پویا رو از همه اپ‌های کسب‌وکارت ادغام کن. جدول‌های محوری لحظه‌ای به‌روز می‌شن! دیوانه‌کننده‌ست!',
           image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/knowledge/build.webp',
         },
         {
-          title: 'سازماندهی انعطاف‌پذیر',
-          desc: 'محتوای خود را با فیلدهای سفارشی مرتب کرده و با نماهای شخصی‌سازی شده مرور کنید',
+          title: 'راه‌های بی‌نهایت برای ساختار دادن به اطلاعاتت',
+          desc: 'سازمان‌دهی داده‌های انعطاف‌پذیر. محتوات رو با فیلدهای دلخواه مرتب کن و با نماها و فیلترهای شخصی‌سازی‌شده توش گشت بزن.',
           image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        },
-      ],
-      interactiveElements: [
-        {
-          type: 'demo',
-          title: 'آزمایش رایگان',
-          desc: 'سیستم مدیریت دانش را به مدت 15 روز رایگان امتحان کنید',
-          image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/knowledge/shape.webp',
         },
         {
-          type: 'demo0',
-          title: 'آزمایش رایگان',
-          desc: 'سیستم مدیریت دانش را به مدت 15 روز رایگان امتحان کنید',
+          title: 'کی بهش دسترسی داره؟ تو تصمیم می‌گیری!',
+          desc: 'حقوق دسترسی رو مدیریت کن. انتخاب کن کی بتونه محتوات رو ببینه یا مدیریت کنه. حتی می‌تونی صفحه رو با کل دنیا به اشتراک بذاری!',
           image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/knowledge/get_acces.webp',
         },
-      ],
-      imageGallery: [
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/Screenshot%202025-09-03%20114727.png',
-      ],
-      testimonials: [
         {
-          name: 'علی احمدی',
-          position: 'مدیر فناوری اطلاعات',
-          company: 'شرکت نوآوری پارس',
-          content:
-            'سیستم مدیریت دانش به ما کمک کرد تا تمام اطلاعات پراکنده سازمان را در یک مکان جمع‌آوری کنیم',
-          avatar: '/images/testimonial-1.webp',
-          companyLogo: '/images/company-1.webp',
+          title: 'دانش تو دستای تو',
+          desc: 'پایگاه دانشت رو با همه اپ‌های کسب‌وکارت ادغام کن. محتوای آماده رو وارد کن تا فوری با مشتریات ارتباط بگیری، به تیکت‌های پشتیبانی جواب بدی، وظایف جدید پروژه رو توضیح بدی و کلی کار دیگه!',
+          image:
+            'https://odoocdn.com/openerp_website/static/src/img/apps/knowledge/fingertips.webp',
         },
       ],
-      cta: {
-        title: 'آماده شروع هستید؟',
-        desc: 'همین امروز سیستم مدیریت دانش خود را راه‌اندازی کنید',
-        primaryButton: 'شروع رایگان',
-        secondaryButton: 'مشاهده دمو',
-      },
     },
   },
   {
