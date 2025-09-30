@@ -109,7 +109,7 @@ const data = [
     imageSrc:
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(23).svg',
     content: {
-      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/knowledge/hero_image.webp.png',
+      img: 'https://odoocdn.com/openerp_website/static/src/img/apps/knowledge/hero_image.webp',
       heroSection: {
         title: 'دانش همون قدرته!',
         desc: 'آویس نالج میذاره همه اطلاعات مهم سازمانت رو یه جا داشته باشی! با آویس نالج، همه اطلاعات کلیدی‌ت رو متمرکز کن، به‌صورت تیمی روش کار کن و از هر اپ آویسی‌ای بهش دسترسی داشته باش!',
