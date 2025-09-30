@@ -169,7 +169,7 @@ const data = [
           title: 'امضا از هرجا، هر وقت',
           desc: 'فرقی نداره موبایل باشه، لپ‌تاپ یا تبلت؛ مشتری‌هات راحت سند رو باز می‌کنن، بررسی می‌کنن و فقط با چند کلیک امضا می‌زنن.',
           image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/sign_online.webp',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
         },
         {
           title: 'فرآیند امضا دست خودته!',
@@ -206,28 +206,16 @@ const data = [
           title: 'یادآوری خودکار برای اعضا',
           desc: 'دیگه کسی امضا کردن یادش نمی‌ره! یه ریمایندر اتوماتیک بساز تا همه به موقع سند رو امضا کنن.',
           image:
-            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
+            'https://odoocdn.com/openerp_website/static/src/img/apps/sign/sign_online.webp',
           action: {
             label: 'یه دمو ببین',
             url: '/demo/avis-sign-tracking',
-          },
-        },
-        {
-          type: 'interactive-demo',
-          title: 'ترتیب امضا دست خودته',
-          desc: 'خودت مشخص کن چه کسی اول یا بعدی امضا کنه تا همه‌چیز منظم و به‌موقع پیش بره.',
-          image:
-            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20180948.png',
-          action: {
-            label: 'امتحانش کن',
-            url: '/demo/avis-sign-order',
           },
         },
       ],
       imageGallery: [
         'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
         'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
         'https://odoocdn.com/openerp_website/static/src/img/apps/sign/simplify_automate_sign.webp',
       ],
     },

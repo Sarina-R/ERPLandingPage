@@ -75,7 +75,7 @@ export default function InteractiveElements({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className='min-h-[600px] md:flex'>
+        <div className='min-h-[600px] max-h-[650px] md:flex'>
           <div className='flex-1 p-8 lg:p-16 flex flex-col justify-center bg-background'>
             <div className='max-w-2xl mx-auto w-full'>
               <div className='flex items-center gap-3 mb-6'>
