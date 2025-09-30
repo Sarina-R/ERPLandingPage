@@ -67,7 +67,7 @@ export default function AppPage() {
               alt='screenshot'
               width={500}
               height={500}
-              className='h-full w-full '
+              className='h-full w-full dark:filter dark:invert-[97%]'
             />
           </div>
         </div>

@@ -43,7 +43,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
               <img
                 src={image}
                 alt={`Gallery image ${index + 1}`}
-                className='w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300'
+                className='w-full h-64 dark:filter dark:invert-[97%] object-cover group-hover:scale-105 transition-transform duration-300'
               />
               <div className='absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center'>
                 <div className='w-12 h-12 bg-white/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
@@ -75,7 +75,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
               <img
                 src={selectedImage}
                 alt='Selected'
-                className='w-full h-auto rounded-lg'
+                className='w-full h-auto dark:filter dark:invert-[97%] rounded-lg'
               />
             </div>
           </div>
