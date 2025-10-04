@@ -9,13 +9,7 @@ import {
   Zap,
 } from 'lucide-react'
 import Image from 'next/image'
-
-interface InteractiveElement {
-  type: string
-  title: string
-  desc: string
-  image: string
-}
+import { InteractiveElement } from '@/app/contexts/AppContext'
 
 interface InteractiveElementsProps {
   elements: InteractiveElement[]
@@ -159,7 +153,9 @@ export default function InteractiveElements({
                 alt={activeElement.title || 'تصویر اسلاید'}
                 width={400}
                 height={400}
-                className={`w-full h-full preserve-colors-dark-css object-contain transition-all duration-700 ease-in-out ${
+                className={`w-full h-full ${
+                  activeElement.darkImage ? '' : 'preserve-colors-dark-css'
+                } object-contain transition-all duration-700 ease-in-out ${
                   imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                 } hover:scale-105`}
                 onLoad={() => setImageLoaded(true)}

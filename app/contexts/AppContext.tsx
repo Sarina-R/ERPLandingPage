@@ -22,11 +22,12 @@ interface Feature {
   image: string
 }
 
-interface InteractiveElement {
+export interface InteractiveElement {
   type: string
   title: string
   desc: string
   image: string
+  darkImage: string
 }
 
 interface Testimonial {
@@ -45,12 +46,18 @@ interface CTA {
   secondaryButton: string
 }
 
+export interface ImageGalleryType {
+  img: string[]
+  darkImg?: string[]
+}
+
 export interface AppContent {
   img: string
+  darkImg?: string
   heroSection: HeroSection
   featureShowcase: Feature[]
   interactiveElements?: InteractiveElement[]
-  imageGallery?: string[]
+  imageGallery?: ImageGalleryType
   testimonials: Testimonial[]
   cta: CTA
 }

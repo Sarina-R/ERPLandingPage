@@ -67,7 +67,9 @@ export default function AppPage() {
               alt='screenshot'
               width={500}
               height={500}
-              className='h-full w-full preserve-colors-dark-css'
+              className={`h-full w-full ${
+                content.darkImg ? '' : 'preserve-colors-dark-css'
+              }`}
             />
           </div>
         </div>

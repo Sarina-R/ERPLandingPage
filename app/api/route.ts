@@ -77,12 +77,14 @@ const data = [
           },
         },
       ],
-      imageGallery: [
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20175751.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20175612.png',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-vendor-bill.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-mobile-02.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20175751.png',
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-20%20175612.png',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-vendor-bill.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/accounting/accounting-mobile-02.webp',
+        ],
+      },
       testimonials: [
         {
           name: 'ویم ون دن براند',
@@ -213,11 +215,13 @@ const data = [
           },
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sign/simplify_automate_sign.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_adopt.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/sign/features_reminders.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/sign/simplify_automate_sign.webp',
+        ],
+      },
     },
   },
   {
@@ -289,12 +293,14 @@ const data = [
           },
         },
       ],
-      imageGallery: [
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20141626.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20141545.png',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/crm/effortless_communication.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/crm/reporting.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20141626.png',
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20141545.png',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/crm/effortless_communication.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/crm/reporting.webp',
+        ],
+      },
     },
   },
   {
@@ -361,12 +367,14 @@ const data = [
           },
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/studio/make_your_documents_1.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/studio/let_odoo_studio_do_the_work.webp',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20155356.png',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/studio/hero_image.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/studio/make_your_documents_1.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/studio/let_odoo_studio_do_the_work.webp',
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20155356.png',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/studio/hero_image.webp',
+        ],
+      },
     },
   },
   {
@@ -439,12 +447,11 @@ const data = [
           },
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/web/image/11126708/Subscriptions-Template.png',
-        // 'https://odoocdn.com/openerp_website/static/src/img/apps/studio/let_odoo_studio_do_the_work.webp',
-        // 'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-21%20155356.png',
-        // 'https://odoocdn.com/openerp_website/static/src/img/apps/studio/hero_image.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/web/image/11126708/Subscriptions-Template.png',
+        ],
+      },
     },
   },
   {
@@ -511,11 +518,13 @@ const data = [
           },
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental_agreement.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental-days.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental-delay.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental_agreement.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental-days.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/rental/rental-delay.webp',
+        ],
+      },
     },
   },
   {
@@ -588,12 +597,14 @@ const data = [
           },
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/banner-shop.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/kitchen_display.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/self_ordering.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/banner-shop.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/kitchen_display.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/self_ordering.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+        ],
+      },
     },
   },
   {
@@ -666,12 +677,14 @@ const data = [
           },
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/banner-shop.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/kitchen_display.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/self_ordering.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/banner-shop.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/kitchen_display.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/self_ordering.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+        ],
+      },
     },
   },
   {
@@ -723,12 +736,14 @@ const data = [
             'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-28%20132850.png',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/banner-shop.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/kitchen_display.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/self_ordering.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/banner-shop.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/kitchen_display.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/self_ordering.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/pos/hero_image.webp',
+        ],
+      },
     },
   },
   {
@@ -795,11 +810,13 @@ const data = [
             'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/Screenshot%202025-09-28%20135015.png',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-overview-budgets.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-overview-milestones.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-overview-profitability.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-overview-budgets.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-overview-milestones.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/project/project-overview-profitability.webp',
+        ],
+      },
     },
   },
   {
@@ -853,10 +870,12 @@ const data = [
             'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/reporting-bar-chart.webp',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/reporting-pivot.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/hero_image.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/reporting-pivot.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/hero_image.webp',
+        ],
+      },
     },
   },
   {
@@ -917,10 +936,12 @@ const data = [
             'https://odoocdn.com/openerp_website/static/src/img/apps/field-service/field-service-timesheet.webp',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/reporting-pivot.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/hero_image.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/reporting-pivot.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/timesheet/hero_image.webp',
+        ],
+      },
     },
   },
   {
@@ -976,12 +997,14 @@ const data = [
             'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20135015.png',
         },
       ],
-      imageGallery: [
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20165549.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20135015.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20165523.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20135015.png',
-      ],
+      imageGallery: {
+        img: [
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20165549.png',
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20135015.png',
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20165523.png',
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/planning/Screenshot%202025-09-28%20135015.png',
+        ],
+      },
     },
   },
   {
@@ -1053,6 +1076,8 @@ const data = [
       'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-icons/icon%20(7).svg',
     content: {
       img: 'https://odoocdn.com/openerp_website/static/src/img/apps/website/hero_image.webp',
+      darkImg:
+        'https://odoocdn.com/openerp_website/static/src/img/apps/website/hero_image.webp',
       heroSection: {
         title: 'یه وبسایت حرفه‌ای، فقط توی چند دقیقه',
         desc: 'آویس وبسایت داره نگاه همه رو به طراحی وب تغییر میده. با رابط کاربری ساده و سرراستش، می‌تونی وبسایتت رو راحت بسازی، مدیریت کنی و هرجوری خواستی شخصی‌سازیش کنی',
@@ -1095,6 +1120,8 @@ const data = [
           desc: 'با درگ‌اَند‌دراپ بلوک‌ها، همه‌چی دست خودته. می‌خوای چیدمان رو دقیق‌تر تنظیم کنی؟ روی عکسا فیلتر و افکت بذاری؟ یه المان رو انیمیت کنی؟ مشکلی نیست! همه اینا رو همون‌جا روی صفحه انجام بده.',
           image:
             'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20130053.png',
+          darkImage:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20130053.png',
         },
         {
           type: 'ساخت وبسایت',
@@ -1102,13 +1129,22 @@ const data = [
           desc: 'با قابلیت‌های فوق‌العاده خیلی ساده بیزینست رو رشد بده. فرآیندها رو ساده کن، تجربه کاربر رو بهتر کن و همه‌چیز رو تو یه سیستم یکپارچه مدیریت کن تا کسب‌وکار رو راحت‌تر پیش ببری.',
           image:
             'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20130039.png',
+          darkImage:
+            'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20130039.png',
         },
       ],
-      imageGallery: [
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20124126.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20124202.png',
-        'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20131259.png',
-      ],
+      imageGallery: {
+        img: [
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20124126.png',
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20124202.png',
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20131259.png',
+        ],
+        darkImg: [
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20124126.png',
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20124202.png',
+          'https://kbgnpdzggogidjwifiuq.supabase.co/storage/v1/object/public/avis/erp-images/website/Screenshot%202025-09-29%20131259.png',
+        ],
+      },
     },
   },
   {
@@ -1209,12 +1245,14 @@ const data = [
             'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_05.png',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/web/image/11170514/Link-Tracker.png',
-        'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_08.gif',
-        'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_02.jpg',
-        'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_03.jpg',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/web/image/11170514/Link-Tracker.png',
+          'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_08.gif',
+          'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_02.jpg',
+          'https://odoocdn.com/openerp_website/static/src/img/2016/email-marketing/email_marketing_screenshot_03.jpg',
+        ],
+      },
     },
   },
   {
@@ -1275,12 +1313,14 @@ const data = [
             'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/automated_rfq_2.webp',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/charge_vendors_2.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/charge_vendors_1.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/all_the_small_things_2.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/flexible_2.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/charge_vendors_2.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/charge_vendors_1.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/all_the_small_things_2.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/purchase/flexible_2.webp',
+        ],
+      },
     },
   },
   {
@@ -1347,9 +1387,11 @@ const data = [
             'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/batch-picking.svg',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/traceability.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/inventory/traceability.webp',
+        ],
+      },
     },
   },
   {
@@ -1390,12 +1432,14 @@ const data = [
             'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/barcode.webp',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/become_paperless_02.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/sigma_6.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/kaizen.svg',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/features_01.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/become_paperless_02.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/sigma_6.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/kaizen.svg',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/manufacturing/features_01.webp',
+        ],
+      },
     },
   },
   {
@@ -1434,12 +1478,14 @@ const data = [
             'https://odoocdn.com/openerp_website/static/src/img/apps/sales/qualified_leads.webp',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sales/unique_pricing.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sales/ai_powered.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sales/manage_01.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/sales/manage_02.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/sales/unique_pricing.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/sales/ai_powered.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/sales/manage_01.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/sales/manage_02.webp',
+        ],
+      },
     },
   },
   {
@@ -1493,10 +1539,12 @@ const data = [
             'https://odoocdn.com/openerp_website/static/src/img/apps/employees/stuff_private.webp',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/employees/all_in_one_place.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/employees/stuff_private.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/employees/all_in_one_place.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/employees/stuff_private.webp',
+        ],
+      },
     },
   },
   {
@@ -1544,10 +1592,12 @@ const data = [
             'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/pivot_02.webp',
         },
       ],
-      imageGallery: [
-        'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/copy_paste.webp',
-        'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/pivot_02.webp',
-      ],
+      imageGallery: {
+        img: [
+          'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/copy_paste.webp',
+          'https://odoocdn.com/openerp_website/static/src/img/apps/business_intelligence/pivot_02.webp',
+        ],
+      },
     },
   },
 ]
