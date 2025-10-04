@@ -86,19 +86,35 @@ export default function InteractiveComparisonTool() {
 
   const getMetricWidth = (metric: string, key: keyof Scenarios): string => {
     if (metric === 'efficiency') {
-      return scenarios[key].metrics[metric]
+      // بهره‌وری: نسبت به 100 درصد
+      const efficiencyMap: Record<keyof Scenarios, number> = {
+        manual: 30,
+        traditional: 60,
+        erp: 95,
+      }
+      return `${efficiencyMap[key]}%`
     }
 
-    switch (key) {
-      case 'erp':
-        return '95%'
-      case 'traditional':
-        return '60%'
-      case 'manual':
-        return '30%'
-      default:
-        return '0%'
+    if (metric === 'errors') {
+      const errorsMap: Record<keyof Scenarios, number> = {
+        manual: 15,
+        traditional: 8,
+        erp: 1,
+      }
+      return `${errorsMap[key]}%`
     }
+
+    if (metric === 'time') {
+      const timeMap: Record<keyof Scenarios, number> = {
+        manual: 8,
+        traditional: 4,
+        erp: 0.5,
+      }
+      const percentage = (timeMap[key] / 12) * 100
+      return `${percentage.toFixed(1)}%`
+    }
+
+    return '0%'
   }
 
   return (
