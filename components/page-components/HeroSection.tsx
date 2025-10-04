@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const HeroSection = () => {
   return (
     <section className='border-b'>
@@ -23,12 +25,16 @@ const HeroSection = () => {
           </p>
 
           <div className='flex flex-col sm:flex-row gap-3 justify-center'>
-            <button className='bg-gray-900 dark:bg-white text-white dark:text-black px-4 py-2 rounded-md font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition w-40 mx-auto sm:mx-0'>
-              درخواست دمو
-            </button>
-            <button className='bg-white dark:bg-black border border-black/20 dark:border-white/20 px-4 py-2 rounded-md font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition w-40 mx-auto sm:mx-0'>
-              مشاهده قیمت‌ها
-            </button>
+            <Link href='/#cta'>
+              <button className='bg-gray-900 dark:bg-white text-white dark:text-black px-4 py-2 rounded-md font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition w-40 mx-auto sm:mx-0'>
+                درخواست دمو
+              </button>
+            </Link>
+            <Link href='/#pricing'>
+              <button className='bg-white dark:bg-black border border-black/20 dark:border-white/20 px-4 py-2 rounded-md font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition w-40 mx-auto sm:mx-0'>
+                مشاهده قیمت‌ها
+              </button>
+            </Link>
           </div>
         </div>
       </div>
