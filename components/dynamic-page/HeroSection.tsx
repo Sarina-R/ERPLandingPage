@@ -5,6 +5,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import Link from 'next/link'
 
 interface HeroSectionProps {
   title: string
@@ -45,36 +46,42 @@ export default function HeroSection({
         </p>
 
         <div className='flex justify-center gap-4 flex-wrap'>
-          <Button className='bg-primary text-primary-foreground hover:bg-primary/90 text-base px-6 py-6'>
-            {ctaText}
-          </Button>
+          <Link href='#cta'>
+            <Button className='bg-primary text-primary-foreground hover:bg-primary/90 text-base px-6 py-6'>
+              {ctaText}
+            </Button>
+          </Link>
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant='outline' className='text-base px-6 py-6'>
-                Meet an advisor
+                لیست قیمت‌ها
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem>
-                Micro business (&lt; 5 employees)
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                Small Business (6-50 employees)
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                Mid-size company (51-250 employees)
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                Large company (&gt;250 employees)
-              </DropdownMenuItem>
+              <Link href='/#pricing'>
+                <DropdownMenuItem>
+                  کسب‌وکار خرد (کمتر از ۵ کارمند)
+                </DropdownMenuItem>
+              </Link>
+              <Link href='/#pricing'>
+                <DropdownMenuItem>
+                  کسب‌وکار کوچک (۶ تا ۵۰ کارمند)
+                </DropdownMenuItem>
+              </Link>
+              <Link href='/#pricing'>
+                <DropdownMenuItem>
+                  شرکت متوسط (۵۱ تا ۲۵۰ کارمند)
+                </DropdownMenuItem>
+              </Link>
+              <Link href='/#pricing'>
+                <DropdownMenuItem>
+                  شرکت بزرگ (بیش از ۲۵۰ کارمند)
+                </DropdownMenuItem>
+              </Link>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-
-        <p className='text-xs text-muted-foreground'>
-          Free, forever, with unlimited users.
-        </p>
       </div>
     </section>
   )
